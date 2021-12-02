@@ -1,9 +1,9 @@
 //Basic keyboard layout for movement
-key_jump = keyboard_check_pressed(ord("W"));
-key_crouch = keyboard_check(ord("S"));
-key_left = keyboard_check(ord("A"));
-key_right = keyboard_check(ord("D"));
-key_dash = keyboard_check_pressed(vk_shift)
+key_jump   = input_check_pressed(Inputs.Up);
+key_crouch = input_check(Inputs.Down);
+key_left   = input_check(Inputs.Left);
+key_right  = input_check(Inputs.Right);
+key_dash   = keyboard_check_pressed(vk_shift)
 
 
 
@@ -20,7 +20,8 @@ if (place_meeting(x, y+1, oStr)) && (key_jump)
 
 
 // colliders
-function colliders(){
+function colliders()
+{
 	if (place_meeting(x+hspd, y, oStr))
 	{
 		while (!place_meeting(x+sign(hspd), y, oStr))
@@ -51,7 +52,7 @@ if (key_right) and (key_dash) or (key_left) and (key_dash)
 {
 	for (xa=0; xa != 6; xa++)
 	{
-	x += 4;
-	colliders()
+		x += 4;
+		colliders()
 	}
 }
