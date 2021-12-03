@@ -20,5 +20,10 @@ function Line(_origin, _ending) constructor
 		return origin.Distance(ending);
 	}
 	
+	function LengthSquared()
+    {
+        return origin.DistanceSquared(ending);
+    }
+	
 	#endregion
 }
