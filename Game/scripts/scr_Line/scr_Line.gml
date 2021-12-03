@@ -50,6 +50,14 @@ function Line(_origin, _ending) constructor
         
         return (_clockwise) ? new vec2(dir.y, -dir.x) : new vec2(-dir.y, dir.x);
     }
+    
+	//Perpendicular Normal, scaled to the Line's Length.
+    static PerpendicularVector = function(_clockwise = true)
+    {
+        var norm = self.PerpendicularNormal(_clockwise);
+        
+        return (norm).__mul__(self.Length());
+    }
 	
 	#endregion
 }
