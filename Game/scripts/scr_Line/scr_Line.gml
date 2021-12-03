@@ -19,10 +19,18 @@ function Line(_origin, _ending) constructor
 	{
 		return origin.Distance(ending);
 	}
-	
 	function LengthSquared()
     {
         return origin.DistanceSquared(ending);
+    }
+	
+	
+	function Normalized()
+    {
+        var dir = ((ending).__sub__(origin)).Normalize();
+        var new_ending = (origin).__add__(dir);
+        
+        return new Line(origin, new_ending);
     }
 	
 	#endregion
