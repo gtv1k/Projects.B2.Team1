@@ -27,17 +27,23 @@ function Line(_origin, _ending) constructor
 	
 	function Normalized()
     {
-        var dir = ((ending).__sub__(origin)).Normalize();
+        var dir = self.Direction();
         var new_ending = (origin).__add__(dir);
         
         return new Line(origin, new_ending);
     }
     function Normalize()
     {
-        var dir = ((ending).__sub__(origin)).Normalize();
+        var dir = self.Direction();
         self.ending = (origin).__add__(dir);
         
         return self;
+    }
+	
+		
+	function Direction()
+    {
+        return ((ending).__sub__(origin)).Normalize();
     }
 	
 	#endregion
