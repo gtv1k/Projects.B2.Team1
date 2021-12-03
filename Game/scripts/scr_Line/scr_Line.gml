@@ -12,4 +12,13 @@ function Line(_origin, _ending) constructor
 	throw ("[ERROR] INVALID INPUT");
 	
 	#endregion
+	
+	#region Functions
+	
+	function Length()
+	{
+		return origin.Distance(ending);
+	}
+	
+	#endregion
 }
