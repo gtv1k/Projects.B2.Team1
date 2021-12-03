@@ -46,5 +46,11 @@ function Line(_origin, _ending) constructor
         return ((ending).__sub__(origin)).Normalize();
     }
 	
+	function PerpendicularClockwise()
+	{
+		var norm = self.Normalized();
+		return new vec2(norm.y, -norm.x);
+	}
+	
 	#endregion
 }
