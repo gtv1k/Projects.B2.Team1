@@ -58,6 +58,15 @@ function Line(_origin, _ending) constructor
         
         return (norm).__mul__(self.Length());
     }
+    
+    static PerpendicularLine = function(_clockwise = true)
+    {
+        var perp = self.PerpendicularVector(_clockwise);
+    
+        var new_ending = (origin).__add__(perp);
+        
+        return new Line(origin, new_ending);
+    }
 	
 	#endregion
 }
