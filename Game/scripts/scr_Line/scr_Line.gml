@@ -15,47 +15,34 @@ function Line(_origin, _ending) constructor
 	
 	#region Functions
 	
-	function Length()
+	static Length = function()
 	{
 		return origin.Distance(ending);
 	}
-	function LengthSquared()
+	static LengthSquared = function()
     {
         return origin.DistanceSquared(ending);
     }
 	
-	
-	function Normalized()
-    {
-        var dir = self.Direction();
-        var new_ending = (origin).__add__(dir);
-        
-        return new Line(origin, new_ending);
-    }
-    function Normalize()
-    {
-        var dir = self.Direction();
-        self.ending = (origin).__add__(dir);
-        
-        return self;
-    }
-	
-		
-	function Direction()
+	static DirectionVector = function()
     {
         return ((ending).__sub__(origin)).Normalize();
     }
 	
-	function PerpendicularClockwise()
-	{
-		var norm = self.Normalized();
-		return new vec2(norm.y, -norm.x);
-	}
-	function PerpendicularCounterClockwise()
-	{
-		var norm = self.Normalized();
-		return new vec2(-norm.y, norm.x);
-	}
+	static Normalized = function()
+    {
+        var dir = self.DirectionVector();
+        var new_ending = (origin).__add__(dir);
+        
+        return new Line(origin, new_ending);
+    }
+    static Normalize = function()
+    {
+        var dir = self.DirectionVector();
+        self.ending = (origin).__add__(dir);
+        
+        return self;
+    }
 	
 	#endregion
 }
