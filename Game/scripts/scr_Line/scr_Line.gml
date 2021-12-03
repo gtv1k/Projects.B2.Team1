@@ -32,6 +32,13 @@ function Line(_origin, _ending) constructor
         
         return new Line(origin, new_ending);
     }
+    function Normalize()
+    {
+        var dir = ((ending).__sub__(origin)).Normalize();
+        self.ending = (origin).__add__(dir);
+        
+        return self;
+    }
 	
 	#endregion
 }
