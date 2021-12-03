@@ -44,5 +44,12 @@ function Line(_origin, _ending) constructor
         return self;
     }
 	
+	static PerpendicularNormal = function(_clockwise = true)
+    {
+        var dir = self.DirectionVector();
+        
+        return (_clockwise) ? new vec2(dir.y, -dir.x) : new vec2(-dir.y, dir.x);
+    }
+	
 	#endregion
 }
