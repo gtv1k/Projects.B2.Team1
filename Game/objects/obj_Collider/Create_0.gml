@@ -1,0 +1,1 @@
+collider = new Collider(new vec2(x, y), new vec2(x + 100, y));
