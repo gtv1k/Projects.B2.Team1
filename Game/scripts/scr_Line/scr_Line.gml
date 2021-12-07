@@ -24,6 +24,11 @@ function Line(_origin, _ending) constructor
         return origin.DistanceSquared(ending);
     }
 	
+	static Center = function()
+	{
+		return ((origin).__add__(ending)).__div__(2);
+	}
+	
 	static DirectionVector = function()
     {
         return ((ending).__sub__(origin)).Normalize();
