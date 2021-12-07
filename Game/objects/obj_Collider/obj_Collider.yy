@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_Collider",
+    "path": "sprites/spr_Collider/spr_Collider.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
@@ -14,8 +17,8 @@
   "physicsLinearDamping": 0.1,
   "physicsAngularDamping": 0.1,
   "physicsFriction": 0.2,
-  "physicsStartAwake": true,
-  "physicsKinematic": false,
+  "physicsStartAwake": false,
+  "physicsKinematic": true,
   "physicsShapePoints": [],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
