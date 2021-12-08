@@ -68,9 +68,9 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"054adc47-7fd4-4ccc-91a6-2fdd3cce307a","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": {
-    "left": 1,
+    "left": 2,
     "top": 1,
-    "right": 1,
+    "right": 2,
     "bottom": 1,
     "guideColour": [
       4294902015,

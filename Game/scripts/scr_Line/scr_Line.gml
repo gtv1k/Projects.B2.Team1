@@ -64,6 +64,7 @@ function Line(_origin, _ending) constructor
         return (norm).__mul__(self.Length());
     }
     
+	//Construct a new line from the perpendicular vector.
     static PerpendicularLine = function(_clockwise = true)
     {
         var perp = self.PerpendicularVector(_clockwise);
