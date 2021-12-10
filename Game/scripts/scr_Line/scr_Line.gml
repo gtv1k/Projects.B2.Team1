@@ -74,5 +74,24 @@ function Line(_origin, _ending) constructor
         return new Line(origin, new_ending);
     }
 	
+	static Cast = function(_ctx)
+	{
+		var uA = 
+			((_ctx.ending.x - _ctx.origin.x) * (self.origin.y - _ctx.origin.y) - (_ctx.ending.y - _ctx.origin.y) * (self.origin.x - _ctx.origin.x)) / 
+			((_ctx.ending.y - _ctx.origin.y) * (self.ending.x - self.origin.x) - (_ctx.ending.x - _ctx.origin.x) * (self.ending.y - self.origin.y));
+		
+		var uB = 
+			((self.ending.x - self.origin.x) * (self.origin.y - _ctx.origin.y) - (self.ending.y - self.origin.y) * (self.origin.x - _ctx.origin.x)) /
+			((_ctx.ending.y - _ctx.origin.y) * (self.ending.x - self.origin.x) - (_ctx.ending.x - _ctx.origin.x) * (self.ending.y - self.origin.y));
+
+		var areLinesIntersecting = (uA >= 0 and uA <= 1) and (uB >= 0 and uB <= 1);
+		
+		if (areLinesIntersecting) 
+		{
+			return (origin).__add__(((ending).__sub__(origin)).__mul__(uA));
+		}
+		return noone;
+	}
+		
 	#endregion
 }
