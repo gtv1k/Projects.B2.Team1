@@ -3,7 +3,7 @@ key_jump   = input_check_pressed(Inputs.Up);
 key_crouch = input_check(Inputs.Down);
 key_left   = input_check(Inputs.Left);
 key_right  = input_check(Inputs.Right);
-key_dash   = keyboard_check_pressed(vk_shift)
+key_dash   = keyboard_check_pressed(vk_shift);
 
 
 
@@ -27,7 +27,7 @@ function colliders()
 		while (!place_meeting(x+sign(hspd), y, oStr))
 		{
 			x = x + sign(hspd);
-		}	
+		}
 		hspd = 0;
 	}
 
