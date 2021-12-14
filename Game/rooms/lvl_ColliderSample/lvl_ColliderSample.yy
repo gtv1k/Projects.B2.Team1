@@ -16,18 +16,12 @@
     {"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[
         {"pathId":{"name":"Path1","path":"paths/Path1/Path1.yy",},"colour":4278190335,"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Path_1","tags":[],"resourceType":"GMRPathLayer",},
       ],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Colliders","tags":[],"resourceType":"GMRLayer",},
-    {"instances":[
-        {"properties":[],"isDnd":false,"objectId":{"name":"obj_Collider","path":"objects/obj_Collider/obj_Collider.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":32.95071,"scaleX":27.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":656.0,"y":384.016571,"resourceVersion":"1.0","name":"inst_61AF9339","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[],"isDnd":false,"objectId":{"name":"obj_Collider","path":"objects/obj_Collider/obj_Collider.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":-5.743602,"scaleX":4.75,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":873.999939,"y":271.999969,"resourceVersion":"1.0","name":"inst_3475ADEE","tags":[],"resourceType":"GMRInstance",},
-      ],"visible":true,"depth":200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
+    {"instances":[],"visible":true,"depth":200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
   ],
   "inheritLayers": false,
   "creationCodeFile": "",
   "inheritCode": false,
-  "instanceCreationOrder": [
-    {"name":"inst_61AF9339","path":"rooms/lvl_ColliderSample/lvl_ColliderSample.yy",},
-    {"name":"inst_3475ADEE","path":"rooms/lvl_ColliderSample/lvl_ColliderSample.yy",},
-  ],
+  "instanceCreationOrder": [],
   "inheritCreationOrder": false,
   "sequenceId": null,
   "roomSettings": {

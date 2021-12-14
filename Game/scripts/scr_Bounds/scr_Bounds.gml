@@ -12,6 +12,8 @@ function Bounds(_min, _max) constructor
 		self.center  = ((_min).__add__(_max)).__div__(2);
 		
 		self.size    =  (_max).__sub__(_min);
+		self.Width   = size.x;
+		self.Height  = size.y;
 		
 		self.extents =  (size).__div__(2);
 		
@@ -50,6 +52,11 @@ function Bounds(_min, _max) constructor
 		
 		draw_set_color(c_blue);
 		draw_circle(Max.x, Max.y, 4, false)
+	}
+	
+	static Translate = function(movement)
+	{
+		
 	}
 	
 	#endregion
