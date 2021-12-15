@@ -130,6 +130,7 @@
     {"id":{"name":"input_bindings_write","path":"scripts/input_bindings_write/input_bindings_write.yy",},"order":3,},
     {"id":{"name":"input_tick","path":"scripts/input_tick/input_tick.yy",},"order":14,},
     {"id":{"name":"__input_keyboard_key","path":"scripts/__input_keyboard_key/__input_keyboard_key.yy",},"order":21,},
+    {"id":{"name":"obj_Player","path":"objects/obj_Player/obj_Player.yy",},"order":4,},
     {"id":{"name":"__input_system","path":"scripts/__input_system/__input_system.yy",},"order":26,},
     {"id":{"name":"input_cursor_move","path":"scripts/input_cursor_move/input_cursor_move.yy",},"order":3,},
     {"id":{"name":"sWall","path":"sprites/sWall/sWall.yy",},"order":6,},

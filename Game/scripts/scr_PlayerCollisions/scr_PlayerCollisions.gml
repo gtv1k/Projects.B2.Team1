@@ -1,19 +1,22 @@
-function PlayerCollisions()
+function PlayerCollisions(_position = new vec2(0, 0)) constructor
 {
-	c_above = false;
-	c_below = false;
-	c_left  = false;
-	c_right = false;
+	self.c_above = false;
+	self.c_below = false;
+	self.c_left  = false;
+	self.c_right = false;
 	
-	isOnGround = false;
+	self.isOnGround = false;
 	
-	groundAngle  = 0;
-	groundVector = up;
+	self.groundAngle  = 0;
+	self.groundVector = up;
 	
+	self.position = _position;
 	
 	var _lineSpacing = 0.1;
 	
-	bounds = new Bounds(new vec2(0, 0), new vec2(1, 2));
+	var _topRight = new vec2(1 * PIXELS_PER_UNIT, 2 * PIXELS_PER_UNIT);
+	
+	self.bounds = new Bounds(position, (position).__add__(_topRight));
 	
 	var _horLineCount = round(bounds.size.y / _lineSpacing);
     var _verLineCount = round(bounds.size.x / _lineSpacing);
@@ -23,13 +26,70 @@ function PlayerCollisions()
     var _horLineSpacing = (bounds.size.y / (_horLineCount - 1));
     var _verLineSpacing = (bounds.size.x / (_verLineCount - 1));
 	
-	static CheckGround = function(_isGoingRight)
+	var _horLines = array_create(_horLineCount);
+	
+	static CheckAllDirections = function()
+	{
+		CheckHorizontal();
+		CheckVertical();
+	}
+	
+	static CheckHorizontal = function()
+	{
+		CheckLeft();
+		CheckRight();
+	}
+	
+	static CheckVertical = function()
+	{
+		CheckTop();
+		CheckDown();
+	}
+	
+	
+	// → 
+	static CheckTop = function()
     {
+		var _rayOrigin = bounds.t_l;
+		
+		for(var _index = 0; _index < _verLineCount; _index += 1)
+		{
+			_rayOrigin.x += _verLineSpacing;
+			
+		}
+	}
+	
+	// ← 
+	static CheckDown = function()
+    {
+		var _rayOrigin = bounds.b_l;
+		
+		for(var _index = 0; _index < _verLineCount; _index += 1)
+		{
+			_rayOrigin.x -= _verLineSpacing;
+			
+		}
+	}
+	
+	// ↑ 
+	static CheckLeft = function()
+	{
+		var _rayOrigin = bounds.b_l;
 		for(var _index = 0; _index < _horLineCount; _index += 1)
 		{
-			var _origin = (_isGoingRight) ? bounds.b_r : bounds.b_l;
+			_rayOrigin.y += _horLineSpacing;
 			
-			_origin = (_origin).__add__(_hor)
+		}
+	}
+	
+	// ↓ 
+	static CheckRight = function()
+	{
+		var _rayOrigin = bounds.t_r;
+		for(var _index = 0; _index < _horLineCount; _index += 1)
+		{
+			_rayOrigin.y -= _horLineSpacing;
+			
 		}
 	}
 	

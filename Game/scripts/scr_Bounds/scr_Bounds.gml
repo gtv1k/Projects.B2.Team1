@@ -22,10 +22,10 @@ function Bounds(_min, _max) constructor
 		self.t_r = new vec2(Max.x, Max.y);
 		self.t_l = new vec2(Min.x, Max.y);
 		
-		show_debug_message("b_l" + string(b_l));
-		show_debug_message("b_r" + string(b_r));
-		show_debug_message("t_r" + string(t_r));
-		show_debug_message("t_l" + string(t_l));
+		show_debug_message("b_l: " + string(b_l));
+		show_debug_message("b_r: " + string(b_r));
+		show_debug_message("t_r: " + string(t_r));
+		show_debug_message("t_l: " + string(t_l));
 
 		return;
 	}

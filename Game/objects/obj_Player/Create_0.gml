@@ -1,0 +1,1 @@
+_col = new PlayerCollisions( new vec2(100, 100) );
