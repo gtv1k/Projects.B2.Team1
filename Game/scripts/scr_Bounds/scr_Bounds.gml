@@ -61,3 +61,16 @@ function Bounds(_min, _max) constructor
 	
 	#endregion
 }
+
+// Combined two Bounds into one new one.
+// ┌───┐              ╔═══┬───────┐
+// │ A │              ║ A │       │
+// └───┘   ┌───┐  ->  ├───┘ C ┌───┤
+//         │ B │      │       │ B ║
+//         └───┘      └───────┴═══╝
+function BoundsUnion(_a, _b)
+{
+	return new Bounds(
+		/*min*/ Min(a.Min, b.Min), 
+		/*max*/ Max(a.Max, b.Max));
+}
