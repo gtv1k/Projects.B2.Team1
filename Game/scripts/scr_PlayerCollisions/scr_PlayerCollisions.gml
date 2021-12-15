@@ -43,11 +43,27 @@ function PlayerCollisions(_position = new vec2(0, 0)) constructor
 	static CheckVertical = function()
 	{
 		CheckTop();
-		CheckDown();
+		CheckBottom();
 	}
 	
 	
-	// → 
+	// ← ┌─────┐
+	// ← ˄     │
+	// ← ╙─────┘
+	static CheckLeft = function()
+	{
+		var _rayOrigin = bounds.b_l;
+		for(var _index = 0; _index < _horLineCount; _index += 1)
+		{
+			_rayOrigin.y += _horLineSpacing;
+			
+		}
+	}
+	
+	//  ↑↑↑↑↑↑↑
+	//  ┌══>──┐
+	//  │     │
+	//  └─────┘
 	static CheckTop = function()
     {
 		var _rayOrigin = bounds.t_l;
@@ -59,30 +75,9 @@ function PlayerCollisions(_position = new vec2(0, 0)) constructor
 		}
 	}
 	
-	// ← 
-	static CheckDown = function()
-    {
-		var _rayOrigin = bounds.b_l;
-		
-		for(var _index = 0; _index < _verLineCount; _index += 1)
-		{
-			_rayOrigin.x -= _verLineSpacing;
-			
-		}
-	}
-	
-	// ↑ 
-	static CheckLeft = function()
-	{
-		var _rayOrigin = bounds.b_l;
-		for(var _index = 0; _index < _horLineCount; _index += 1)
-		{
-			_rayOrigin.y += _horLineSpacing;
-			
-		}
-	}
-	
-	// ↓ 
+	//  ┌─────╖ →
+	//  │     ˅ →
+	//  └─────┘ →
 	static CheckRight = function()
 	{
 		var _rayOrigin = bounds.t_r;
@@ -93,4 +88,18 @@ function PlayerCollisions(_position = new vec2(0, 0)) constructor
 		}
 	}
 	
+	//  ┌─────┐
+	//  │     │
+	//  └──<══┘
+	//  ↓↓↓↓↓↓↓
+	static CheckBottom = function()
+    {
+		var _rayOrigin = bounds.b_r;
+		
+		for(var _index = 0; _index < _verLineCount; _index += 1)
+		{
+			_rayOrigin.x -= _verLineSpacing;
+			
+		}
+	}
 }
