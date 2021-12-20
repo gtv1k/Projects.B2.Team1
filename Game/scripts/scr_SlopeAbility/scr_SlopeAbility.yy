@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Scripts",
-    "path": "folders/Scripts.yy",
+    "name": "Abilities",
+    "path": "folders/Scripts/Player/Abilities.yy",
   },
   "resourceVersion": "1.0",
-  "name": "scr_PlayerCollisions",
+  "name": "scr_SlopeAbility",
   "tags": [],
   "resourceType": "GMScript",
 }
