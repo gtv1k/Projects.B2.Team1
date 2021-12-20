@@ -116,6 +116,13 @@ function Line(_origin, _ending) constructor
 	#endregion
 }
 
+function HitInfo(_point, _normal, _distance) constructor
+{
+	self.point    = _point;
+	self.normal   = _normal;
+	self.distance = _distance;
+}
+
 function Raycast(_origin, _direction, _length = 10000)
 {
 	//TODO: Removed hardcoded collider!!!
@@ -145,9 +152,14 @@ function Raycast(_origin, _direction, _length = 10000)
 		if(_distance < _closestDistance)
 		{
 			_closestDistance = _distance;
-			_closestResult = _result;
+			_closestResult = new HitInfo(/*point: */ _result, /*normal: */ _collider_line.PerpendicularNormal(), /*distance: */_closestDistance);
 			//TODO: Closest normal
 		}
+	}
+	
+	if(_closestResult != noone)
+	{
+		_closestResult.distance = sqrt(_closestDistance)
 	}
 	
 	return _closestResult;

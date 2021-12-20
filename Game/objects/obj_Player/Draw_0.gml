@@ -14,6 +14,10 @@ for(var _index = 0, _count = array_length(_results); _index < _count; _index += 
 	var _result = _results[_index];
 	if(_result != noone)
 	{
-		draw_circle(_result.x, _result.y, /*radius: */ 4, /*outline: */ false);
+		draw_circle(_result.point.x, _result.point.y, /*radius: */ 4, /*outline: */ false);
+		
+		var _normal = (_result.normal).__mul__(1 UNITS);
+		
+		draw_line_width(_result.point.x, _result.point.y, _result.point.x + _normal.x, _result.point.y + _normal.y, 2);
 	}
 }
