@@ -1,1 +1,1 @@
-_col = new PlayerCollisions( new vec2(100, 100) );
+_player = new Character(/*position: */ new vec2(x, y));
