@@ -1,7 +1,7 @@
 function DashAbility() : Ability() constructor
 {
-	Update = function()
+	static Update = function()
 	{
-		show_message("DASH BITCH!");
+		//show_message("DASH BITCH!");
 	}
 }

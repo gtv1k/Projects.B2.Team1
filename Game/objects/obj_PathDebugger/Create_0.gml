@@ -1,0 +1,1 @@
+collider = new PathCollider(Path1);
