@@ -1,10 +1,19 @@
-function Ability() constructor
+function Ability(_character) constructor
 {
-	//TODO Add PlayerCollider
-	//TODO Add PlayerController
+	#region Constructor
 	
-	Update = function()
+	self.character = _character;
+	
+	return;
+	
+	#endregion
+	
+	#region Functions
+	
+	static Update = function()
 	{
-		throw ("Not Implemented Yet Exception!");
+		throw "NotImplementedException!";
 	}
+	
+	#endregion
 }
