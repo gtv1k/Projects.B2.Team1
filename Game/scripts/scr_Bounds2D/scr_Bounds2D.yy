@@ -6,7 +6,7 @@
     "path": "folders/GameMaker.Utils.Physics/Scripts.yy",
   },
   "resourceVersion": "1.0",
-  "name": "scr_Bounds",
+  "name": "scr_Bounds2D",
   "tags": [],
   "resourceType": "GMScript",
 }

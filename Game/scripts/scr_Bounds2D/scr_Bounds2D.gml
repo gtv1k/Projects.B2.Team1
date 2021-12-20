@@ -1,4 +1,4 @@
-function Bounds(_min, _max) constructor
+function Bounds2D(_min, _max) constructor
 {
 	//x, y, width, height
 	
@@ -9,23 +9,22 @@ function Bounds(_min, _max) constructor
 		self.Min = _min;
 		self.Max = _max;
 		
-		self.center  = ((_min).__add__(_max)).__div__(2);
+		self.Center  = ((Min).__add__(Max)).__div__(2);
 		
-		self.size    =  (_max).__sub__(_min);
-		self.Width   = size.x;
-		self.Height  = size.y;
+		self.Size    =  (Max).__sub__(Min);
+		self.Width   = Size.x;
+		self.Height  = Size.y;
 		
-		self.extents =  (size).__div__(2);
+		self.Extents =  (Size).__div__(2);
 		
-		self.b_l = new vec2(Min.x, Min.y);
-		self.b_r = new vec2(Max.x, Min.y);
-		self.t_r = new vec2(Max.x, Max.y);
-		self.t_l = new vec2(Min.x, Max.y);
+		self.SurfaceArea = Width * Height;
 		
-		show_debug_message("b_l: " + string(b_l));
-		show_debug_message("b_r: " + string(b_r));
-		show_debug_message("t_r: " + string(t_r));
-		show_debug_message("t_l: " + string(t_l));
+		self.b_l = new vec2(Min.x, Max.y);
+		self.b_r = new vec2(Max.x, Max.y);
+		self.t_l = new vec2(Min.x, Min.y);
+		self.t_r = new vec2(Max.x, Min.y);
+		
+		//Reload();
 
 		return;
 	}
@@ -40,12 +39,15 @@ function Bounds(_min, _max) constructor
 	{	
 		draw_set_color(c_aqua);
 		draw_line_width(b_l.x, b_l.y, b_r.x, b_r.y, 1);
+		
 		draw_line_width(b_r.x, b_r.y, t_r.x, t_r.y, 1);
+		
 		draw_line_width(t_r.x, t_r.y, t_l.x, t_l.y, 1);
+		
 		draw_line_width(t_l.x, t_l.y, b_l.x, b_l.y, 1);
 		
 		draw_set_color(c_gray);
-		draw_circle(center.x, center.y, 2, false)
+		draw_circle(Center.x, Center.y, 2, false)
 		
 		draw_set_color(c_red);
 		draw_circle(Min.x, Min.y, 4, false);
@@ -54,15 +56,30 @@ function Bounds(_min, _max) constructor
 		draw_circle(Max.x, Max.y, 4, false)
 	}
 	
-	static Translate = function(movement)
+	/*
+	static Reload = function()
 	{
+		self.Center  = ((Min).__add__(Max)).__div__(2);
 		
+		self.Size    =  (Max).__sub__(Min);
+		self.Width   = Size.x;
+		self.Height  = Size.y;
+		
+		self.Extents =  (Size).__div__(2);
+		
+		self.SurfaceArea = Width * Height;
+		
+		self.b_l = new vec2(Min.x, Min.y);
+		self.b_r = new vec2(Max.x, Min.y);
+		self.t_l = new vec2(Min.x, Max.y);
+		self.t_r = new vec2(Max.x, Max.y);
 	}
+	*/
 	
 	#endregion
 }
 
-// Combined two Bounds into one new one.
+// Combines two Bounds into one new one.
 // ┌───┐              ╔═══┬───────┐
 // │ A │              ║ A │       │
 // └───┘   ┌───┐  ->  ├───┘ C ┌───┤
@@ -70,7 +87,7 @@ function Bounds(_min, _max) constructor
 //         └───┘      └───────┴═══╝
 function BoundsUnion(_a, _b)
 {
-	return new Bounds(
-		/*min*/ Min(a.Min, b.Min), 
-		/*max*/ Max(a.Max, b.Max));
+	return new Bounds2D(
+		/*min*/ Min(_a.Min, _b.Min), 
+		/*max*/ Max(_a.Max, _b.Max));
 }

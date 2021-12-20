@@ -52,7 +52,7 @@ function PathCollider(_path) constructor
 			_max.y = max(_max.y, _point.y);
 		}
 		
-		return new Bounds(_min, _max);
+		return new Bounds2D(_min, _max);
 	}
 	
 	//TODO: [Walter] Normals

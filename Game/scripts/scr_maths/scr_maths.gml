@@ -1,29 +1,62 @@
 //Returns the smallest value from its inputs.
-function min()
+function Math_Min()
 {
-	var smallest = argument[0];
+	if(argument_count == 0) throw "Invalid Argument Count";
+	
+	var _smallest = argument[0];
 	for (var i = 1; i < argument_count; i += 1) 
 	{
-		if(argument[i] < smallest)
+		var _arg = argument[i];
+		
+		if (is_numeric(_arg))
 		{
-			smallest = list[i];
+			if(_arg < _smallest)
+			{
+				_smallest = _arg;
+			}
 		}
+		else if(is_struct(_arg)) //assume is vec2
+		{
+			if((_arg).__lt__(_smallest))
+			{
+				_smallest = _arg;
+			}
+		}
+		
+		throw "Invalid Argument!";
+		
 	}
-	return smallest;
+	return _smallest;
 }
 
 //Returns the largest value from its inputs.
-function max()
+function Math_Max()
 {
-	var smallest = argument[0];
+	if(argument_count == 0) throw "Invalid Argument Count";
+	
+	var _largest = argument[0];
 	for (var i = 1; i < argument_count; i += 1) 
 	{
-		if(argument[i] < smallest)
+		var _arg = argument[i];
+		
+		if(is_numeric(_arg))
 		{
-			smallest = list[i];
+			if(_arg[i] > _largest)
+			{
+				_largest = _arg;
+			}
 		}
+		else if(is_struct(_arg)) //assume is vec2
+		{
+			if((_arg).__gt__(_largest))
+			{
+				_largest = _arg;
+			}
+		}
+		
+		throw "Invalid Argument!";
 	}
-	return smallest;
+	return _largest;
 }
 
 //Returns -1 if input is negative, 0 if input is zero (or within the given threshold), 1 if input is positive.
