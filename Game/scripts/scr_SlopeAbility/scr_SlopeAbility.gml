@@ -23,6 +23,8 @@ function SlopeAbility(_character) : Ability(_character) constructor
 	
 	static Update = function()
 	{
+		DescendSlope();
+		
 		var _results = character.collider.CheckHor((character.velocity).__mul__(Time.deltaTime));
 		
 		if (_results == noone) return;
@@ -71,9 +73,9 @@ function SlopeAbility(_character) : Ability(_character) constructor
 				
 				if (isAscendingSlope)
 				{
-					character.velocity.y =
-						tan(degtorad(currSlopeAngle)) *
-						abs(character.velocity.x);
+					character.velocity.y = 
+					  -(tan(degtorad(currSlopeAngle)) *
+						abs(character.velocity.x));
 				}
 			}
 		}
@@ -84,7 +86,7 @@ function SlopeAbility(_character) : Ability(_character) constructor
 		var _slopeRadians = degtorad(currSlopeAngle);
 		
 		var _speed = abs(character.velocity.x);
-		var _climb = sin(_slopeRadians) * _speed;
+		var _climb = -(sin(_slopeRadians) * _speed);
 
 		if (character.velocity.y <= _climb) //TODO: neccesary check? move down??
 		{
@@ -93,13 +95,62 @@ function SlopeAbility(_character) : Ability(_character) constructor
 			character.velocity.x = cos(_slopeRadians) * _speed * _velSign;
 			character.velocity.y = _climb;
 			
-			currSlopeSign   = _velSign;
+			//currSlopeSign   = _velSign;
 			
 			isAscendingSlope = true;
 		}
 		else
 		{
 			isAscendingSlope = false;
+		}
+	}
+	
+	static DescendSlope = function()
+	{
+		if(character.velocity.y <= 0) return;
+		
+		var _velSign = sign(character.velocity.x);
+		
+		var _origin = (_velSign == -1) ? character.collider.bounds.b_r : character.collider.bounds.b_l;
+		
+		var _hit = Raycast(_origin, down, /*distance*/ 1 UNITS);
+		if(!_hit) return;
+
+		var _slopeAngle = _hit.normal.AsAngleDegrees() - 90;
+
+		if (_slopeAngle != 0 && _slopeAngle <= maxSlopeAngle)
+		{
+			var _isMovingInDownDir = (sign(_hit.normal.x) == _velSign);
+			
+			if (_isMovingInDownDir)
+			{
+				show_debug_message("Down");
+				
+				//character.velocity.y -= 100;
+				
+				if(_hit.distance - character.collider.SkinWidth <=
+				   tan(degtorad(_slopeAngle) * abs(character.velocity.x)))
+				{
+					show_debug_message("DOWN DOWN DOWN");
+					
+					var __speed = abs(character.velocity.x);
+					var __descendVelocityY = sin(degtorad(_slopeAngle)) * __speed;
+
+					character.velocity.x = cos(degtorad(_slopeAngle)) * __speed * sign(character.velocity.x);
+					character.velocity.y = __descendVelocityY;
+
+					currSlopeAngle = _slopeAngle;
+					currSlopeSign  = -sign(character.velocity.x);
+
+					isDescendingSlope = true;
+
+					//setBelow(true, hit.normal);
+				}
+			}
+			else
+			{
+				isDescendingSlope = false;
+			}
 		}
 	}
 	
