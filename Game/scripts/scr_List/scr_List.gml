@@ -17,6 +17,13 @@ function List(/*_capacity = 10*/) constructor
 		return self;
 	}
 	
+	static Remove = function(_item)
+	{
+		gml_pragma("forceinline");
+		
+		ds_list_delete(list, ds_list_find_index(list, _item));
+	}
+	
 	static AddRange = function()
 	{
 		gml_pragma("forceinline");
@@ -47,6 +54,8 @@ function List(/*_capacity = 10*/) constructor
 	
 	static Clear = function()
 	{
+		gml_pragma("forceinline");
+		
 		if(!ds_list_empty(list))
 		{
 			ds_list_clear(list);
