@@ -8,7 +8,7 @@ function List(/*_capacity = 10*/) constructor
 	
 	#region Functions
 	
-	static Add=function(_item)
+	static Add = function(_item)
 	{
 		gml_pragma("forceinline");
 		
@@ -17,7 +17,7 @@ function List(/*_capacity = 10*/) constructor
 		return self;
 	}
 	
-	static AddRange=function()
+	static AddRange = function()
 	{
 		gml_pragma("forceinline");
 		
@@ -43,6 +43,14 @@ function List(/*_capacity = 10*/) constructor
 		}
 		
 		return self;
+	}
+	
+	static Clear = function()
+	{
+		if(!ds_list_empty(list))
+		{
+			ds_list_clear(list);
+		}
 	}
 	
 	#endregion
