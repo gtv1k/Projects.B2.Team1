@@ -135,6 +135,18 @@ function GetStaticDebug()
 				return _gizmo;	
 	        },
 			
+			DrawCircle: function(_center, _radius = 1, _doOutline = false, _color = c_white, _duration = 0)
+			{    
+				var _action = method({center: _center, radius: _radius, doOutline: _doOutline}, function()
+				{
+					draw_circle(center.x, center.y, radius, doOutline);
+				});
+				
+				var _gizmo = new Gizmo(_action, _color, _duration);
+				ds_list_add(/*id: */ global.gizmos, /*val: */_gizmo);
+				return _gizmo;
+	        },
+			
 			#endregion
         };
     }
