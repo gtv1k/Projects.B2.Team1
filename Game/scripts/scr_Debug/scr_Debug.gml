@@ -91,6 +91,18 @@ function GetStaticDebug()
 				}
 			},
 			
+			DrawLine: function(_line, _thickness = 1, _color = c_white, _duration = 0) 
+			{    
+				var _action = method({line: _line, thickness: _thickness}, function()
+				{
+					draw_line_width(line.origin.x, line.origin.y, line.ending.x, line.ending.y, thickness);
+				});
+				
+				var _gizmo = new Gizmo(_action, _color, _duration);
+				ds_list_add(/*id: */ global.gizmos, /*val: */_gizmo);
+				return _gizmo;
+			},
+			
 			#endregion
         };
     }
