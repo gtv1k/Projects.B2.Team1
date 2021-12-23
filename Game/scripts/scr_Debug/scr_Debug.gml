@@ -162,6 +162,34 @@ function GetStaticDebug()
 				ds_list_add(/*id: */ global.gizmos, /*val: */_gizmo);
 				return _gizmo;
 	        },
+	        
+	        DrawBounds: function(_bounds, _thickness = 1, _color = c_white, _duration = 0)
+	        {
+				var _action = method({bounds: _bounds, thickness: _thickness}, function()
+				{
+					draw_set_color(c_aqua);
+					draw_line_width(bounds.b_l.x, bounds.b_l.y, bounds.b_r.x, bounds.b_r.y, thickness);
+		
+					draw_line_width(bounds.b_r.x, bounds.b_r.y, bounds.t_r.x, bounds.t_r.y, thickness);
+		
+					draw_line_width(bounds.t_r.x, bounds.t_r.y, bounds.t_l.x, bounds.t_l.y, thickness);
+		
+					draw_line_width(bounds.t_l.x, bounds.t_l.y, bounds.b_l.x, bounds.b_l.y, thickness);
+	
+					draw_set_color(c_gray);
+					draw_circle(bounds.Center.x, bounds.Center.y, 2, false);
+		
+					draw_set_color(c_red);
+					draw_circle(bounds.Min.x, bounds.Min.y, 4, false);
+		
+					draw_set_color(c_blue);
+					draw_circle(bounds.Max.x, bounds.Max.y, 4, false);
+				});
+				
+				var _gizmo = new Gizmo(_action, _color, _duration);
+				ds_list_add(/*id: */ global.gizmos, /*val: */_gizmo);
+				return _gizmo;
+	        },
 			
 			#endregion
         };
