@@ -114,6 +114,26 @@ function GetStaticDebug()
 				ds_list_add(/*id: */ global.gizmos, /*val: */_gizmo);
 				return _gizmo;
 	        },
+	        
+			/*
+			DrawRay: function(_ray, _thickness = 1, _color = c_white, _duration = 0)
+			{
+	        },
+			*/
+			
+	        DrawNewRay: function(_origin, _direction, _length = 10000, _thickness = 1, _color = c_white, _duration = 0) 
+			{    
+				var _ending = (_origin).__add__((_direction).__mul__(_length));
+				
+				var _action = method({origin: _origin, ending: _ending, thickness: _thickness}, function()
+				{
+					draw_line_width(origin.x, origin.y, ending.x, ending.y, thickness);
+				});
+				
+				var _gizmo = new Gizmo(_action, _color, _duration);
+				ds_list_add(/*id: */ global.gizmos, /*val: */_gizmo);
+				return _gizmo;	
+	        },
 			
 			#endregion
         };
