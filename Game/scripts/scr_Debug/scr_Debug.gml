@@ -147,6 +147,22 @@ function GetStaticDebug()
 				return _gizmo;
 	        },
 			
+	        
+	        DrawRect: function(_position, _size, _doOutline = true, _color = c_white, _duration = 0)
+			{    
+				var _action = method({position: _position, extents: (_size).__div__(2), doOutline: _doOutline}, function()
+				{
+					var _min = (position).__sub__(extents);
+					var _max = (position).__add__(extents);
+					
+					draw_rectangle(_min.x, _min.y, _max.x, _max.y, doOutline);
+				});
+				
+				var _gizmo = new Gizmo(_action, c_white, _duration);
+				ds_list_add(/*id: */ global.gizmos, /*val: */_gizmo);
+				return _gizmo;
+	        },
+			
 			#endregion
         };
     }
