@@ -74,6 +74,24 @@ function GetStaticDebug()
 			},
 			
 			#endregion
+			
+			#region Drawing
+			
+			DrawAll: function()
+			{
+				if(ds_list_empty(global.gizmos)) return;
+				
+				for(var _index = 0, _count = ds_list_size(global.gizmos); _index < _count; _index += 1)
+				{
+					var _gizmo = global.gizmos[| _index];
+					
+					draw_set_colour(_gizmo.color);
+					
+					_gizmo.action();
+				}
+			},
+			
+			#endregion
         };
     }
     
