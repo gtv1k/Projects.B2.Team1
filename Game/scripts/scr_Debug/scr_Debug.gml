@@ -103,6 +103,18 @@ function GetStaticDebug()
 				return _gizmo;
 			},
 			
+			DrawNewLine: function(_origin, _ending, _thickness = 1, _color = c_white, _duration = 0) 
+			{
+				var _action = method({origin: _origin, ending: _ending, thickness: _thickness}, function()
+				{
+					draw_line_width(origin.x, origin.y, ending.x, ending.y, thickness);
+				});
+				
+				var _gizmo = new Gizmo(_action, _color, _duration);
+				ds_list_add(/*id: */ global.gizmos, /*val: */_gizmo);
+				return _gizmo;
+	        },
+			
 			#endregion
         };
     }
