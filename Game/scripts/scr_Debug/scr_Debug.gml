@@ -60,6 +60,20 @@ function GetStaticDebug()
 					}
 				}
             },
+			
+			#region Logging
+			
+			Log: function(_message)
+			{
+				if(!is_string(_message))
+				{
+					throw ("InvalidArgumentException");
+				}
+				
+				show_debug_message(_message);
+			},
+			
+			#endregion
         };
     }
     
