@@ -37,7 +37,7 @@ function GetStaticDebug()
     
     if (instance == undefined)
 	{
-		global.gizmos = ds_list_create();
+		global.gizmos = new List();
 		
         instance = 
 		{			
@@ -48,6 +48,17 @@ function GetStaticDebug()
                 if (last_update_time == current_time) return;
                 last_update_time = current_time;
 				
+				global.gizmos.Forr(function(_gizmo)
+				{
+					_gizmo.timeLeft -= (delta_time / 1000000);
+					
+					if(_gizmo.timeLeft <= 0)
+					{
+						global.gizmos.Remove(_gizmo);
+					}
+				});
+				
+				/*
 				for(var _index = 0; _index < ds_list_size(global.gizmos); _index += 1)
 				{
 					var _gizmo = global.gizmos[| _index];
@@ -59,6 +70,7 @@ function GetStaticDebug()
 						ds_list_delete(global.gizmos, _index);
 					}
 				}
+				*/
             },
 			
 			#region Logging
@@ -79,16 +91,24 @@ function GetStaticDebug()
 			
 			DrawAll: function()
 			{
-				if(ds_list_empty(global.gizmos)) return;
+				if(global.gizmos.IsEmpty()) return;
 				
-				for(var _index = 0, _count = ds_list_size(global.gizmos); _index < _count; _index += 1)
+				global.gizmos.For(function(_gizmo)
 				{
-					var _gizmo = global.gizmos[| _index];
+					draw_set_colour(_gizmo.color);
+					_gizmo.action();
+				});
+				
+				/*
+				for(var _index = 0, _count = global.gizmos.Count(); _index < _count; _index += 1)
+				{
+					var _gizmo = global.gizmos.GetAt(_index);
 					
 					draw_set_colour(_gizmo.color);
 					
 					_gizmo.action();
 				}
+				*/
 			},
 			
 			DrawLine: function(_line, _thickness = 1, _color = c_white, _duration = 0) 
@@ -99,7 +119,8 @@ function GetStaticDebug()
 				});
 				
 				var _gizmo = new Gizmo(_action, _color, _duration);
-				ds_list_add(/*id: */ global.gizmos, /*val: */_gizmo);
+				//ds_list_add(/*id: */ global.gizmos, /*val: */_gizmo);
+				global.gizmos.Add(_gizmo);
 				return _gizmo;
 			},
 			
@@ -111,7 +132,8 @@ function GetStaticDebug()
 				});
 				
 				var _gizmo = new Gizmo(_action, _color, _duration);
-				ds_list_add(/*id: */ global.gizmos, /*val: */_gizmo);
+				//ds_list_add(/*id: */ global.gizmos, /*val: */_gizmo);
+				global.gizmos.Add(_gizmo);
 				return _gizmo;
 	        },
 	        
@@ -131,7 +153,8 @@ function GetStaticDebug()
 				});
 				
 				var _gizmo = new Gizmo(_action, _color, _duration);
-				ds_list_add(/*id: */ global.gizmos, /*val: */_gizmo);
+				//ds_list_add(/*id: */ global.gizmos, /*val: */_gizmo);
+				global.gizmos.Add(_gizmo);
 				return _gizmo;	
 	        },
 			
@@ -143,7 +166,8 @@ function GetStaticDebug()
 				});
 				
 				var _gizmo = new Gizmo(_action, _color, _duration);
-				ds_list_add(/*id: */ global.gizmos, /*val: */_gizmo);
+				//ds_list_add(/*id: */ global.gizmos, /*val: */_gizmo);
+				global.gizmos.Add(_gizmo);
 				return _gizmo;
 	        },
 			
@@ -159,7 +183,8 @@ function GetStaticDebug()
 				});
 				
 				var _gizmo = new Gizmo(_action, c_white, _duration);
-				ds_list_add(/*id: */ global.gizmos, /*val: */_gizmo);
+				//ds_list_add(/*id: */ global.gizmos, /*val: */_gizmo);
+				global.gizmos.Add(_gizmo);
 				return _gizmo;
 	        },
 	        
@@ -187,7 +212,8 @@ function GetStaticDebug()
 				});
 				
 				var _gizmo = new Gizmo(_action, _color, _duration);
-				ds_list_add(/*id: */ global.gizmos, /*val: */_gizmo);
+				//ds_list_add(/*id: */ global.gizmos, /*val: */_gizmo);
+				global.gizmos.Add(_gizmo);
 				return _gizmo;
 	        },
 			
