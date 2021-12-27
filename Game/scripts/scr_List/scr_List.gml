@@ -2,7 +2,18 @@ function List(/*_capacity = 10*/) constructor
 {
 	#region Constructor
 	
-	self.list = ds_list_create();
+    if (argument_count == 0)
+	{
+		self.list = []; //array_create(10, noone);
+		return;
+    }
+	if (argument_count == 1)
+	{
+        self.list = argument[0];
+		return;
+    }
+	
+	throw ("InvalidArgumentsException!");
 	
 	#endregion
 	
@@ -12,25 +23,56 @@ function List(/*_capacity = 10*/) constructor
 	{
 		gml_pragma("forceinline");
 		
-		var _index = ds_list_find_index(list, _item);
+		var _index = GetIndex(_item);
 		
-		return list[| _index];
+		return list[_index];
+	}
+	
+	static GetIndex = function(_item)
+	{
+        for (var _index = 0, _count = array_length(list); _index < _count; _index += 1) 
+		{
+            if (list[_index] == _item)
+			{
+                return _index;
+            }
+        }
+        
+        return -1;
+	}
+	
+	static GetAt = function(_index)
+	{
+		gml_pragma("forceinline");
+		
+		return list[_index];
 	}
 	
 	static Set = function(_item, _newItem)
 	{
 		gml_pragma("forceinline");
 		
-		var _index = ds_list_find_index(list, _item);
+		var _index = GetIndex(_item);
 		
-		list[| _index] = _newItem;
+		list[_index] = _newItem;
+		
+		return self;
+	}
+	
+	static SetAt = function(_index, _newItem)
+	{
+		gml_pragma("forceinline");
+		
+		list[_index] = _newItem;
+		
+		return self;
 	}
 	
 	static Add = function(_item)
 	{
 		gml_pragma("forceinline");
 		
-		ds_list_add(list, _item);
+		array_push(list, _item);
 		
 		return self;
 	}
@@ -50,26 +92,10 @@ function List(/*_capacity = 10*/) constructor
 	{
 		gml_pragma("forceinline");
 		
-		//TODO: Check if argument*s* has the same effect.
-		
-		switch (argument_count)
+        for (var _index = 0; _index < argument_count; _index += 1) 
 		{
-			case  1: ds_list_add(list, argument0); break;
-			case  2: ds_list_add(list, argument0, argument1); break;
-			case  3: ds_list_add(list, argument0, argument1, argument2); break;
-			case  4: ds_list_add(list, argument0, argument1, argument2, argument3); break;
-			case  5: ds_list_add(list, argument0, argument1, argument2, argument3, argument4); break;
-			case  6: ds_list_add(list, argument0, argument1, argument2, argument3, argument4, argument5); break;
-			case  7: ds_list_add(list, argument0, argument1, argument2, argument3, argument4, argument5, argument6); break;
-			case  8: ds_list_add(list, argument0, argument1, argument2, argument3, argument4, argument5, argument6, argument7); break;
-			case  9: ds_list_add(list, argument0, argument1, argument2, argument3, argument4, argument5, argument6, argument7, argument8); break;
-			case 10: ds_list_add(list, argument0, argument1, argument2, argument3, argument4, argument5, argument6, argument7, argument8, argument9); break;
-			case 11: ds_list_add(list, argument0, argument1, argument2, argument3, argument4, argument5, argument6, argument7, argument8, argument9, argument10); break;
-			case 12: ds_list_add(list, argument0, argument1, argument2, argument3, argument4, argument5, argument6, argument7, argument8, argument9, argument10, argument11); break;
-			case 13: ds_list_add(list, argument0, argument1, argument2, argument3, argument4, argument5, argument6, argument7, argument8, argument9, argument10, argument11, argument12); break;
-			case 14: ds_list_add(list, argument0, argument1, argument2, argument3, argument4, argument5, argument6, argument7, argument8, argument9, argument10, argument11, argument12, argument13); break;
-			case 15: ds_list_add(list, argument0, argument1, argument2, argument3, argument4, argument5, argument6, argument7, argument8, argument9, argument10, argument11, argument12, argument13, argument14); break;
-		}
+            array_push(list, argument[_index]);
+        }
 		
 		return self;
 	}
@@ -78,36 +104,79 @@ function List(/*_capacity = 10*/) constructor
 	{
 		gml_pragma("forceinline");
 		
-		ds_list_delete(list, ds_list_find_index(list, _item));
-		
-		return self;
+		array_delete(list, GetIndex(_item), 1);
+        
+        return self;
 	}
 	
 	static RemoveAt = function(_index)
 	{
 		gml_pragma("forceinline");
 		
-		ds_list_delete(list, _index);
+		array_delete(list, _index, 1);
+        
+        return self;
+	}
+	
+	static Count = function()
+	{
+		gml_pragma("forceinline");
+		
+		return array_length(list);
+	}
+	
+	static For = function(_action)
+	{
+		gml_pragma("forceinline");
+		
+		if IsEmpty() return self;
+		
+		for (var _index = 0, _count = array_length(list); _index < _count; _index += 1)
+		{
+			var _item = list[_index];
+			
+			if(_item != noone)
+			{
+				_action(list[_index]);
+			}
+		}
 		
 		return self;
 	}
 	
-	static GetCount = function()
+	static Forr = function(_action)
 	{
 		gml_pragma("forceinline");
 		
-		return ds_list_size(list);
+		if IsEmpty() return self;
+		
+		for (var _index = array_length(list) -1; _index >= 0; _index -= 1)
+		{
+			var _item = list[_index];
+			
+			if(_item != noone)
+			{
+				_action(list[_index]);
+			}
+		}
+		
+		return self;
 	}
 
+	static IsEmpty = function()
+	{
+		gml_pragma("forceinline");
+		
+		return (array_length(list) == 0);
+	}
 	
 	static Clear = function()
 	{
 		gml_pragma("forceinline");
 		
-		if(!ds_list_empty(list))
-		{
-			ds_list_clear(list);
-		}
+		if IsEmpty() return self;
+		
+		array_resize(list, 0);
 		
 		return self;
 	}
