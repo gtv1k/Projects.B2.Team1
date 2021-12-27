@@ -8,6 +8,24 @@ function List(/*_capacity = 10*/) constructor
 	
 	#region Functions
 	
+	static Get = function(_item)
+	{
+		gml_pragma("forceinline");
+		
+		var _index = ds_list_find_index(list, _item);
+		
+		return list[| _index];
+	}
+	
+	static Set = function(_item, _newItem)
+	{
+		gml_pragma("forceinline");
+		
+		var _index = ds_list_find_index(list, _item);
+		
+		list[| _index] = _newItem;
+	}
+	
 	static Add = function(_item)
 	{
 		gml_pragma("forceinline");
@@ -17,12 +35,16 @@ function List(/*_capacity = 10*/) constructor
 		return self;
 	}
 	
-	static Remove = function(_item)
+	/*
+	static AddAt = function(_index, _item)
 	{
 		gml_pragma("forceinline");
 		
-		ds_list_delete(list, ds_list_find_index(list, _item));
+		ds_list_set(list, _index, _item);
+		
+		return self;
 	}
+	*/
 	
 	static AddRange = function()
 	{
@@ -52,6 +74,32 @@ function List(/*_capacity = 10*/) constructor
 		return self;
 	}
 	
+	static Remove = function(_item)
+	{
+		gml_pragma("forceinline");
+		
+		ds_list_delete(list, ds_list_find_index(list, _item));
+		
+		return self;
+	}
+	
+	static RemoveAt = function(_index)
+	{
+		gml_pragma("forceinline");
+		
+		ds_list_delete(list, _index);
+		
+		return self;
+	}
+	
+	static GetCount = function()
+	{
+		gml_pragma("forceinline");
+		
+		return ds_list_size(list);
+	}
+
+	
 	static Clear = function()
 	{
 		gml_pragma("forceinline");
@@ -60,6 +108,8 @@ function List(/*_capacity = 10*/) constructor
 		{
 			ds_list_clear(list);
 		}
+		
+		return self;
 	}
 	
 	#endregion
