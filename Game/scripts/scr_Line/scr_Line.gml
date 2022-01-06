@@ -126,7 +126,8 @@ function HitInfo(_point, _normal, _distance) constructor
 function Raycast(_origin, _direction, _length = 10000)
 {
 	//TODO: Removed hardcoded collider!!!
-	var _collider = new PathCollider(Path1);
+	var _collider = new PathCollider(Path2);
+	//_collider.Draw();
 	
 	var _end = (_origin).__add__((_direction).__mul__(_length));
 	
@@ -149,7 +150,7 @@ function Raycast(_origin, _direction, _length = 10000)
 		if(_result == noone) continue;
 		
 		var _distance = _origin.DistanceSquared(_result);
-		if(_distance < _closestDistance)
+		if(_distance < _closestDistance) //only return the closest result.
 		{
 			_closestDistance = _distance;
 			_closestResult = new HitInfo(/*point: */ _result, /*normal: */ _collider_line.PerpendicularNormal(), /*distance: */_closestDistance);
@@ -159,7 +160,23 @@ function Raycast(_origin, _direction, _length = 10000)
 	
 	if(_closestResult != noone)
 	{
-		_closestResult.distance = sqrt(_closestDistance)
+		_closestResult.distance = sqrt(_closestDistance);
+		
+		//Draw
+		
+		var _resultOrigin = _closestResult.point;
+		var _resultNormal = _closestResult.normal;
+		//var _resultEnding = (_closestResult.point).__add__((_closestResult.normal).__mul__(1 UNITS));
+		
+		Debug.DrawCircle(/*center: */ _resultOrigin, /*radius: */ 4, ,                                                       /*color: */ c_yellow, /*duration: */ 0.2);
+		Debug.DrawNewRay(/*origin: */ _resultOrigin, /*direction: */ _resultNormal, /*length: */ 1 UNITS, /*thickness: */ 2, /*color: */ c_yellow, /*duration: */ 0.2);
+		
+		//Debug.DrawCircle(/*center: */ _closestResult.point, /*radius: */ 4, /*outline: */ false);
+		//Debug.DrawLine(/*origin: */ _closestResult.point, /*ending: */ (_closestResult.normal).__mul__(1 UNITS));
+		
+		//draw_circle(_closestResult.point.x, _closestResult.point.y, /*radius: */ 4, /*outline: */ false);
+		//var _normal = (_closestResult.normal).__mul__(1 UNITS);
+		//draw_line_width(_closestResult.point.x, _closestResult.point.y, _closestResult.point.x + _normal.x, _closestResult.point.y + _normal.y, 2);
 	}
 	
 	return _closestResult;
