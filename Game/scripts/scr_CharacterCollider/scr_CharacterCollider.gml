@@ -206,4 +206,25 @@ function CharacterCollider(_position = new vec2(0, 0), _size = new vec2(1, 2), _
 
 		return (_hasAnyHit) ? _hits : noone;
 	}
+	
+	static GroundSlopeAngle = function(_lineLength = 32, _checkRight = true)
+	{
+		var _origin = (_checkRight) ? bounds.BottomRight() : bounds.BottomLeft(); //bounds.Bottom()
+		
+		var _hit = Raycast(/*origin: */_origin, /*direction: */down, /*distance: */(_lineLength + skinWidth));
+		
+		if(_hit == noone) return noone;
+		
+		var _groundAngle = (_hit.normal.AsAngleDegrees() - 90);
+		
+		return _groundAngle;
+	}
+	
+	static Draw = function()
+	{
+		bounds.Draw();
+		//shrunkBounds.Draw();
+	}
+	
+	#endregion
 }
