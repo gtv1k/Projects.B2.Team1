@@ -11,6 +11,8 @@ function Bounds(__center = zero, __size = zero) constructor
 	
 	self._center  =  __center;
 	self._size    =  __size;
+	_size.y = -_size.y;
+	
 	self._extents = (__size).__div__(2);
 
 	self._min     = (_center).__sub__(_extents);
@@ -165,66 +167,108 @@ function Bounds(__center = zero, __size = zero) constructor
 		return new vec2(_max.x, _max.y);
 	}
 	
+	static BL = function()
+	{
+		return new vec2(_min.x, _min.y);
+	}
+	static BR = function()
+	{
+		return new vec2(_max.x, _min.y);
+	}
+	static TL = function()
+	{
+		return new vec2(_min.x, _max.y);
+	}
+	static TR = function()
+	{
+		return new vec2(_max.x, _max.y);
+	}
+	
 	#endregion
 	
 	#region Functions
 	
 	static Shrink = function(__amount)
 	{
-		self._extents -= (__amount).__div__(2);
+		__amount = (__amount).__div__(2);
+		
+		SetExtents((_extents).__sub__(__amount));
 
 		return self;
 	}
 	
 	static Grow = function(__amount)
 	{
-		self._extents += (__amount).__div__(2);
+		__amount = (__amount).__div__(2);
+		
+		SetExtents((_extents).__add__(__amount));
 
 		return self;
 	}
 	
-	static Draw = function()
-	{	
-		/*
-		draw_set_color(c_aqua);
-		draw_line_width(b_l.x, b_l.y, b_r.x, b_r.y, 1);
+	static Shrink = function(__amount)
+	{
+		if(is_numeric(__amount))
+		{
+			__amount /= 2;
+		}
+		else if(is_struct(_amount))
+		{
+			__amount = (__amount).__div__(2);
+		}
+		else
+		{
+			throw "InvalidArgumentException";
+		}
 		
-		draw_line_width(b_r.x, b_r.y, t_r.x, t_r.y, 1);
+		var __size = (_size).__sub__(__amount);
 		
-		draw_line_width(t_r.x, t_r.y, t_l.x, t_l.y, 1);
-		
-		draw_line_width(t_l.x, t_l.y, b_l.x, b_l.y, 1);
-		
-		draw_set_color(c_gray);
-		draw_circle(Center.x, Center.y, 2, false)
-		
-		draw_set_color(c_red);
-		draw_circle(Min.x, Min.y, 4, false);
-		
-		draw_set_color(c_blue);
-		draw_circle(Max.x, Max.y, 4, false)
-		*/
+		return new Bounds(_center, __size);
 	}
 	
-	/*
-	static Reload = function()
+	static NewGrown = function(__amount)
 	{
-		self.Center  = ((Min).__add__(Max)).__div__(2);
+		/*
+		__amount = (__amount).__div__(2);
 		
-		self.Size    =  (Max).__sub__(Min);
-		self.Width   = Size.x;
-		self.Height  = Size.y;
+		var __size = (_size).__add__(__amount);
 		
-		self.Extents =  (Size).__div__(2);
+		return new Bounds(_center, __size);
+		*/
 		
-		self.SurfaceArea = Width * Height;
+		if(is_numeric(__amount))
+		{
+			__amount /= 2;
+		}
+		else if(is_struct(__amount))
+		{
+			__amount = (__amount).__div__(2);
+		}
+		else
+		{
+			throw "InvalidArgumentException";
+		}
 		
-		self.b_l = new vec2(Min.x, Min.y);
-		self.b_r = new vec2(Max.x, Min.y);
-		self.t_l = new vec2(Min.x, Max.y);
-		self.t_r = new vec2(Max.x, Max.y);
+		var __size = (_size).__add__(__amount);
+		
+		return new Bounds(_center, __size);
 	}
-	*/
+	
+	static Draw = function()
+	{
+		Debug.DrawNewLine(BL(), BR(), 2, c_aqua);
+		Debug.DrawNewLine(BR(), TR(), 2, c_aqua);
+		Debug.DrawNewLine(TR(), TL(), 2, c_aqua);
+		Debug.DrawNewLine(TL(), BL(), 2, c_aqua);
+		
+		
+		Debug.DrawCircle(/*center: */Center(), /*radius: */4, /*doOutline: */false, /*color: */ c_grey);
+		
+		Debug.DrawCircle(/*center: */BL(), /*radius: */4, /*doOutline: */false, /*color: */ c_black);
+		Debug.DrawCircle(/*center: */TL(), /*radius: */4, /*doOutline: */false, /*color: */ c_lime);
+		Debug.DrawCircle(/*center: */BR(), /*radius: */4, /*doOutline: */false, /*color: */ c_red);
+		Debug.DrawCircle(/*center: */TR(), /*radius: */4, /*doOutline: */false, /*color: */ c_yellow);
+	}
 	
 	#endregion
 }
