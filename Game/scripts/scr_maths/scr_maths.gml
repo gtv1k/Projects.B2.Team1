@@ -93,3 +93,22 @@ function inverse_lerp_clamped(from, to, value)
 
 //TODO: angle_to_dir
 //TODO: dir_to_angle
+
+#region Constants
+
+// 15 decimal places in a double
+
+#macro TAU (6.283185307179586)
+#macro PI  (3.141592653589793)
+
+#macro PI_HALF (1.570796326794896)
+
+/// Use this to convert from Degrees to Radians.
+/// (TAU / 360) or (PI / 180)
+#macro DEG_TO_RAD (0.017453292519943)
+
+/// Use this to convert from Radians to Degrees. 
+/// (360 / TAU) or (180 / PI)
+#macro RAD_TO_DEG (57.295779513082325)
+
+#endregion
