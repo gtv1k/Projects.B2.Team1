@@ -5,8 +5,8 @@ function JumpAbility(_character, _jumpHeight, _jumpDuration) : Ability(_characte
 	//self.airJumpsMax  = 0;
     //self.airJumpsLeft = 0;
 	
-	self._gravity  = -(2 * _jumpHeight) / power(_jumpDuration, 2); //SUVAT
-	self.jumpSpeed = -(-_gravity * _jumpDuration);
+	self._gravity  = (2 * _jumpHeight) / power(_jumpDuration, 2); //-(2 * _jumpHeight) / power(_jumpDuration, 2); //SUVAT
+	self.jumpSpeed = (_gravity * _jumpDuration) //-(-_gravity * _jumpDuration);
 	
 	//return;
 	
@@ -23,18 +23,25 @@ function JumpAbility(_character, _jumpHeight, _jumpDuration) : Ability(_characte
 	
 	static HandleGravity = function()
     {
-		character.velocity.y -= _gravity * Time.deltaTime;
-		
 		//TODO: Double gravity on way down.
+		//TODO: Use HasColBelow
 		
-        if(character.collider.IsOnGround())
+        if(character.collider.IsOnGround()) //only fall if in air (so we don't fall through the ground)
         {
-            character.velocity.y = 0;   
-        }
-        else
-        {
-            character.velocity.y -= _gravity * Time.deltaTime;
-        }
+			character.velocity.y = 0;
+			/*
+			if(character.velocity.y < _gravity)
+			{
+			
+			}
+			*/
+		}
+		else
+		{
+			character.velocity.y = -_gravity;
+		}
+		
+		//character.Move();
     }
 	
 	static HandleJump = function()
