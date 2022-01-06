@@ -500,20 +500,61 @@ function vec2(x = 0, y) constructor
 	{
 		gml_pragma("forceinline");
 		
-		//Normalize first.
-		var norm_vector = new vec2(self.x, self.y).Normalized();
+		var norm_vector = self.Normalized();
 		
-		return radtodeg(-arctan2(norm_vector.y, norm_vector.x));
+		return radtodeg(arctan2(-norm_vector.y, norm_vector.x));
 	}
 	
 	static AsAngleRadians=function()
 	{
 		gml_pragma("forceinline");
 		
-		//Normalize first.
-		var norm_vector = new vec2(self.x, self.y).Normalized();
+		var norm_vector = self.Normalized();
 		
-		return -arctan2(norm_vector.y, norm_vector.x);
+		return arctan2(-norm_vector.y, norm_vector.x);
+	}
+	
+	//rotates this vector by angle degrees
+	static Rotate=function(__angleDegrees)
+	{
+		gml_pragma("forceinline");
+		
+		var __angleRadians = degtorad(__angleDegrees);
+		
+		var __sin = sin(__angleRadians);
+		var __cos = cos(__angleRadians);
+		
+		//cache because they're changed.
+		var __x = self.x;
+		var __y = self.y;
+		
+		self.x = (__cos * __x) - (__sin * __y);
+		self.y = (__sin * __x) + (__cos * __y);
+		
+		return self;
+	}
+	
+	//returns a NEW vector rotaded by angle degrees.
+	static Rotated=function(__angleDegrees)
+	{
+		gml_pragma("forceinline");
+		
+		var __angleRadians = degtorad(__angleDegrees);
+		
+		var __sin = sin(__angleRadians);
+		var __cos = cos(__angleRadians);
+		
+		var __x = (__cos * self.x) - (__sin * self.y);
+		var __y = (__sin * self.x) + (__cos * self.y);
+		
+		return self;
+	}
+	
+	static ToString = function()
+	{
+		gml_pragma("forceinline");
+		
+		return "(" + string(x) + ", " + string(y) + ")";
 	}
 	
 	#endregion
