@@ -79,7 +79,7 @@ function GetStaticDebug()
 			{
 				if(!is_string(_message))
 				{
-					throw ("InvalidArgumentException");
+					_message = string(_message);
 				}
 				
 				show_debug_message(_message);
