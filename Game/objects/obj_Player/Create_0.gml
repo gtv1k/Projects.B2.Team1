@@ -1,0 +1,1 @@
+_player = new Character(/*position: */ new vec2(x, y));

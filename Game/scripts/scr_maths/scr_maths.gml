@@ -1,29 +1,62 @@
 //Returns the smallest value from its inputs.
-function min()
+function Math_Min()
 {
-	var smallest = argument[0];
+	if(argument_count == 0) throw "Invalid Argument Count";
+	
+	var _smallest = argument[0];
 	for (var i = 1; i < argument_count; i += 1) 
 	{
-		if(argument[i] < smallest)
+		var _arg = argument[i];
+		
+		if (is_numeric(_arg))
 		{
-			smallest = list[i];
+			if(_arg < _smallest)
+			{
+				_smallest = _arg;
+			}
 		}
+		else if(is_struct(_arg)) //assume is vec2
+		{
+			if((_arg).__lt__(_smallest))
+			{
+				_smallest = _arg;
+			}
+		}
+		
+		throw "Invalid Argument!";
+		
 	}
-	return smallest;
+	return _smallest;
 }
 
 //Returns the largest value from its inputs.
-function max()
+function Math_Max()
 {
-	var smallest = argument[0];
+	if(argument_count == 0) throw "Invalid Argument Count";
+	
+	var _largest = argument[0];
 	for (var i = 1; i < argument_count; i += 1) 
 	{
-		if(argument[i] < smallest)
+		var _arg = argument[i];
+		
+		if(is_numeric(_arg))
 		{
-			smallest = list[i];
+			if(_arg[i] > _largest)
+			{
+				_largest = _arg;
+			}
 		}
+		else if(is_struct(_arg)) //assume is vec2
+		{
+			if((_arg).__gt__(_largest))
+			{
+				_largest = _arg;
+			}
+		}
+		
+		throw "Invalid Argument!";
 	}
-	return smallest;
+	return _largest;
 }
 
 //Returns -1 if input is negative, 0 if input is zero (or within the given threshold), 1 if input is positive.
@@ -60,3 +93,22 @@ function inverse_lerp_clamped(from, to, value)
 
 //TODO: angle_to_dir
 //TODO: dir_to_angle
+
+#region Constants
+
+// 15 decimal places in a double
+
+#macro TAU (6.283185307179586)
+#macro PI  (3.141592653589793)
+
+#macro PI_HALF (1.570796326794896)
+
+/// Use this to convert from Degrees to Radians.
+/// (TAU / 360) or (PI / 180)
+#macro DEG_TO_RAD (0.017453292519943)
+
+/// Use this to convert from Radians to Degrees. 
+/// (360 / TAU) or (180 / PI)
+#macro RAD_TO_DEG (57.295779513082325)
+
+#endregion

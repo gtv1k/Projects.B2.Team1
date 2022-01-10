@@ -2,9 +2,11 @@ enum Inputs
 {
     Up,
     Down,
+	
     Left,
     Right,
     
+	Jump,
     Dash,
     
     Attack
@@ -21,3 +23,6 @@ input_default_gamepad_axis(gp_axislh, true,  Inputs.Left);
 
 input_default_key(ord("D"),                  Inputs.Right);
 input_default_gamepad_axis(gp_axislh, false, Inputs.Right);
+
+input_default_key(vk_space,                  Inputs.Jump);
+input_default_key(vk_shift,                  Inputs.Dash);
