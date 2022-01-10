@@ -1,8 +1,8 @@
 {
-  "bboxMode": 2,
+  "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
-  "origin": 7,
+  "origin": 0,
   "preMultiplyAlpha": false,
   "edgeFiltering": false,
   "collisionTolerance": 0,
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"01dbbb6c-7a52-44d5-b0a7-74f661a040de","path":"sprites/sPlayer/sPlayer.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"01dbbb6c-7a52-44d5-b0a7-74f661a040de","path":"sprites/sPlayer/sPlayer.yy",},"LayerId":{"name":"b5b2d661-23f2-4265-b32f-05984cb3c923","path":"sprites/sPlayer/sPlayer.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sPlayer","path":"sprites/sPlayer/sPlayer.yy",},"resourceVersion":"1.0","name":"01dbbb6c-7a52-44d5-b0a7-74f661a040de","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"2b84ccd9-24d2-4b9c-a72b-cea792d6adb6","path":"sprites/sNPC/sNPC.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"2b84ccd9-24d2-4b9c-a72b-cea792d6adb6","path":"sprites/sNPC/sNPC.yy",},"LayerId":{"name":"b3a605ac-6f6d-405a-9abf-2e9b7ba9d679","path":"sprites/sNPC/sNPC.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sNPC","path":"sprites/sNPC/sNPC.yy",},"resourceVersion":"1.0","name":"2b84ccd9-24d2-4b9c-a72b-cea792d6adb6","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"sPlayer","path":"sprites/sPlayer/sPlayer.yy",},
+    "spriteId": {"name":"sNPC","path":"sprites/sNPC/sNPC.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"cb7a1f20-02d4-41e6-99d0-d148554f972d","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"01dbbb6c-7a52-44d5-b0a7-74f661a040de","path":"sprites/sPlayer/sPlayer.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"9e24868f-35fc-4452-82e4-3acbea6c8344","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2b84ccd9-24d2-4b9c-a72b-cea792d6adb6","path":"sprites/sNPC/sNPC.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -54,18 +54,18 @@
     "backdropHeight": 768,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 16,
-    "yorigin": 64,
+    "xorigin": 0,
+    "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sPlayer","path":"sprites/sPlayer/sPlayer.yy",},
+    "parent": {"name":"sNPC","path":"sprites/sNPC/sNPC.yy",},
     "resourceVersion": "1.3",
-    "name": "sPlayer",
+    "name": "sNPC",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"b5b2d661-23f2-4265-b32f-05984cb3c923","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"b3a605ac-6f6d-405a-9abf-2e9b7ba9d679","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
@@ -73,7 +73,7 @@
     "path": "folders/Sprites.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sPlayer",
+  "name": "sNPC",
   "tags": [],
   "resourceType": "GMSprite",
 }
