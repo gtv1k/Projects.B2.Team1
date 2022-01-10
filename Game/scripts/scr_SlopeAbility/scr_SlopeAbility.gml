@@ -2,7 +2,7 @@ function SlopeAbility(_character) : Ability(_character) constructor
 {
 	#region Constructor
 	
-	self.maxSlopeAngle = 80;
+	self.maxSlopeAngle = 60;
 
 	self.prevSlopeAngle   = 0;
 	self.prevSlopeNormal  = new vec2(0, 0);
@@ -70,12 +70,13 @@ function SlopeAbility(_character) : Ability(_character) constructor
 
 				distanceToSlopeStart = (_hit.distance - character.collider.SkinWidth);
 				character.velocity.x = distanceToSlopeStart * movingDirection;
+				//rayLength = _hit.distance;
 				
 				if (isAscendingSlope)
 				{
-					character.velocity.y = 
-					  -(tan(degtorad(currSlopeAngle)) *
-						abs(character.velocity.x));
+					var _velY = -(tan(degtorad(_slopeAngle)) * abs(character.velocity.x));
+					
+					character.velocity.y = _velY;
 				}
 			}
 		}
@@ -117,6 +118,8 @@ function SlopeAbility(_character) : Ability(_character) constructor
 		if(!_hit) return;
 
 		var _slopeAngle = _hit.normal.AsAngleDegrees() - 90;
+		
+		//show_debug_message("SlopeAngle = " + string(_slopeAngle));
 
 		if (_slopeAngle != 0 && _slopeAngle <= maxSlopeAngle)
 		{
@@ -124,14 +127,11 @@ function SlopeAbility(_character) : Ability(_character) constructor
 			
 			if (_isMovingInDownDir)
 			{
-				show_debug_message("Down");
+				var _velY = (tan(degtorad(_slopeAngle)) * abs(character.velocity.x));
 				
-				//character.velocity.y -= 100;
-				
-				if(_hit.distance - character.collider.SkinWidth <=
-				   tan(degtorad(_slopeAngle) * abs(character.velocity.x)))
+				if(_hit.distance - character.collider.SkinWidth <= _velY)
 				{
-					show_debug_message("DOWN DOWN DOWN");
+					//show_debug_message("DOWN DOWN DOWN");
 					
 					var __speed = abs(character.velocity.x);
 					var __descendVelocityY = sin(degtorad(_slopeAngle)) * __speed;

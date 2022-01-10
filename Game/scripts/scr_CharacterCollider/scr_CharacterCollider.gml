@@ -1,4 +1,4 @@
-function CharacterCollider(_position = new vec2(0, 0), _size = new vec2(1, 2), _lineSpacing = 0.1, _skinWidth = 0.25) constructor
+function CharacterCollider(_position = new vec2(0, 0), _size = new vec2(1, 2), _lineSpacing = 0.1, _skinWidth = 0.5) constructor
 {
 	#region Constructor
 	
