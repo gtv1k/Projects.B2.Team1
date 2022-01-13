@@ -91,6 +91,7 @@
     {"id":{"name":"__input_gamepad_find_in_sdl2_database","path":"scripts/__input_gamepad_find_in_sdl2_database/__input_gamepad_find_in_sdl2_database.yy",},"order":12,},
     {"id":{"name":"Test1","path":"rooms/Test1/Test1.yy",},"order":5,},
     {"id":{"name":"input_binding_get","path":"scripts/input_binding_get/input_binding_get.yy",},"order":0,},
+    {"id":{"name":"scr_Action","path":"scripts/scr_Action/scr_Action.yy",},"order":3,},
     {"id":{"name":"input_keyboard_check_pressed","path":"scripts/input_keyboard_check_pressed/input_keyboard_check_pressed.yy",},"order":1,},
     {"id":{"name":"input_player_gamepad_get_invalid_bindings","path":"scripts/input_player_gamepad_get_invalid_bindings/input_player_gamepad_get_invalid_bindings.yy",},"order":4,},
     {"id":{"name":"oReflection","path":"objects/oReflection/oReflection.yy",},"order":12,},
