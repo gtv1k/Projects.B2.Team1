@@ -12,7 +12,7 @@ function Wait(_waitTime = 1) : Action() constructor
 	
 	static OnStep = function()
 	{
-		return (Time.time > endTime) ? Status.Success : Status.Continue;
+		return (Time.time > endTime) ? SUCCES : CONTINUE;
 	}
 	
 	#endregion
