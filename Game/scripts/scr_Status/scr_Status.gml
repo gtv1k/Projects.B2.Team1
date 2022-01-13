@@ -1,7 +1,7 @@
 enum Status
 {
 	Inactive,
-	Active,
+	Continue,
 	Success,
 	Failure
 }
