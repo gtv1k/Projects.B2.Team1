@@ -8,3 +8,8 @@
 
 #macro PIXEL  / PIXELS_PER_UNIT
 #macro PIXELS / PIXELS_PER_UNIT
+
+
+#macro NULL noone
+
+#macro is ==
