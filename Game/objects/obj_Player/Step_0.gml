@@ -48,6 +48,8 @@ switch(state)
 	case PLAYERSTATE.JUMP: PlayerState_Jump(); break;
 	case PLAYERSTATE.FALL: PlayerState_Fall(); break;
 	
+	default: PlayerState_Free(); break;
+	
 } 
 
 onground = place_meeting(x, y + 1, obj_wall);

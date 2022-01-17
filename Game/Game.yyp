@@ -247,7 +247,7 @@
     {"id":{"name":"sp_village3_design","path":"sprites/sp_village3_design/sp_village3_design.yy",},"order":53,},
     {"id":{"name":"obj_textevent","path":"objects/obj_textevent/obj_textevent.yy",},"order":2,},
     {"id":{"name":"r_village_2","path":"rooms/r_village_2/r_village_2.yy",},"order":2,},
-    {"id":{"name":"obj_InputManager","path":"objects/obj_InputManager/obj_InputManager.yy",},"order":1,},
+    {"id":{"name":"_InputManager_","path":"objects/_InputManager_/_InputManager_.yy",},"order":1,},
     {"id":{"name":"__input_class_binding","path":"scripts/__input_class_binding/__input_class_binding.yy",},"order":3,},
     {"id":{"name":"input_gamepad_get_map","path":"scripts/input_gamepad_get_map/input_gamepad_get_map.yy",},"order":6,},
     {"id":{"name":"scr_SlopeAbility","path":"scripts/scr_SlopeAbility/scr_SlopeAbility.yy",},"order":4,},
