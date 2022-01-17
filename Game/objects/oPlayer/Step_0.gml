@@ -1,49 +1,65 @@
 //Basic keyboard layout for movement
-key_jump   = input_check_pressed(Inputs.Up);
-key_crouch = input_check(Inputs.Down);
-key_left   = input_check(Inputs.Left);
-key_right  = input_check(Inputs.Right);
-key_dash   = keyboard_check_pressed(vk_shift);
+key_jump = keyboard_check_pressed(ord("W"));
+key_crouch = keyboard_check(ord("S"));
+key_left = keyboard_check(ord("A"));
+key_right = keyboard_check(ord("D"));
+key_dash = keyboard_check_pressed(vk_shift)
+key_check = true;
 
 
 
 var move = key_right - key_left;
 
-hspd = move * movspd;
-vspd = vspd + grv;
+velocity.x = move * spd;
+velocity.y += grv;
 
-if (place_meeting(x, y+1, oStr)) && (key_jump)
+if (key_crouch)
 {
-	vspd = -7;
+	sprite_index = sPlayer_crouch;
+	key_check = false;
+	
+}
+else
+{
+	sprite_index = sPlayer;
+	key_check = true;
 }
 
+
+if (key_check == true)
+{
+	if (place_meeting(x, y+1, oWall)) && (key_jump)
+	{
+		velocity.y = -7;
+	}
+}
 
 
 // colliders
 function colliders()
 {
-	if (place_meeting(x+hspd, y, oStr))
+	if (place_meeting(x+velocity.x, y, oWall))
 	{
-		while (!place_meeting(x+sign(hspd), y, oStr))
+		while (!place_meeting(x+sign(velocity.x), y, oWall))
 		{
-			x = x + sign(hspd);
-		}
-		hspd = 0;
+			x = x + sign(velocity.x);
+		}	
+		velocity.x = 0;
 	}
 
-	x = x + hspd;
+	x += velocity.x;
 
 
-	if (place_meeting(x, y+vspd, oStr))
+	if (place_meeting(x, y+velocity.y, oWall))
 	{
-		while (!place_meeting(x, y+sign(vspd), oStr))
+		while (!place_meeting(x, y+sign(velocity.y), oWall))
 		{
-			y = y + sign(vspd);
+			y = y + sign(velocity.y);
 		}	
-		vspd = 0;
+		velocity.y = 0;
 	}
 	
-	y = y + vspd;
+	y += velocity.y;
 }
 colliders()
 
@@ -52,7 +68,11 @@ if (key_right) and (key_dash) or (key_left) and (key_dash)
 {
 	for (xa=0; xa != 6; xa++)
 	{
-		x += 4;
-		colliders()
+		x += sign(velocity.x) * 4;
+		colliders();
 	}
 }
+
+position.x = x;
+position.y = y;
+
