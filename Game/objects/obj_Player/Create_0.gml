@@ -1,4 +1,16 @@
-weapon=1;
+
+enum Weapon
+{
+	Nothing,
+	Sword,
+	Hammer,
+	Scythe,
+	Gauntlets,
+	MyBeloved
+}
+
+//weapon=1;
+currentWeapon = Weapon.Sword;
 
 targetEnter=0;
 
@@ -18,9 +30,7 @@ myPortraitTalk_x	= 26;
 myPortraitTalk_y	= 44;
 myPortraitIdle		= spr_portrait_examplechar_idle;
 
-
-
-	enum PLAYERSTATE
+enum PLAYERSTATE
 {
 	FREE,
 	WEAPON_1,
