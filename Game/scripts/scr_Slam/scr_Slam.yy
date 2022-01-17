@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "_Player",
-    "path": "folders/_Player.yy",
+    "name": "States",
+    "path": "folders/_Enemies/States.yy",
   },
   "resourceVersion": "1.0",
-  "name": "scr_CharacterCollider",
+  "name": "scr_Slam",
   "tags": [],
   "resourceType": "GMScript",
 }

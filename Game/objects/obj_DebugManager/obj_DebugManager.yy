@@ -23,8 +23,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "_Managers",
+    "path": "folders/_Managers.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_DebugManager",

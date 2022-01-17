@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "States",
-    "path": "folders/_Enemies/States.yy",
+    "name": "StateMachine",
+    "path": "folders/_Enemies/StateMachine.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Wait",
+  "name": "scr_Condition",
   "tags": [],
   "resourceType": "GMScript",
 }

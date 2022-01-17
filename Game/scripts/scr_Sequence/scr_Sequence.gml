@@ -17,7 +17,7 @@ function Sequence() : Action() constructor
 			
 			if(_shouldUpdateChild)
 			{				
-				var ret = UpdateChild(_index);
+				UpdateChild(_index);
 			}
 			
 			switch(_child.status)
@@ -35,7 +35,7 @@ function Sequence() : Action() constructor
 		{
 			ResetAllChildren();
 			
-			_status = SUCCES;
+			status = SUCCES;
 			return SUCCES;
 		}
     }
