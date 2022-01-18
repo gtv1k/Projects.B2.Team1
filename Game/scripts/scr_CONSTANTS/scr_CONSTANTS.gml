@@ -15,3 +15,6 @@
 #macro null noone
 
 #macro is ==
+
+#macro Vec2 vec2
+#macro newVec2 new vec2

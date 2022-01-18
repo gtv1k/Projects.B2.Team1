@@ -484,6 +484,18 @@ function vec2(x = 0, y) constructor
 		throw ("Unexpected Argument!");
 	}
 	
+	static DistanceTo=function(input)
+	{
+		gml_pragma("forceinline");
+		
+		if is_struct(input) //is vec2
+		{
+			return ((input).__sub__(self)).Length();
+		}
+	
+		throw ("Unexpected Argument!");
+	}
+	
 	static DistanceSquared=function(input)
 	{
 		gml_pragma("forceinline");
