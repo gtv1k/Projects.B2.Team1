@@ -217,6 +217,31 @@ function GetStaticDebug()
 				return _gizmo;
 	        },
 			
+			DrawBezier: function(_a, _b, _c, _d, _color = c_white, _duration = 0)
+			{
+				var _action = method({a: _a, b: _b, c: _c, d: _d}, function()
+				{
+					var _step = 0.05;
+					
+				    draw_primitive_begin(pr_linestrip);
+				    draw_vertex(a.x, a.y);
+	
+				    for (var i = 0; i <= 1; i += _step) 
+					{
+						var _pos = BezierInterpolate(a, b, c, d, i);
+		
+				        draw_vertex(_pos.x, _pos.y);
+				    }
+	
+				    draw_vertex(d.x, d.y);
+				    draw_primitive_end();
+				});
+				
+				var _gizmo = new Gizmo(_action, _color, _duration);
+				global.gizmos.Add(_gizmo);
+				return _gizmo;
+			},
+			
 			#endregion
         };
     }

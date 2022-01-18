@@ -1,4 +1,4 @@
-function Slam(_target) : Action() constructor
+function Slam(_target, _lerpDuration = 2) : Action() constructor
 {
 	#region Constructor
 	
@@ -10,6 +10,8 @@ function Slam(_target) : Action() constructor
 	}
 	
 	self.target = _target;
+	
+	self.lerpDuration = _lerpDuration;
 	
 	return;
 	
@@ -24,10 +26,14 @@ function Slam(_target) : Action() constructor
 
 		
 		self.a = position_user;
-		self.b = new vec2(a.x, a.y + 12);
+		self.b = new vec2(a.x, a.y - (12 UNITS));
 		
 		self.d = position_target;
-		self.c = new vec2(d.x, d.y + 12);
+		self.c = new vec2(d.x, d.y - (12 UNITS));
+		
+		self.timeElapsed = 0;
+		
+		Debug.Log("Start");
 		
 		//face player direction.
 		
@@ -40,7 +46,32 @@ function Slam(_target) : Action() constructor
 	{
 		//interpolate further along Bezier curve by time.
 		
-		return HasLanded() ? SUCCES : CONTINUE;
+		//TODO: Use animation curve for believable movement.
+		
+		if(timeElapsed < lerpDuration)
+		{
+			timeElapsed += Time.deltaTime; //at start of function because I find the end position more important than the begin position.
+			
+			var _t = clamp((timeElapsed / lerpDuration), 0, 1);
+			
+			var _pos = BezierInterpolate(a, b, c, d, _t);
+			Debug.DrawBezier(a, b, c, d);
+		
+			Debug.Log(_t);
+			
+			//Debug.DrawCircle(/*point */_pos, /*radius*/ 5);
+		
+			//Debug.Log(_pos.ToString());
+		
+			user.x = _pos.x;
+			user.y = _pos.y;
+			
+			return CONTINUE;
+		}
+		else
+		{
+			return SUCCES;
+		}
 	}
 	
 	static CanJumpToPlayer = function()

@@ -1,12 +1,14 @@
-function StateMachine(_user) : Action(_user) constructor
+function StateMachine(_user) : Action() constructor
 {
 	#region Constructor
 	
-	if(_user is NULL) throw "InvalidArgumentsException";
+	if((_user is noone) or (_user is undefined)) throw "InvalidArgumentsException";
 	
-	//self.user = _user;
+	self.user = _user;
 	
-	return;
+	Debug.Log("StateMachine user = " + string(user));
+	
+	//return;
 	
 	#endregion
 	
@@ -17,8 +19,6 @@ function StateMachine(_user) : Action(_user) constructor
 		hasStarted = true;
 		
 		status = CONTINUE;
-		
-		Debug.Log(user);
 	}
 	
 	static Update = function()

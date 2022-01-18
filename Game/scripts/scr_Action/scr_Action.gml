@@ -30,11 +30,15 @@ function Action() constructor
 	
 	//static OnChildUpdated = function(_childStatus){}
 	
-	static Add = function(_newChild)
+	static Add = function(_child)
 	{
-		//_newChild.user = self.user;
+		//_child.user = self.user;
 		
-		children.Add(_newChild);
+		//Debug.Log("New Child user = " + string(_child.user));
+		
+		_child.user = other;
+		
+		children.Add(_child);
 		
 		return self;
 	}

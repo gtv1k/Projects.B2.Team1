@@ -9,7 +9,12 @@
 #macro PIXEL  / PIXELS_PER_UNIT
 #macro PIXELS / PIXELS_PER_UNIT
 
+#macro PER_FRAME  * (delta_time / 1000000)
+#macro PER_SECOND / (delta_time / 1000000)
+
 #macro NULL noone
 #macro null noone
+
+#macro elif else if
 
 #macro is ==
