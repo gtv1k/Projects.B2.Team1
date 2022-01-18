@@ -21,6 +21,7 @@
     {"id":{"name":"sCaptureTarget","path":"sprites/sCaptureTarget/sCaptureTarget.yy",},"order":11,},
     {"id":{"name":"input_gamepad_constant_get_name","path":"scripts/input_gamepad_constant_get_name/input_gamepad_constant_get_name.yy",},"order":3,},
     {"id":{"name":"__input_keyboard_key","path":"scripts/__input_keyboard_key/__input_keyboard_key.yy",},"order":21,},
+    {"id":{"name":"ani_GolemSlam","path":"animcurves/ani_GolemSlam/ani_GolemSlam.yy",},"order":4,},
     {"id":{"name":"__input_gamepad_set_description","path":"scripts/__input_gamepad_set_description/__input_gamepad_set_description.yy",},"order":14,},
     {"id":{"name":"input_source_is_available","path":"scripts/input_source_is_available/input_source_is_available.yy",},"order":5,},
     {"id":{"name":"sBG","path":"sprites/sBG/sBG.yy",},"order":10,},

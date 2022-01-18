@@ -54,14 +54,13 @@ function Slam(_target, _lerpDuration = 2) : Action() constructor
 			
 			var _t = clamp((timeElapsed / lerpDuration), 0, 1);
 			
-			var _pos = BezierInterpolate(a, b, c, d, _t);
-			Debug.DrawBezier(a, b, c, d);
+			var _channel = animcurve_get_channel(/*curve_struct_or_id */ani_GolemSlam, /*channel_name_or_index */0);
+			var _tween   = animcurve_channel_evaluate(/*channel_struct */_channel, /*posx */_t);
+			
+			var _pos = BezierInterpolate(a, b, c, d, _tween);
+			//Debug.DrawBezier(a, b, c, d);
 		
 			Debug.Log(_t);
-			
-			//Debug.DrawCircle(/*point */_pos, /*radius*/ 5);
-		
-			//Debug.Log(_pos.ToString());
 		
 			user.x = _pos.x;
 			user.y = _pos.y;
