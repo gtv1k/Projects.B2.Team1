@@ -82,7 +82,47 @@ function GetStaticDebug()
 					_message = string(_message);
 				}
 				
+				if(argument_count > 1)
+				{
+					for(var _index = 1; _index < argument_count; _index += 1)
+					{
+						var _arg = argument[_index];
+						
+						if(!is_string(_arg))
+						{
+							_arg = string(_arg);
+						}
+						
+						_message += _arg;
+					}
+				}
+				
 				show_debug_message(_message);
+			},
+			
+			LogWarning: function(_message)
+			{
+				if(!is_string(_message))
+				{
+					_message = string(_message);
+				}
+				
+				if(argument_count > 1)
+				{
+					for(var _index = 1; _index < argument_count; _index += 1)
+					{
+						var _arg = argument[_index];
+						
+						if(!is_string(_arg))
+						{
+							_arg = string(_arg);
+						}
+						
+						_message += _arg;
+					}
+				}
+				
+				show_message(_message);
 			},
 			
 			#endregion
@@ -119,7 +159,6 @@ function GetStaticDebug()
 				});
 				
 				var _gizmo = new Gizmo(_action, _color, _duration);
-				//ds_list_add(/*id: */ global.gizmos, /*val: */_gizmo);
 				global.gizmos.Add(_gizmo);
 				return _gizmo;
 			},
@@ -132,7 +171,6 @@ function GetStaticDebug()
 				});
 				
 				var _gizmo = new Gizmo(_action, _color, _duration);
-				//ds_list_add(/*id: */ global.gizmos, /*val: */_gizmo);
 				global.gizmos.Add(_gizmo);
 				return _gizmo;
 	        },
@@ -153,7 +191,6 @@ function GetStaticDebug()
 				});
 				
 				var _gizmo = new Gizmo(_action, _color, _duration);
-				//ds_list_add(/*id: */ global.gizmos, /*val: */_gizmo);
 				global.gizmos.Add(_gizmo);
 				return _gizmo;	
 	        },
@@ -166,7 +203,6 @@ function GetStaticDebug()
 				});
 				
 				var _gizmo = new Gizmo(_action, _color, _duration);
-				//ds_list_add(/*id: */ global.gizmos, /*val: */_gizmo);
 				global.gizmos.Add(_gizmo);
 				return _gizmo;
 	        },
@@ -183,7 +219,6 @@ function GetStaticDebug()
 				});
 				
 				var _gizmo = new Gizmo(_action, c_white, _duration);
-				//ds_list_add(/*id: */ global.gizmos, /*val: */_gizmo);
 				global.gizmos.Add(_gizmo);
 				return _gizmo;
 	        },
@@ -212,7 +247,6 @@ function GetStaticDebug()
 				});
 				
 				var _gizmo = new Gizmo(_action, _color, _duration);
-				//ds_list_add(/*id: */ global.gizmos, /*val: */_gizmo);
 				global.gizmos.Add(_gizmo);
 				return _gizmo;
 	        },
