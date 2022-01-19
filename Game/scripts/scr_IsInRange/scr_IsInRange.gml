@@ -35,12 +35,17 @@ function IsInRange(_target, _minDistance = 0 UNITS, _maxDistance = infinity) : A
 
 		//Debug.Log("Target is ", _distanceToTarget PIXELS, "m from target: ",  (_isInRange) ? "IN RANGE" : "outside range");
 		
-		if(not _isInRange)
+		if(_isInRange)
 		{
-			Debug.Log("Target is outside range. Distance: ", _distanceToTarget PIXELS, "m from target");
+			return SUCCES;
+		}
+		else
+		{
+			Debug.Log("Target is outside range. Distance: ", _distanceToTarget PIXELS, "m from target");	
+			return FAILURE;
 		}
 		
-		return (_isInRange) ? SUCCES : FAILURE;
+		//return (_isInRange) ? SUCCES : FAILURE;
 	}
 	
 	#endregion

@@ -562,6 +562,12 @@ function vec2(x = 0, y) constructor
 
 #region Aliases
 
+#macro Pos vec2
+#macro Vec vec2
+
+#macro Vec2 vec2
+#macro Vector2 vec2
+
 #region	Operators/Functions
 
 #macro __equals__     __eq__

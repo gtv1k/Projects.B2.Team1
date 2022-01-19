@@ -1,25 +1,44 @@
+//Runs children sequentually until all have succeeded or one has failed.
 function Sequence() : Action() constructor
 {
-	static Start = function()
-	{
-		self.childCount = children.Count();
-	}
-	
     static Update = function()
 	{
 		var _allSucceeded = true;
 		
-		for(var _index = 0; _index < childCount; _index += 1)
+		//TODO: Use activeChildIndex instead of for loop.
+		
+		for(var _index = 0, _childCount = children.Count(); _index < _childCount; _index += 1)
 		{
 			var _child = children.GetAt(_index);
 			
-			var _shouldUpdateChild = ((_child.status is OFF) or (_child.status is CONTINUE));
+			var _childStatus = _child.status;
+			
+			var _shouldUpdateChild = ((_childStatus is OFF) or (_childStatus is CONTINUE));
 			
 			if(_shouldUpdateChild)
 			{				
-				UpdateChild(_index);
+				_childStatus = UpdateChild(_index);
 			}
 			
+			switch(_childStatus)
+			{
+				case CONTINUE: 
+					_allSucceeded = false;
+					
+					status = CONTINUE;
+					return CONTINUE;
+				case FAILURE:
+					_allSucceeded = false;
+					
+					Debug.Log("EPIC FAIL");
+										
+					//status = FAILURE;
+					self.Reset();		
+					return FAILURE;
+				break;
+	        }
+			
+			/*
 			switch(_child.status)
 			{
 				case CONTINUE: 
@@ -29,24 +48,15 @@ function Sequence() : Action() constructor
 					return status;
 				break;
 	        }
+			*/
 		}
 		
 		if(_allSucceeded) 
 		{
-			ResetAllChildren();
+			self.Reset();
 			
 			status = SUCCES;
 			return SUCCES;
 		}
     }
-	
-	static ResetAllChildren = function()
-	{
-		for(var _index = 0; _index < childCount; _index += 1)
-		{
-			var _child = children.GetAt(_index);
-			
-			_child.Reset();
-		}
-	}
 }

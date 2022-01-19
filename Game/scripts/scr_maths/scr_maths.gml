@@ -59,28 +59,33 @@ function Math_Max()
 	return _largest;
 }
 
-function BezierInterpolate(a, b, c, d, t)
+function BlerpUnclamped(a, b, c, d, amount)
 {
     // get intermediate coordinates
-    var ix = lerp(a.x, b.x, t);
-    var iy = lerp(a.y, b.y, t);
+    var ix  = LerpUnclamped(a.x, b.x, amount);
+    var iy  = LerpUnclamped(a.y, b.y, amount);
 		
-    var jx = lerp(b.x, c.x, t);
-    var jy = lerp(b.y, c.y, t);
-    var kx = lerp(c.x, d.x, t);
-    var ky = lerp(c.y, d.y, t);
-        
+    var jx  = LerpUnclamped(b.x, c.x, amount);
+    var jy  = LerpUnclamped(b.y, c.y, amount);
+    var kx  = LerpUnclamped(c.x, d.x, amount);
+    var ky  = LerpUnclamped(c.y, d.y, amount);
+	
     // get further intermediate coordinates
-    var iix = lerp(ix, jx, t);
-    var iiy = lerp(iy, jy, t);
-    var jjx = lerp(jx, kx, t);
-    var jjy = lerp(jy, ky, t);
+    var iix = LerpUnclamped(ix,  jx,  amount);
+    var iiy = LerpUnclamped(iy,  jy,  amount);
+    var jjx = LerpUnclamped(jx,  kx,  amount);
+    var jjy = LerpUnclamped(jy,  ky,  amount);
 
     // get final curve point
-    var bx = lerp(iix, jjx, t);
-    var by = lerp(iiy, jjy, t);
+    var bx = LerpUnclamped(iix, jjx, amount);
+    var by = LerpUnclamped(iiy, jjy, amount);
 		
     return new vec2(bx, by);
+}
+
+function BlerpClamped(a, b, c, d, amount)
+{
+	return BlerpUnclamped(a, b, c, d, clamp(amount, 0, 1));
 }
 
 /// Taken from here: 

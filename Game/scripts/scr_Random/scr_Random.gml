@@ -6,20 +6,22 @@ function Random() : Action() constructor
 		
 		Debug.Log("Start Random, INDEX = ", randomIndex);
 		
-		ResetAllChildren();
+		//ResetAllChildren();
 	}
 	
     static Update = function()
 	{
 		var _child = children.GetAt(randomIndex);
+		
+		var _childStatus = _child.status;
 			
-		var _shouldUpdateChild = ((_child.status is OFF) or (_child.status is CONTINUE));
+		var _shouldUpdateChild = ((_childStatus is OFF) or (_childStatus is CONTINUE));
         if(_shouldUpdateChild)
 		{
-			UpdateChild(randomIndex);
+			_childStatus = UpdateChild(randomIndex);
         }
 			
-		switch(_child.status)
+		switch(_childStatus)
 		{
             case CONTINUE: 
 				status = CONTINUE;
@@ -29,10 +31,14 @@ function Random() : Action() constructor
 				status = SUCCES;
 				ResetAllChildren();
 				self.Reset();
+				
 			return status;
         }
 		
 		Debug.Log("Random FAILURE");
+		
+		self.Reset();
+		
         return FAILURE;
     }
 }
