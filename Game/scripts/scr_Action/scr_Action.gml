@@ -21,6 +21,10 @@ function Action() constructor
 	{
 		self.status = OFF;
 		self.hasStarted = false; //??
+		
+		ResetAllChildren(); //??
+		
+		//self.Start();
 	}
 	
 	static Start = function(){}
@@ -71,6 +75,16 @@ function Action() constructor
 		}
 		
 		return __status;
+	}
+	
+	static ResetAllChildren = function()
+	{
+		for(var _index = 0, _childCount = children.Count(); _index < _childCount; _index += 1)
+		{
+			var _child = children.GetAt(_index);
+			
+			_child.Reset();
+		}
 	}
 	
 	#endregion
