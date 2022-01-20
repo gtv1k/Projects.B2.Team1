@@ -6,7 +6,7 @@
     "path": "folders/_Enemies/States.yy",
   },
   "resourceVersion": "1.0",
-  "name": "scr_PlayAnim",
+  "name": "scr_Anim",
   "tags": [],
   "resourceType": "GMScript",
 }
