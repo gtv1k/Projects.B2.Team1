@@ -27,14 +27,19 @@ function Anim(_sequence, _position = new vec2(0, 0), _layer = "Attacks", _awaitC
 			hasAnimationStarted = true;
 		}
 		
-		if(awaitCompletion)
-		{
-			return layer_sequence_is_finished(animation) ? SUCCES : CONTINUE;
-		}
-		else
-		{
-			return SUCCES;
-		}
+		//if(hasAnimationStarted)
+		//{
+			if(awaitCompletion)
+			{
+				return layer_sequence_is_finished(animation) ? SUCCES : CONTINUE;
+			}
+			else
+			{
+				return SUCCES;
+			}
+		//}
+		
+		return FAILURE;
 	}
 	
 	#endregion
