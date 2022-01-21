@@ -27,6 +27,6 @@ I_DASH   = input_check_pressed(Inputs.Dash);
 
 I_CROUCH = input_check(Inputs.Crouch);
 
-I_USE    = input_check(Inputs.Use);
+I_USE    = input_check_pressed(Inputs.Use);
 
 I_ATTACK = input_check(Inputs.Attack);

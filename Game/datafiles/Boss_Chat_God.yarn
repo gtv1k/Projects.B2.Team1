@@ -1,0 +1,29 @@
+#__PrivCrochet_version:1
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 358,23
+__PrivCrochet_tags: 
+title: Node
+---
+Oh, it seems like you came...
+
+->Who are you?
+	Odd that you don't know that already... <<jump Node>>
+
+->What is this place?
+	My home... at least it used to...<<jump Node>>
+
+->Why did you hurt all those people?
+	I only tried to help them... They were all so focused on themselves, their selfishness, arrogance, all they did was walk on a road towards their own demise. I had hoped 	to show them, and that by showing how corrupted their minds are, it would steer them towards taking joy out of 	life instead of pursuing chimerical greatness. 
+It all went wrong as you can see... We all fell into the madness of our own  emotions, lost track of who we are. 	Seems that you however had found your own meaning in this 	world and made yourself something. <<jump Node_2>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1018,-97
+__PrivCrochet_tags: 
+title: Node_2
+---
+->I must put an end to this... 
+
+->You have to put an end to this...
+    So be it, it seems that there is still some hope left...
+    //It seems that it's too late for you to stop the thing you started...
+===

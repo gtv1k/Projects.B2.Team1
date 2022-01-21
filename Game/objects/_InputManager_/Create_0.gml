@@ -34,7 +34,7 @@ input_default_key(         /*key  */vk_control,                    /*verb */Inpu
 input_default_key(         /*key  */ord("E"),                      /*verb */Inputs.Use);
 input_default_key(         /*key  */ord("Q"),                      /*verb */Inputs.Inv);
 input_default_key(         /*key  */ord("F"),                      /*verb */Inputs.Attack);
-input_default_key(         /*key  */ord("T"),                      /*verb */Inputs.Talk);
+//input_default_key(         /*key  */ord("T"),                      /*verb */Inputs.Talk);
 
 #macro I_LEFT   global.input_left
 #macro I_RIGHT  global.input_right

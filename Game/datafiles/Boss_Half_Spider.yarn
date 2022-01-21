@@ -1,0 +1,28 @@
+#__PrivCrochet_version:1
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 208,28
+__PrivCrochet_tags: 
+title: Node
+---
+You'll be the cause of our demise...
+	->Why would I?
+        You reek of corruption...What emotions have led you to this?
+			->To this?
+				(No response) <<jump Node>>
+
+    ->[#b103fc] Do you know what's happening here?[/c]
+        The artefact given us by them...it caused us more pain and corruption than it solved any...They are the source...They made our emotions...consume us...
+	        ->Who are they?
+		        (No response) <<jump Node_2>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 527,45
+__PrivCrochet_tags: 
+title: Node_2
+---
+->(Give picture)
+    My child...my beloved child...the only pure being...(purify)
+
+->(Attack)
+    There is no saving of this wretched world...
+===
