@@ -25,7 +25,7 @@ if (_complete)
         {
             ChatterboxContinue(chatterbox);
             //Always update your text elements after advancing chatterbox!
-            refresh_text_elements();
+            refresh_text_elements(x, y);
         }
     }
     else if (ChatterboxGetOptionCount(chatterbox)) //If Chatterbox is presenting the user with some options, check for that
@@ -41,7 +41,7 @@ if (_complete)
             //If the player pressed a number key, choose the corresponding option
             ChatterboxSelect(chatterbox, _index);
             //Always update your text elements after advancing chatterbox!
-            refresh_text_elements();
+            refresh_text_elements(x, y);
         }
     }
 }

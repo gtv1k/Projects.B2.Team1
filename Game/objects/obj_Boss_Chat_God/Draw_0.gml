@@ -1,8 +1,14 @@
+if (isPaused)
+{
+	return;
+}
+
 if (ChatterboxIsStopped(chatterbox))
 {
     //If we've stopped we should say so
     //In a real game you'd close the dialogue system and permit user interaction again
     //scribble("(Chatterbox stopped)").draw(10, 10);
+
 }
 else
 {

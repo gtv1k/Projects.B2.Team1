@@ -12,4 +12,6 @@ chatterbox = ChatterboxCreate("Boss_Chat_God.yarn", false);
 ChatterboxJump(chatterbox, "Node");
 
 //Update our text elements
-refresh_text_elements();
+refresh_text_elements(x, y);
+
+isPaused = false;

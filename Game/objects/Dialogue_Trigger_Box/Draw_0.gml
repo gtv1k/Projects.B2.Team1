@@ -23,6 +23,18 @@ if(not started)
         }
     }
 }
+if (started)
+{
+	if (IsInRange)
+	{
+		dialogue.isPaused = false;
+	}
+	else
+	{
+		dialogue.isPaused = true;
+	}
+}
+
 
 function StartDialogue()
 {

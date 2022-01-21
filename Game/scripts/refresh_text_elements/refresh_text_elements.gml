@@ -1,10 +1,10 @@
-function refresh_text_elements()
+function refresh_text_elements(_x = 450, _y = 600)
 {
     
     text_elements = [];
     //Set all the Scribble t
-    var _x = 450;
-    var _y = 600;
+    //var _x = 450;
+    //var _y = 600;
     
     //Iterate over all the content strings
     var _i = 0;
@@ -14,7 +14,7 @@ function refresh_text_elements()
         var _element = scribble(ChatterboxGetContent(chatterbox, _i));
         
         //Wrap our text so that it doesn't exceed the room's width
-        _element.wrap(room_width - 400);
+        _element.wrap(room_width - 500);
         
         //Create a new typist for the text element, and tell it to start typing in
         var _typist = scribble_typist().in(1, 5);
