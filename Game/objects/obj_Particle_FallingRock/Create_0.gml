@@ -1,9 +1,12 @@
-var _randomScale = random_range(1.0, 3.0);
+randomize();
+
+var _randomScale = random_range(0.75, 3.0);
 
 image_xscale = _randomScale;
 image_yscale = _randomScale;
 
 image_angle = random_range(0, 360);
+
 
 /*
 
