@@ -45,6 +45,8 @@ function List(/*_capacity = 10*/) constructor
 	{
 		gml_pragma("forceinline");
 		
+		if(_index < 0) return NULL;
+		
 		return list[_index];
 	}
 	
@@ -135,7 +137,7 @@ function List(/*_capacity = 10*/) constructor
 		{
 			var _item = list[_index];
 			
-			if(_item != noone)
+			if(_item != NULL)
 			{
 				_action(list[_index]);
 			}
@@ -154,7 +156,7 @@ function List(/*_capacity = 10*/) constructor
 		{
 			var _item = list[_index];
 			
-			if(_item != noone)
+			if(_item != NULL)
 			{
 				_action(list[_index]);
 			}

@@ -3,7 +3,7 @@
   "isCompatibility": false,
   "parent": {
     "name": "Abilities",
-    "path": "folders/Scripts/Player/Abilities.yy",
+    "path": "folders/_Player/Abilities.yy",
   },
   "resourceVersion": "1.0",
   "name": "scr_MoveAbility",

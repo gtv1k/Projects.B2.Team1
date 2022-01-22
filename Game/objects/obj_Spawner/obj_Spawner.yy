@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "spr_Collider",
-    "path": "sprites/spr_Collider/spr_Collider.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
@@ -17,21 +14,24 @@
   "physicsLinearDamping": 0.1,
   "physicsAngularDamping": 0.1,
   "physicsFriction": 0.2,
-  "physicsStartAwake": false,
-  "physicsKinematic": true,
+  "physicsStartAwake": true,
+  "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
-  "properties": [],
+  "properties": [
+    {"varType":5,"value":"obj_Particle_FallingRock","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[
+        "GMObject",
+      ],"resourceVersion":"1.0","name":"objectToSpawn","tags":[],"resourceType":"GMObjectProperty",},
+  ],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Spawners",
+    "path": "folders/_Enemies/Spawners.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_Collider",
+  "name": "obj_Spawner",
   "tags": [],
   "resourceType": "GMObject",
 }
