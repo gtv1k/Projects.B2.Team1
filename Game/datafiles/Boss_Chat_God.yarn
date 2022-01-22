@@ -13,8 +13,25 @@ Oh, it seems like you came...
 	My home... at least it used to...<<jump Node>>
 
 ->Why did you hurt all those people?
-	I only tried to help them... They were all so focused on themselves, their selfishness, arrogance, all they did was walk on a road towards their own demise. I had hoped 	to show them, and that by showing how corrupted their minds are, it would steer them towards taking joy out of 	life instead of pursuing chimerical greatness. 
-It all went wrong as you can see... We all fell into the madness of our own  emotions, lost track of who we are. 	Seems that you however had found your own meaning in this 	world and made yourself something. <<jump Node_2>>
+	I only tried to help them... They were all so focused on themselves, their selfishness, arrogance, all they did was walk on a road towards their own demise. <<jump Node_3>> 
+
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1018,-97
+__PrivCrochet_tags: 
+title: Node_3
+---
+I had hoped to show them, and that by showing how corrupted their minds are, it would steer them towards taking joy out of life instead of pursuing chimerical greatness. <<jump Node_4>>
+
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1018,-97
+__PrivCrochet_tags: 
+title: Node_4
+---
+It all went wrong as you can see... We all fell into the madness of our own  emotions, lost track of who we are. Seems that you however had found your own meaning in this world and made yourself something. <<jump Node_2>>
+
+
 ===
 __PrivCrochet_colorID: 0
 __PrivCrochet_position: 1018,-97
@@ -24,6 +41,9 @@ title: Node_2
 ->I must put an end to this... 
 
 ->You have to put an end to this...
+<<if $saveCount == 4>>
     So be it, it seems that there is still some hope left...
-    //It seems that it's too late for you to stop the thing you started...
+<<else>>
+    It seems that it's too late for you to stop the thing you started...
+<<endif>>
 ===

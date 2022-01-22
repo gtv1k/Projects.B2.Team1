@@ -1,8 +1,4 @@
-//if ((boss_instance != noone) and (boss_instance != undefined))
-//	{
-//		x = boss_instance.x;
-//		y = boss_instance.y;
-//	}
+
 
 IsInRange = (self.position.DistanceTo(oPlayer.position) <= range METRES);
 
@@ -41,6 +37,13 @@ function StartDialogue()
 	started = true;
     instance_create_layer(position.x, position.y, "Dialogue", dialogue);
 }
+
+//if ((boss_instance != noone) and (boss_instance != undefined))
+//	{
+//		x = boss_instance.x;
+//		y = boss_instance.y;
+//	}
+
 	//if ((boss != noone) and (boss != undefined)) 
 	//{
 	//	instance_create_layer(position.x, position.y, "Instances", boss);

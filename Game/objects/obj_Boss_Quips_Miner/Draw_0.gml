@@ -1,3 +1,8 @@
+if (isPaused)
+{
+	return;
+}
+
 if (ChatterboxIsStopped(chatterbox))
 {
     //If we've stopped we should say so

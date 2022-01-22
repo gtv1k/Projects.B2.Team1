@@ -5,9 +5,10 @@ __PrivCrochet_tags:
 title: Node
 ---
 Is that you, my love?
+<<if $golemRelic == 3>>
     ->(Give item)
         So it is you... I was so lonely...
-
+<<endif>>
 
     ->No...
         So you left me...

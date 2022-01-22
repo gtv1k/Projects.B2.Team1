@@ -5,6 +5,8 @@ __PrivCrochet_tags:
 title: Node
 ---
 You should have left me to die...
+<<if $note == 1>>
     ->(give note) So he did send you... didn't he cause me enough suffering?
+<<endif>>
     ->You felt too lonely to leave you...
 ===

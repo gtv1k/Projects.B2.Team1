@@ -40,9 +40,11 @@ __PrivCrochet_position: 597,-109
 __PrivCrochet_tags: 
 title: Option B
 ---
+<<if $bossSpider == 0>>
 ->Yes
 	Where is she?
 	    Bit further in the forest, it is not safe enough to go there however...
+<<endif>>
 ->No.
     Oh, alright... Could you help me find her? She looks like this. <<jump Option_A>>
 ===

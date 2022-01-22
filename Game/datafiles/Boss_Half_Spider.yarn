@@ -20,8 +20,10 @@ __PrivCrochet_position: 527,45
 __PrivCrochet_tags: 
 title: Node_2
 ---
+<<if $spiderRelic == 3>>
 ->(Give picture)
     My child...my beloved child...the only pure being...(purify)
+<<endif>>
 
 ->(Attack)
     There is no saving of this wretched world...

@@ -13,3 +13,5 @@ ChatterboxJump(chatterbox, "NPC1");
 
 //Update our text elements
 refresh_text_elements();
+
+isPaused = false;
