@@ -1,0 +1,67 @@
+#__PrivCrochet_version:1
+__PrivCrochet_colorID: 8
+__PrivCrochet_position: 44,152
+__PrivCrochet_tags: 
+title: NPC1
+---
+Good you're awake.
+For a second there I thought you were gone for.
+
+
+<<wait>>
+<<jump Hero_to_NPC2>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 436,155
+__PrivCrochet_tags: 
+title: Hero_to_NPC2
+---
+Hey, you okay?
+	->Not really, I don't know who I am. <<jump OPTION A>>
+	->[#b103fc] Yeah I'm in one piece.[/c] <<jump NPC1.2>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 705,272
+__PrivCrochet_tags: 
+title: NPC1.2
+---
+->Where am I?
+    You're on the outskirts of what used to be a nice city, these days however.... not so much.
+->[#b103fc]Who are you exactly?[/c]
+    No one anymore, I used to fix up water pipes for our village along with my partner, however, I can't find them anywhere.... <<jump NPC1.3>>
+===
+__PrivCrochet_colorID: 1
+__PrivCrochet_position: 704,-7
+__PrivCrochet_tags: 
+title: OPTION A
+---
+Oh, well I don't know either, you don't look like an average fellow that I would know off, rather odd looking if anything
+	->Thanks....
+	->You don't look well either.
+		Well these days being alive would be considered looking well.
+
+<<jump NPC1.2>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1040,177
+__PrivCrochet_tags: 
+title: NPC1.3
+---
+Would you mind looking for them? You don't seem exactly human so you probably would be able to handle yourself better out there...
+->Why can't you do it yourself?
+    So you don't know? Well no wonder, you lost your memories. I don't know much myself but few years back something happened and everyone started to go crazy and afterwards they changed... I only know that you can't let yourself break to stay clear off turning...
+        What do you mean by break?
+            You need to keep positive, don't let emotions take over otherwise you'll end up like most people out there...
+		
+->[#b103fc]I don't look human?[/c]
+    No, I would say you look more like them more than anything, but even then you don't exactly fit the picture... I felt... as if you wouldn't be hostile, that's why I approached in the first place. <<jump help>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1260,57
+__PrivCrochet_tags: 
+title: help
+---
+So could you find my partner? They mean the world to me and I can't do it myself. Here, this is part of the picture I managed to keep after the rest got ripped and scattered around. Perhaps if you find the rest they will know that I sent you, otherwise just try not to scare them and send them here.
+
+->Sure thanks...
+===

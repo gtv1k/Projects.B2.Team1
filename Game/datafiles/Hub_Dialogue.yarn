@@ -1,0 +1,21 @@
+#__PrivCrochet_version:1
+__PrivCrochet_colorID: 8
+__PrivCrochet_position: 45,152
+__PrivCrochet_tags: 
+title: Hero_to_NPC
+---
+->Hey you what is this place?
+	I think you should already know that.
+->Who are you?
+	I wish I knew that...
+	<<wait>>
+	<<jump Hero_to_NPC2>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 438,156
+__PrivCrochet_tags: 
+title: Hero_to_NPC2
+---
+->Do you know how to get out?
+	You already did, and you can come back whenever you want.
+===

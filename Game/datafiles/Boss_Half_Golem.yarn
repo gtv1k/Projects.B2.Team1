@@ -1,0 +1,15 @@
+#__PrivCrochet_version:1
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 119,91
+__PrivCrochet_tags: 
+title: Node
+---
+Is that you, my love?
+<<if $golemRelic == 3>>
+    ->(Give item)
+        So it is you... I was so lonely...
+<<endif>>
+
+    ->No...
+        So you left me...
+===
