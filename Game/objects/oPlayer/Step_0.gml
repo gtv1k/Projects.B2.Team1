@@ -76,3 +76,6 @@ if (key_right) and (key_dash) or (key_left) and (key_dash)
 position.x = x;
 position.y = y;
 
+
+
+
