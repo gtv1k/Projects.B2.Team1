@@ -15,7 +15,7 @@
 #macro RADIANS * DEG_TO_RAD;
 #macro DEGREES * RAD_TO_DEG;
 
-#macro NULL noone
+//#macro NULL noone
 #macro null noone
 
 #macro elif else if
