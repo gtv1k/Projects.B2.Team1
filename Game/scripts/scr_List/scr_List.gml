@@ -183,5 +183,24 @@ function List(/*_capacity = 10*/) constructor
 		return self;
 	}
 	
+	static ToString = function()
+    {
+        gml_pragma("forceinline");
+        
+        var _str = "List: ";
+        
+        for (var _index = 0, _count = array_length(list); _index < _count; _index += 1)
+        {
+            var _item = list[_index];
+            
+            if(_item != null)
+            {
+                _str += string(_item) + ", ";
+            }
+        }
+		return _str;
+        
+    }
+	
 	#endregion
 }

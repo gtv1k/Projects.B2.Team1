@@ -21,7 +21,7 @@ if (global.is_dead)
 	global.is_dead = false;
 	//Debug.Log("current room:", room);
 	
-	if (global.bonfire_room != undefined)
+	if (global.bonfire_room != null)
 	{
 	
 		if (room != global.bonfire_room)

@@ -77,5 +77,14 @@ position.x = x;
 position.y = y;
 
 
+if (input_keyboard_check_pressed(ord("8")))
+{
+	attack = true;
+}
+else
+{
+	attack = false;
+}
+
 
 

@@ -10,3 +10,6 @@ position = new vec2(0, 0);
 Debug.Log("Player created");
 
 global.is_dead = false;
+
+attack = false;
+weapon = 1;

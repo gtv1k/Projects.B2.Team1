@@ -6,7 +6,7 @@
 Debug.Log("Bonfire created");
 global.bonfire_x = x;
 global.bonfire_y = y;
-global.bonfire_room = undefined;
+global.bonfire_room = null;
 global.bonfire = null;
 bonito = false;
 room_goto_next();
