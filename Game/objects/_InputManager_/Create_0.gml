@@ -1,10 +1,10 @@
 enum Inputs
 {
+    Up,
+    Down,
+	
     Left,
     Right,
-
-    Down,
-    Up,
     
 	Jump,
     Dash,
@@ -39,7 +39,6 @@ input_default_key(         /*key  */ord("V"),                      /*verb */Inpu
 
 #macro I_LEFT   global.input_left
 #macro I_RIGHT  global.input_right
-
 #macro I_DOWN   global.input_down
 #macro I_UP     global.input_up
 
