@@ -32,7 +32,8 @@ input_default_key(         /*key  */vk_shift,                      /*verb */Inpu
 input_default_key(         /*key  */vk_control,                    /*verb */Inputs.Crouch);
 
 input_default_key(         /*key  */ord("E"),                      /*verb */Inputs.Use);
-input_default_key(         /*key  */ord("Q"),                      /*verb */Inputs.Inv);
+input_default_key(         /*key  */vk_tab,                        /*verb */Inputs.Inv);
+
 input_default_key(         /*key  */ord("F"),                      /*verb */Inputs.Attack);
 input_default_key(         /*key  */ord("V"),                      /*verb */Inputs.Swap);
 
@@ -51,4 +52,7 @@ input_default_key(         /*key  */ord("V"),                      /*verb */Inpu
 
 #macro I_USE    global.input_use
 
+#macro I_INV    global.input_inventory
+
 #macro I_ATTACK global.input_attack
+#macro I_SWAP   global.input_swap
