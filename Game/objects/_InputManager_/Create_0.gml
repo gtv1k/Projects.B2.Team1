@@ -52,16 +52,3 @@ input_default_key(         /*key  */ord("T"),                      /*verb */Inpu
 #macro I_USE    global.input_use
 
 #macro I_ATTACK global.input_attack
-
-//input_default_key(         /*key  */vk_space,                      /*verb */Inputs.Jump);
-
-
-
-//input_default_gamepad_axis(gp_axislv, false, Inputs.Down);
-//input_default_gamepad_axis(gp_axislh, true,  Inputs.Left);
-//input_default_gamepad_axis(gp_axislh, false, Inputs.Right);
-//input_default_key(ord("D"),                  Inputs.Right);
-//input_default_gamepad_axis(/*axis */gp_axislh, /*negative */false,  /*verb */Inputs.Right);
-
-//input_default_key(vk_space,                  Inputs.Jump);
-//input_default_key(vk_shift,                  Inputs.Dash);

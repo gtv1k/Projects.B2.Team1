@@ -3,9 +3,9 @@
 sus = 5;
 
 #macro cam view_camera[0]
-#macro base_width  display_get_width()  / 5//320
-#macro base_height display_get_height() / 5//180
-current_width  = base_width
+#macro base_width 1920/5//320
+#macro base_height 1080/5//180
+current_width = base_width
 current_height = base_height
 
 #macro center_window alarm[0]=1

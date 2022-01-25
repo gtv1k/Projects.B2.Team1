@@ -4,7 +4,7 @@
     "path": "sprites/sp_enter/sp_enter.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
