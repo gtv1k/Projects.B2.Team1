@@ -1,10 +1,10 @@
 enum Inputs
 {
-    Up,
-    Down,
-	
     Left,
     Right,
+
+    Down,
+    Up,
     
 	Jump,
     Dash,
@@ -12,9 +12,9 @@ enum Inputs
 	
 	Use,
 	Inv,
-	Talk,
     
-    Attack
+    Attack,
+	Swap,
 }
 
 input_default_key(         /*key  */ord("A"),                      /*verb */Inputs.Left);
@@ -32,12 +32,14 @@ input_default_key(         /*key  */vk_shift,                      /*verb */Inpu
 input_default_key(         /*key  */vk_control,                    /*verb */Inputs.Crouch);
 
 input_default_key(         /*key  */ord("E"),                      /*verb */Inputs.Use);
-input_default_key(         /*key  */ord("Q"),                      /*verb */Inputs.Inv);
+input_default_key(         /*key  */vk_tab,                        /*verb */Inputs.Inv);
+
 input_default_key(         /*key  */ord("F"),                      /*verb */Inputs.Attack);
-//input_default_key(         /*key  */ord("T"),                      /*verb */Inputs.Talk);
+input_default_key(         /*key  */ord("V"),                      /*verb */Inputs.Swap);
 
 #macro I_LEFT   global.input_left
 #macro I_RIGHT  global.input_right
+
 #macro I_DOWN   global.input_down
 #macro I_UP     global.input_up
 
@@ -51,17 +53,7 @@ input_default_key(         /*key  */ord("F"),                      /*verb */Inpu
 
 #macro I_USE    global.input_use
 
+#macro I_INV    global.input_inventory
+
 #macro I_ATTACK global.input_attack
-
-//input_default_key(         /*key  */vk_space,                      /*verb */Inputs.Jump);
-
-
-
-//input_default_gamepad_axis(gp_axislv, false, Inputs.Down);
-//input_default_gamepad_axis(gp_axislh, true,  Inputs.Left);
-//input_default_gamepad_axis(gp_axislh, false, Inputs.Right);
-//input_default_key(ord("D"),                  Inputs.Right);
-//input_default_gamepad_axis(/*axis */gp_axislh, /*negative */false,  /*verb */Inputs.Right);
-
-//input_default_key(vk_space,                  Inputs.Jump);
-//input_default_key(vk_shift,                  Inputs.Dash);
+#macro I_SWAP   global.input_swap

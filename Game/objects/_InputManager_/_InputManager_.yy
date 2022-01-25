@@ -24,8 +24,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "__Managers__",
+    "path": "folders/__Managers__.yy",
   },
   "resourceVersion": "1.0",
   "name": "_InputManager_",
