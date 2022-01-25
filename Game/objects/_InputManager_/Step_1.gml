@@ -10,7 +10,7 @@ I_UP     = input_check(Inputs.Up);
 I_DOWN   = input_check(Inputs.Down);
 
 I_HOR    = (I_RIGHT ? 1 : 0) - (I_LEFT ? 1 : 0);
-I_VER    = (I_UP    ? 1 : 0) - (I_DOWN ? 1 : 0);
+I_VER    = (I_DOWN ? 1 : 0)  - (I_UP   ? 1 : 0);
 
 I_JUMP   = input_check_pressed(Inputs.Jump);
 I_DASH   = input_check_pressed(Inputs.Dash);

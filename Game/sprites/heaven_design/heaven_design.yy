@@ -8,14 +8,14 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 63,
+  "bbox_right": 999,
   "bbox_top": 0,
-  "bbox_bottom": 63,
+  "bbox_bottom": 319,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 3440,
-  "height": 1340,
+  "width": 1000,
+  "height": 320,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"3cc31bcb-898c-4535-ad15-c3540d67aba3","path":"sprites/Houses_1_/Houses_1_.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"3cc31bcb-898c-4535-ad15-c3540d67aba3","path":"sprites/Houses_1_/Houses_1_.yy",},"LayerId":{"name":"39fc400c-b8db-48f1-9e91-077771777ff3","path":"sprites/Houses_1_/Houses_1_.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"Houses_1_","path":"sprites/Houses_1_/Houses_1_.yy",},"resourceVersion":"1.0","name":"3cc31bcb-898c-4535-ad15-c3540d67aba3","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"7840a44e-7ef0-4265-adb2-4f9bdd9fe6de","path":"sprites/heaven_design/heaven_design.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"7840a44e-7ef0-4265-adb2-4f9bdd9fe6de","path":"sprites/heaven_design/heaven_design.yy",},"LayerId":{"name":"5dd85832-a853-4878-9e5e-a09198389e2d","path":"sprites/heaven_design/heaven_design.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"heaven_design","path":"sprites/heaven_design/heaven_design.yy",},"resourceVersion":"1.0","name":"7840a44e-7ef0-4265-adb2-4f9bdd9fe6de","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"Houses_1_","path":"sprites/Houses_1_/Houses_1_.yy",},
+    "spriteId": {"name":"heaven_design","path":"sprites/heaven_design/heaven_design.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"f9d52030-7df9-44e8-952e-4911c70ec1ac","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3cc31bcb-898c-4535-ad15-c3540d67aba3","path":"sprites/Houses_1_/Houses_1_.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"8b02f45d-8eaf-4327-bd46-af1c46036698","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7840a44e-7ef0-4265-adb2-4f9bdd9fe6de","path":"sprites/heaven_design/heaven_design.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -58,22 +58,22 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"Houses_1_","path":"sprites/Houses_1_/Houses_1_.yy",},
+    "parent": {"name":"heaven_design","path":"sprites/heaven_design/heaven_design.yy",},
     "resourceVersion": "1.3",
-    "name": "Houses_1_",
+    "name": "heaven_design",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"39fc400c-b8db-48f1-9e91-077771777ff3","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"5dd85832-a853-4878-9e5e-a09198389e2d","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
-    "name": "CITY",
-    "path": "folders/Sprites/Architectural/CITY.yy",
+    "name": "Rooms",
+    "path": "folders/Rooms.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Houses_1_",
+  "name": "heaven_design",
   "tags": [],
   "resourceType": "GMSprite",
 }

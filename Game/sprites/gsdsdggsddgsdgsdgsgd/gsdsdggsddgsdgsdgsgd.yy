@@ -8,9 +8,9 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 63,
-  "bbox_top": 0,
-  "bbox_bottom": 63,
+  "bbox_right": 3429,
+  "bbox_top": 775,
+  "bbox_bottom": 1339,
   "HTile": false,
   "VTile": false,
   "For3D": false,
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"3cc31bcb-898c-4535-ad15-c3540d67aba3","path":"sprites/Houses_1_/Houses_1_.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"3cc31bcb-898c-4535-ad15-c3540d67aba3","path":"sprites/Houses_1_/Houses_1_.yy",},"LayerId":{"name":"39fc400c-b8db-48f1-9e91-077771777ff3","path":"sprites/Houses_1_/Houses_1_.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"Houses_1_","path":"sprites/Houses_1_/Houses_1_.yy",},"resourceVersion":"1.0","name":"3cc31bcb-898c-4535-ad15-c3540d67aba3","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"fcbb65c3-4563-4f76-b461-26fde71850da","path":"sprites/gsdsdggsddgsdgsdgsgd/gsdsdggsddgsdgsdgsgd.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"fcbb65c3-4563-4f76-b461-26fde71850da","path":"sprites/gsdsdggsddgsdgsdgsgd/gsdsdggsddgsdgsdgsgd.yy",},"LayerId":{"name":"db538eb3-b779-4d81-a53b-c22bc9b33401","path":"sprites/gsdsdggsddgsdgsdgsgd/gsdsdggsddgsdgsdgsgd.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"gsdsdggsddgsdgsdgsgd","path":"sprites/gsdsdggsddgsdgsdgsgd/gsdsdggsddgsdgsdgsgd.yy",},"resourceVersion":"1.0","name":"fcbb65c3-4563-4f76-b461-26fde71850da","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"Houses_1_","path":"sprites/Houses_1_/Houses_1_.yy",},
+    "spriteId": {"name":"gsdsdggsddgsdgsdgsgd","path":"sprites/gsdsdggsddgsdgsdgsgd/gsdsdggsddgsdgsdgsgd.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"f9d52030-7df9-44e8-952e-4911c70ec1ac","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3cc31bcb-898c-4535-ad15-c3540d67aba3","path":"sprites/Houses_1_/Houses_1_.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"49b9fdcb-3203-4f38-a458-cd461c44c7f3","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fcbb65c3-4563-4f76-b461-26fde71850da","path":"sprites/gsdsdggsddgsdgsdgsgd/gsdsdggsddgsdgsdgsgd.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -58,22 +58,22 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"Houses_1_","path":"sprites/Houses_1_/Houses_1_.yy",},
+    "parent": {"name":"gsdsdggsddgsdgsdgsgd","path":"sprites/gsdsdggsddgsdgsdgsgd/gsdsdggsddgsdgsdgsgd.yy",},
     "resourceVersion": "1.3",
-    "name": "Houses_1_",
+    "name": "gsdsdggsddgsdgsdgsgd",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"39fc400c-b8db-48f1-9e91-077771777ff3","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"db538eb3-b779-4d81-a53b-c22bc9b33401","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
-    "name": "CITY",
-    "path": "folders/Sprites/Architectural/CITY.yy",
+    "name": "Rooms",
+    "path": "folders/Rooms.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Houses_1_",
+  "name": "gsdsdggsddgsdgsdgsgd",
   "tags": [],
   "resourceType": "GMSprite",
 }

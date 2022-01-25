@@ -1,4 +1,10 @@
-
+if keyboard_check(vk_home)
+{
+    x += I_HOR * ((5 UNITS) * Time.deltaTime);
+    y += I_VER * ((5 UNITS) * Time.deltaTime);
+    
+    return;
+}
 
 vsp=vsp+grv;
 // Verticle collision
@@ -92,4 +98,16 @@ if(keyboard_check_pressed(ord("V")))
 	}
 	
 	Debug.Log(currentWeapon);
+}
+
+
+
+
+if((I_LEFT or I_RIGHT) and I_DASH) 
+{
+	for (xa=0; xa != 6; xa++)
+	{
+		x += sign(I_HOR) * 4;
+		colliders();
+	}
 }

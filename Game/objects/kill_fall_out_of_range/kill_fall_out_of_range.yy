@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "KILLL",
-    "path": "sprites/KILLL/KILLL.yy",
+    "name": "Sprite13",
+    "path": "sprites/Sprite13/Sprite13.yy",
   },
   "solid": false,
   "visible": true,
@@ -30,7 +30,7 @@
     "path": "folders/Scripts.yy",
   },
   "resourceVersion": "1.0",
-  "name": "kill_spike",
+  "name": "kill_fall_out_of_range",
   "tags": [],
   "resourceType": "GMObject",
 }

@@ -5,7 +5,7 @@ if (bonito)
 	//if(obj_player != null)
 	//{
 		obj_player.x = global.bonfire_x;
-		obj_player.y = global.bonfire_y;
+		obj_player.y = global.bonfire_y-32;
 	//}
 	
 	if (global.bonfire != null)
