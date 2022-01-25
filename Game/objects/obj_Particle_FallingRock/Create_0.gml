@@ -7,4 +7,4 @@ image_yscale = _randomScale;
 
 phy_active   = true;
 
-phy_rotation = random_range(-90, 90);
+phy_rotation += random_range(-180, 180);

@@ -1,4 +1,0 @@
-function SpawnFalling(_position)
-{
-	
-}		
