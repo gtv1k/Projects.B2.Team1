@@ -278,6 +278,7 @@
     {"id":{"name":"scribble_font_combine","path":"scripts/scribble_font_combine/scribble_font_combine.yy",},"order":5,},
     {"id":{"name":"kill_spike","path":"objects/kill_spike/kill_spike.yy",},"order":17,},
     {"id":{"name":"obj_Bubble_Tut1","path":"objects/obj_Bubble_Tut1/obj_Bubble_Tut1.yy",},"order":10,},
+    {"id":{"name":"scr_Screenshake","path":"scripts/scr_Screenshake/scr_Screenshake.yy",},"order":14,},
     {"id":{"name":"Sprite121","path":"sprites/Sprite121/Sprite121.yy",},"order":62,},
     {"id":{"name":"ani_GolemSlamSpeed","path":"animcurves/ani_GolemSlamSpeed/ani_GolemSlamSpeed.yy",},"order":5,},
     {"id":{"name":"input_default_joycon_axis","path":"scripts/input_default_joycon_axis/input_default_joycon_axis.yy",},"order":3,},

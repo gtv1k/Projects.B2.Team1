@@ -9,8 +9,7 @@ function SetAnim(_animation) : Action() constructor
 	#region Methods
 	
 	static Update = function()
-	{	
-		
+	{
 		if (user.sprite_index != animation)
 		{
 			user.image_index = 0;
