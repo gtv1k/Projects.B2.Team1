@@ -1,4 +1,4 @@
-function JumpTo(_target, _jumpDuration = 2) : Action() constructor
+function JumpTo(_target) : Action() constructor
 {
 	#region Constructor
 	
@@ -21,8 +21,16 @@ function JumpTo(_target, _jumpDuration = 2) : Action() constructor
 	
 	static Start = function()
 	{
-		self.position_target = new vec2(target.x, target.y);
+		self.position_target = new vec2(target.x, target.y + (0.5 UNITS));
 		self.position_user   = new vec2(user.x, user.y);
+		
+		var _ray = new Ray(position_target, V_DOWN, obj_wall);
+		var _hitInfo = _ray.Cast();
+		if(_hitInfo != null)
+		{
+			position_target = _hitInfo.point;
+		}
+		
 
 		self.a = position_user;
 		self.b = new vec2(a.x, a.y - (5 UNITS));

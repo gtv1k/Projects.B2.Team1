@@ -64,7 +64,7 @@ function Ray(_origin, _direction, _object = all, _maxDistance = 2000) constructo
 			//could also div the end by 2 or multiply by 0.5
 		}
 	
-		var __distances = array_create(4, noone);
+		var __distances = array_create(4, null);
 	
 		var __hitInfo = new RaycastHit(,,,,);
 
@@ -79,7 +79,7 @@ function Ray(_origin, _direction, _object = all, _maxDistance = 2000) constructo
 			//This shouldn't be neccesary, we're doing the same work twice, we should be moving outside the object until we hit the edge.
 			var __hitObject = collision_point(__currentPos.x, __currentPos.y, obj, true, true);
 		
-			if(__hitObject != noone)
+			if(__hitObject != null)
 			{
 			
 				__hitInfo.point  = __currentPos;
@@ -131,7 +131,6 @@ function Ray(_origin, _direction, _object = all, _maxDistance = 2000) constructo
 		}
 	
 		Debug.Log("Ray gone wild");
-	
-		return __hitInfo;
+		return null;
 	}
 }

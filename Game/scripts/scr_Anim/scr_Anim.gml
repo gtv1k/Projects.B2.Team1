@@ -1,4 +1,4 @@
-function Anim(_sequence, _position = new vec2(0, 0), _layer = "Attacks", _awaitCompletion = true) : Action() constructor
+function Anim(_sequence, _position = new vec2(0, 0), _layer = "Attacks", _awaitCompletion = true, _mirror = false, _scale = 1) : Action() constructor
 {		
 	#region Constructor
 	
@@ -7,6 +7,10 @@ function Anim(_sequence, _position = new vec2(0, 0), _layer = "Attacks", _awaitC
 	self.hasAnimationStarted = false;
 	
 	self.awaitCompletion = _awaitCompletion;
+	
+	self.mirror = _mirror;
+	
+	self.scale = _scale;
 	
 	#endregion
 	
@@ -24,6 +28,10 @@ function Anim(_sequence, _position = new vec2(0, 0), _layer = "Attacks", _awaitC
 		if(not hasAnimationStarted)
 		{
 			layer_sequence_play(animation);
+			
+			layer_sequence_xscale(animation, (mirror) ? -scale : scale);
+			layer_sequence_yscale(animation, scale);
+			
 			hasAnimationStarted = true;
 		}
 		

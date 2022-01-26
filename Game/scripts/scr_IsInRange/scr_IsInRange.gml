@@ -12,6 +12,9 @@ function IsInRange(_target, _minDistance = 0 UNITS, _maxDistance = infinity) : A
 	self.minDistance = _minDistance;
 	self.maxDistance = _maxDistance;
 	
+	self.position_target = new vec2(target.x, target.y);
+	self.position_user   = new vec2(obj_Golem.x, obj_Golem.y); //= new vec2(user.x, user.y);
+	
 	return;
 	
 	#endregion
@@ -21,7 +24,7 @@ function IsInRange(_target, _minDistance = 0 UNITS, _maxDistance = infinity) : A
 	static Start = function()
 	{
 		self.position_target = new vec2(target.x, target.y);
-		self.position_user   = new vec2(user.x, user.y);
+		self.position_user   = new vec2(obj_Golem.x, obj_Golem.y); //= new vec2(user.x, user.y);
 	}
 	
 	static Update = function()
