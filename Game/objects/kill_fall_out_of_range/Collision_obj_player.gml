@@ -1,1 +1,1 @@
-global.is_dead=true;
+global.is_dead = true;

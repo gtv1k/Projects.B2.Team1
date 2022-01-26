@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sEnemy",
-    "path": "sprites/sEnemy/sEnemy.yy",
+    "name": "sp_god_idle",
+    "path": "sprites/sp_god_idle/sp_god_idle.yy",
   },
   "solid": false,
   "visible": true,
