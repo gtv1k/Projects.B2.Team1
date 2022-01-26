@@ -1,4 +1,4 @@
-draw_text(x,y-48,hp);
+draw_text(x,y-48,global.hp);
 
 
 var weapon_text = "";

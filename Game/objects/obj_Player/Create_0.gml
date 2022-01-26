@@ -50,8 +50,6 @@ enum PLAYERSTATE
 }
 state = PLAYERSTATE.FREE;
 
-hp = 3;
-
 
 hitNow = false;
 frameCount = 0;
@@ -59,9 +57,13 @@ flash = false;
 
 hsp = 0;
 vsp = 0;
-grv = 0.3;
-walksp = 6;//4;
+grv = 1.2 UNITS;
+walksp = (6.5  UNITS);//4;
 onground=false;
 charge=0;
 
+hit = false;
+
+hpWidth = 120;
+hpHeight = 20;
 

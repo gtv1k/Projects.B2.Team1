@@ -6,7 +6,7 @@ if keyboard_check(vk_home)
     return;
 }
 
-vsp=vsp+grv;
+vsp=vsp+(grv * Time.deltaTime);
 // Verticle collision
 if (place_meeting(x, y + vsp, obj_wall)) 
 {
@@ -64,13 +64,13 @@ if (onground)
 {
 	if(state is PLAYERSTATE.CROUCH)
 	{
-		walksp = 1.5;
+		walksp = (3 UNITS) * Time.deltaTime
 		//onground=true;
 	}
 	else
 	{
 		//onground=true;
-		walksp = 2.5
+		walksp =  (6.5 UNITS) * Time.deltaTime;
 		charge = 1;
 	}
 }
@@ -85,7 +85,7 @@ else
 		state=PLAYERSTATE.FALL;
 	}
 	
-	walksp=4;
+	walksp = (6.5  UNITS) * Time.deltaTime;
 	//onground=false;
 }
 
@@ -111,3 +111,17 @@ if((I_LEFT or I_RIGHT) and I_DASH)
 		colliders();
 	}
 }
+if (hit)
+{
+	if (global.hp > 0)
+	{
+		global.hp -= oEnemy.damage;
+	}
+	else
+	{
+		global.is_dead = true;
+	}
+}
+
+hpBar_x = x;
+hpBar_y = y - (2 METRES);
