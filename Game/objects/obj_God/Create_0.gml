@@ -41,6 +41,14 @@ stateMachine
 				.Add(new Wait( /*seconds*/ 0.5) )
 			)
 			
+			.Add
+			(new Sequence()
+				.Add(new Wait( /*seconds*/ 0.2) )
+				//.Add(new Log("A") )
+				.Add(new Seq(/*sequence*/ seq_God_OrbitalLaser, /*offset */new vec2(0, -(1 UNIT)), /*layer*/ "Attacks", /*awaitCompletion*/ true, /*scale*/ new vec2( 0.5, 0.5)) )
+				.Add(new Wait( /*seconds*/ 5.0) )
+			)
+			
 			//Balls
 			.Add
 			(new Sequence()
