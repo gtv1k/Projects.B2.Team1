@@ -17,6 +17,14 @@
         {"properties":[
             {"propertyId":{"name":"dialogue","path":"objects/Dialogue_Trigger_Box/Dialogue_Trigger_Box.yy",},"objectId":{"name":"Dialogue_Trigger_Box","path":"objects/Dialogue_Trigger_Box/Dialogue_Trigger_Box.yy",},"value":"obj_NPC2_Dial1","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
           ],"isDnd":false,"objectId":{"name":"Dialogue_Trigger_Box","path":"objects/Dialogue_Trigger_Box/Dialogue_Trigger_Box.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2912.0,"y":992.0,"resourceVersion":"1.0","name":"inst_3A2A54EA","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[
+            {"propertyId":{"name":"vari","path":"objects/oPickUp/oPickUp.yy",},"objectId":{"name":"oPickUp","path":"objects/oPickUp/oPickUp.yy",},"value":"7","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+            {"propertyId":{"name":"relic","path":"objects/oPickUp/oPickUp.yy",},"objectId":{"name":"oPickUp","path":"objects/oPickUp/oPickUp.yy",},"value":"spiderRelic","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+          ],"isDnd":false,"objectId":{"name":"oPickUp","path":"objects/oPickUp/oPickUp.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":3296.0,"y":704.0,"resourceVersion":"1.0","name":"inst_2078C855","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[
+            {"propertyId":{"name":"vari","path":"objects/oPickUp/oPickUp.yy",},"objectId":{"name":"oPickUp","path":"objects/oPickUp/oPickUp.yy",},"value":"5","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+            {"propertyId":{"name":"relic","path":"objects/oPickUp/oPickUp.yy",},"objectId":{"name":"oPickUp","path":"objects/oPickUp/oPickUp.yy",},"value":"spiderRelic","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+          ],"isDnd":false,"objectId":{"name":"oPickUp","path":"objects/oPickUp/oPickUp.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2336.0,"y":256.0,"resourceVersion":"1.0","name":"inst_4D08243A","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Dialogue","tags":[],"resourceType":"GMRInstanceLayer",},
     {"assets":[
         {"spriteId":{"name":"NPC2_LittleGirl","path":"sprites/NPC2_LittleGirl/NPC2_LittleGirl.yy",},"headPosition":0.0,"rotation":0.0,"scaleX":-0.7,"scaleY":0.7,"animationSpeed":1.0,"colour":4294967295,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2912.0,"y":1002.0,"resourceVersion":"1.0","name":"graphic_13EC163A","tags":[],"resourceType":"GMRSpriteGraphic",},
@@ -484,6 +492,8 @@
     {"name":"inst_142E01DE","path":"rooms/r_forest_0/r_forest_0.yy",},
     {"name":"inst_44EFB4F3","path":"rooms/r_forest_0/r_forest_0.yy",},
     {"name":"inst_3A2A54EA","path":"rooms/r_forest_0/r_forest_0.yy",},
+    {"name":"inst_2078C855","path":"rooms/r_forest_0/r_forest_0.yy",},
+    {"name":"inst_4D08243A","path":"rooms/r_forest_0/r_forest_0.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
