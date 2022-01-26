@@ -1,60 +1,31 @@
-
-function EnemyState_Patrol() {
-	sprite_index=sp_enemy_walk;
-chaserange = 10 METRES;
-	if (distance_to_object(obj_player) <= chaserange)
-	{
-		state= ENEMYSTATE.CHASE;
-	}
-		
-	velocity.x = dir * spd;
-	x += velocity.x;	
+function EnemyState_Free() {
+	sprite_index = ENEMY_IDLE;//idle
 
 		if (keyAttack) state = ENEMYSTATE.ATTACK_SLASH;
+		var inst;
+inst = collision_rectangle(x-10, y-10, x+10, y+10, obj_player, false, true);
+if inst != noone
+   {
+   state=ENEMYSTATE.ATTACK_SLASH;
+   }
 
 
 
 }
-
-function EnemyState_Chase() {
-	targetX = sign(obj_player.x - x);
-	if (distance_to_object(obj_player) <= 1.5 METRES)
-	{ 
-		state = ENEMYSTATE.ATTACK_SLASH;
-	}
-	
-	else if ((distance_to_object(obj_player) > chaserange) and (timeElapsed >= 10))
+function EnemyState_Dead() {
+	if (sprite_index != ENEMY_IDLE) //death animation
 	{
-		timeElapsed = 0;
-		state= ENEMYSTATE.PATROL;
-	}
-	
-	else if ((distance_to_object(obj_player) > chaserange))
-	{
-		timeElapsed += Time.deltaTime;
-	}
-	
-	x += targetX * spd;
-
-		 
-
-
-
-}
-function EnemyState_Deadd() {
-	if (sprite_index != sp_enemy_hitler) //death animation
-	{
-		sprite_index = sp_enemy_hitler;
+		sprite_index = ENEMY_IDLE;
 		image_index = 0;
 	}
 
-	if (animation_end()) instance_change(obj_corpse,true);
+	if (animation_end()) instance_destroy();
 
 
 
 
 }
-function EnemyState_Hitler() {
+function EnemyState_Hit() {
 	//Just hit
 	
 	if (hitNow)
@@ -72,7 +43,7 @@ function EnemyState_Hitler() {
 	if (frameCount > 10) 
 	{
 		frameCount = 0;
-		state = ENEMYSTATE.PATROL;
+		state = ENEMYSTATE.FREE;
 	}
 
 

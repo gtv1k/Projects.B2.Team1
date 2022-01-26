@@ -3,18 +3,21 @@ function EnemyState_Attack_Slash() {
 
 	ProcessAttackEnemy(sp_enemy_attack,sp_enemy_attack_HB);
 
-
+	if (keyAttack) && (image_index > 2)
+	{	
+		state = ENEMYSTATE.ATTACK_COMBO;	
+	}
 
 	if (animation_end())
 	{
-		sprite_index = sp_enemy_walk;
-		state = ENEMYSTATE.PATROL;
+		sprite_index = ENEMY_IDLE;
+		state = ENEMYSTATE.FREE;
 	}
 }
 function EnemyState_Attack_Combo() {
 
 
-	ProcessAttackEnemy(sp_enemy_dummy_attack,sp_enemy_dummy_attack_HB);
+	ProcessAttackEnemy(sp_enemy_attack,sp_enemy_attack_HB);
 
 	if (keyAttack) && (image_index > 2)
 	{	
@@ -23,8 +26,8 @@ function EnemyState_Attack_Combo() {
 
 	if (animation_end())
 	{
-		sprite_index = sp_enemy_dummy;
-		state = ENEMYSTATE.PATROL;
+		sprite_index = ENEMY_IDLE;
+		state = ENEMYSTATE.FREE;
 	}
 
 
@@ -62,7 +65,7 @@ function ProcessAttackEnemy(argument0, argument1) {
 		}
 	}
 	ds_list_destroy(hitByAttackNow);
-	mask_index = sp_enemy_dummy;;
+	mask_index = ENEMY_IDLE;
 
 
 
@@ -72,9 +75,9 @@ function ProcessAttackEnemy(argument0, argument1) {
 function PlayerHit(argument0) {
 	var _damage = argument0;
 
-	global.hp -= _damage;
+	hp -= _damage;
 	flash = true;
-	if (global.hp > 0)
+	if (hp > 0)
 	{
 		state = PLAYERSTATE.HIT;
 		hitNow = true;

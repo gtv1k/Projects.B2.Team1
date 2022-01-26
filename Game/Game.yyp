@@ -16,6 +16,7 @@
     {"id":{"name":"sGround","path":"sprites/sGround/sGround.yy",},"order":28,},
     {"id":{"name":"spr_guide","path":"sprites/spr_guide/spr_guide.yy",},"order":59,},
     {"id":{"name":"kms2_sewers","path":"sprites/kms2_sewers/kms2_sewers.yy",},"order":1,},
+    {"id":{"name":"ENEMY_IDLE","path":"sprites/ENEMY_IDLE/ENEMY_IDLE.yy",},"order":29,},
     {"id":{"name":"seq_God_EnergyBalls","path":"sequences/seq_God_EnergyBalls/seq_God_EnergyBalls.yy",},"order":16,},
     {"id":{"name":"draw_text_scribble","path":"scripts/draw_text_scribble/draw_text_scribble.yy",},"order":0,},
     {"id":{"name":"__scribble_config_colours","path":"scripts/__scribble_config_colours/__scribble_config_colours.yy",},"order":1,},
