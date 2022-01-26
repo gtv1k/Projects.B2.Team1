@@ -1,6 +1,6 @@
 
 
-IsInRange = (self.position.DistanceTo(oPlayer.position) <= range METRES);
+IsInRange = (self.position.DistanceTo(obj_player.position) <= range METRES);
 
 if(not started)
 {
@@ -9,6 +9,7 @@ if(not started)
         if(I_USE and IsInRange)
         {
 			StartDialogue();   
+			Debug.Log("I'mHERE")
         }
     }
     else //us range instead

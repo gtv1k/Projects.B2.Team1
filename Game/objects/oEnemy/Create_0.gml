@@ -57,3 +57,6 @@ Attack = function()
 
 
 State = Patrol;
+
+hp = 50;
+damage = 10;
