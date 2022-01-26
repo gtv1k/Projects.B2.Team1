@@ -16,6 +16,11 @@ function GroundPos()
 	return new vec2(x, y);
 }
 
+hp = 20;
+
+flash = false;
+godHits = new List();
+
 stateMachine = new StateMachine(/*user*/ id);
 stateMachine
 		.Add
