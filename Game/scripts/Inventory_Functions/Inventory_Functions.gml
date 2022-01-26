@@ -3,6 +3,13 @@
 
 function Inventory_Search(rootObject, itemType)
 {
+	return 0;	
+	
+	if(rootObject == undefined) return 0;	
+	if(rootObject == null) return 0;	
+	if(rootObject.inv_slots == undefined) return 0;
+	if(rootObject.inv_slots == null) return 0;
+
 	for(var i = 0; i < rootObject.inv_slots; i++)
 	{
 		if (rootObject.inventory[i] == itemType)

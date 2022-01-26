@@ -4,7 +4,7 @@
 //Debug.DrawNewLine(oPlayer.position, position)
 
 
-if (keyboard_check_pressed(ord("F")) and (oPlayer.position.Distance(position) < 3 METER))
+if (keyboard_check_pressed(ord("F")) and (obj_player.position.Distance(position) < 3 METER))
 {
 	Inventory_Add(oInventory, frame);
 	var rel = ChatterboxVariableGet(relic, 0) + 1;
