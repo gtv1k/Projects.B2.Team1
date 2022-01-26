@@ -58,6 +58,7 @@
     {"id":{"name":"__shd_scribble_bake_shadow","path":"shaders/__shd_scribble_bake_shadow/__shd_scribble_bake_shadow.yy",},"order":4,},
     {"id":{"name":"sp_enemy_dummy","path":"sprites/sp_enemy_dummy/sp_enemy_dummy.yy",},"order":2,},
     {"id":{"name":"sp_enemy_hitler","path":"sprites/sp_enemy_hitler/sp_enemy_hitler.yy",},"order":28,},
+    {"id":{"name":"sBonfire_orb","path":"sprites/sBonfire_orb/sBonfire_orb.yy",},"order":84,},
     {"id":{"name":"ChatterboxUnload","path":"scripts/ChatterboxUnload/ChatterboxUnload.yy",},"order":9,},
     {"id":{"name":"__ChatterboxVM","path":"scripts/__ChatterboxVM/__ChatterboxVM.yy",},"order":7,},
     {"id":{"name":"Sprite122","path":"sprites/Sprite122/Sprite122.yy",},"order":30,},
