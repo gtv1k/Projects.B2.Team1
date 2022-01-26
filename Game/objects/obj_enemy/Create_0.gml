@@ -22,7 +22,7 @@ hitNow = false;
 frameCount = 0;
 flash = false;
 state = ENEMYSTATE.FREE;
-hp = 3000//3;
+hp = 3//3;
 
 attack = false;
 hitByAttackEnemy = ds_list_create();

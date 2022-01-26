@@ -76,3 +76,15 @@ if (key_right) and (key_dash) or (key_left) and (key_dash)
 position.x = x;
 position.y = y;
 
+
+if (input_keyboard_check_pressed(ord("8")))
+{
+	attack = true;
+}
+else
+{
+	attack = false;
+}
+
+
+

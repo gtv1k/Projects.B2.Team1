@@ -1,0 +1,38 @@
+#__PrivCrochet_version:1
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 181,2
+__PrivCrochet_tags: 
+title: Node
+---
+Oh-h h-hello there... You s-s-s-seem like m-me...
+    ->Huh?
+		You aren't exactly... c-c-corrupted... b-b-but... N-not normal either... <<jump Node>>
+	->You're rather big for a rat...
+		ha ha ha, l-l-like I haven't heard that one b-b-before... <<jump Node>>
+
+    ->What are you doing here?
+		I'm t-t-trying to be i-i-i-in-incon-inconsp-incon-in FUCK... I'm hidin'... <<jump Node>>
+
+    ->What exactly do you mean by 'like you'?
+        Y-you aren't c-c-corrupted like others ˜'round here... n-not quite at least... M-most fellows here were c-c-consumed by e-emotions... a-a-and that d-damn rock...<<jump Node_2>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 515,-17
+__PrivCrochet_tags: 
+title: Node_2
+---
+->Rock?
+    Y-yes, s-some w-w-witchcraft or bloody same ordeal thing... i-it was s-s-s-supposed to t-t-teach us... o-o-or help some o-o-there way... B-b-but a-after a w-while it c-c-caused p-p-people to change... I-I-I I sup-p-pp-ppose it were to h-help u-u-us u-u-uncover our t-t-t-true self... Shite if you ask me... I'm a b-b-b-loody rat... <<jump Node_2>>
+
+->Why are you different?
+	I'm n-not s-sure... I l-lost m-m-most o-of me memories... 
+		I lost all of them...
+            That's s-sad to hear l-little f-f-fellow... W-what I r-r-r-r-remember i-is that, I u-used to w-w-work i-in a mine a-around here... I suddenly woke up... Was a couple years ago h-however... S-since then I l-looked h-here a-a-and there. I-I found th-that some bloody rock t-that apparently o-our people took f-f-from that THING behind the g-g-gate, caused all this... I am too-o afraid to check it however... <<jump Node_3>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 975,16
+__PrivCrochet_tags: 
+title: Node_3
+---
+Say... m-m-m-mind helping me a l-little? I am l-l-lookin for me f-friend... I-I-I I did him wrong... I-i-if you fin-find him, mind g-g-g-giving h-him b-back s-s-s-some m-money I a-a-apparently ˜'borrowed'... c-c-caused q-q-q-q-quite a s-s-stir I did... I'm too a-a-ashamed t-to do it meself y-y-you see...
+===

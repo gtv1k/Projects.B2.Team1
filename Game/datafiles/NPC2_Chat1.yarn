@@ -1,0 +1,50 @@
+#__PrivCrochet_version:1
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 111,90
+__PrivCrochet_tags: 
+title: NPC
+---
+->Are you lost?
+No... Maybe... <<jump Dial_1>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 358,24
+__PrivCrochet_tags: 
+title: Dial_1
+---
+->What are you doing here?
+	I'm looking for my mom, have you seen her? <<jump Option B>>
+    
+		
+
+        
+
+>You should find somewhere safe.
+	I can't leave without my mom...
+		->I'll help you find her.
+            Would you do that? She looks like this. <<jump Option_A>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 672,166
+__PrivCrochet_tags: 
+title: Option_A
+---
+->Where is the rest of the drawing.
+    I don't know, it got ripped when I was getting here and I couldn't find it. <<jump Option_A>>
+
+->Aren't you afraid of me?
+		    You seem nice.
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 597,-109
+__PrivCrochet_tags: 
+title: Option B
+---
+<<if $bossSpider == 0>>
+->Yes
+	Where is she?
+	    Bit further in the forest, it is not safe enough to go there however...
+<<endif>>
+->No.
+    Oh, alright... Could you help me find her? She looks like this. <<jump Option_A>>
+===

@@ -1,0 +1,31 @@
+#__PrivCrochet_version:1
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 75,88
+__PrivCrochet_tags: 
+title: Node_2
+---
+<Howdy there stranger... huhu... don't be alarmed... I don't bite... I'm but crammed...
+	->What are you?
+        Huhu... you tell me, seems you'd know more about who is thee... bat? Cat? Rat? Sat on a hat and he picked up the cake,
+        and the rake, and the gown,
+        and the milk, and the strings,
+        and the books, and the dish,
+        and the fan, and the cup,
+        and the ship, and the fish.
+        and he put them away.
+        then he said, 'that is that.'
+        and then he was gone
+        with a tip of his hat. Ha ha! <<jump node_3>>
+    
+    ->What do you want?
+       What I want is nothing I spat about. Ha ha.
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 392,0
+__PrivCrochet_tags: 
+title: node_3
+---
+->Ha ha indeed... <<jump Node_2>>
+->You're giving me the creeps... Are you okay in the head?
+	(No answer) <<stop>>
+===

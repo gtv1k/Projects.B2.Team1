@@ -1,3 +1,4 @@
+
 event_inherited(); //so it will inherit from par_speaker
 keyAttack = keyboard_check_pressed(ord("H")) || keyboard_check_pressed(ord("Z"));
 

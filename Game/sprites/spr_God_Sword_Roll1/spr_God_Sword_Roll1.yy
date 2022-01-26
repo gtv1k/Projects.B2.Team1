@@ -1,0 +1,163 @@
+{
+  "bboxMode": 0,
+  "collisionKind": 1,
+  "type": 0,
+  "origin": 4,
+  "preMultiplyAlpha": false,
+  "edgeFiltering": false,
+  "collisionTolerance": 0,
+  "swfPrecision": 2.525,
+  "bbox_left": 0,
+  "bbox_right": 103,
+  "bbox_top": 0,
+  "bbox_bottom": 106,
+  "HTile": false,
+  "VTile": false,
+  "For3D": false,
+  "width": 104,
+  "height": 107,
+  "textureGroupId": {
+    "name": "Default",
+    "path": "texturegroups/Default",
+  },
+  "swatchColours": null,
+  "gridX": 0,
+  "gridY": 0,
+  "frames": [
+    {"compositeImage":{"FrameId":{"name":"86a98673-a022-48ed-8a36-b740dd58317d","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"86a98673-a022-48ed-8a36-b740dd58317d","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"LayerId":{"name":"a1273f97-d991-4ab4-b8af-8dd0850a3b80","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_God_Sword_Roll1","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"resourceVersion":"1.0","name":"86a98673-a022-48ed-8a36-b740dd58317d","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"4e0b45cc-eadc-4ea1-8b84-e7b63922041a","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"4e0b45cc-eadc-4ea1-8b84-e7b63922041a","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"LayerId":{"name":"a1273f97-d991-4ab4-b8af-8dd0850a3b80","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_God_Sword_Roll1","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"resourceVersion":"1.0","name":"4e0b45cc-eadc-4ea1-8b84-e7b63922041a","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"31502e04-5a28-4c08-aff4-3a5f69b676a3","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"31502e04-5a28-4c08-aff4-3a5f69b676a3","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"LayerId":{"name":"a1273f97-d991-4ab4-b8af-8dd0850a3b80","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_God_Sword_Roll1","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"resourceVersion":"1.0","name":"31502e04-5a28-4c08-aff4-3a5f69b676a3","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"8360256f-fa5c-41a5-a617-afd315f48a70","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"8360256f-fa5c-41a5-a617-afd315f48a70","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"LayerId":{"name":"a1273f97-d991-4ab4-b8af-8dd0850a3b80","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_God_Sword_Roll1","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"resourceVersion":"1.0","name":"8360256f-fa5c-41a5-a617-afd315f48a70","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"b015c13e-609d-4acb-8f0c-6b2868a52600","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"b015c13e-609d-4acb-8f0c-6b2868a52600","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"LayerId":{"name":"a1273f97-d991-4ab4-b8af-8dd0850a3b80","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_God_Sword_Roll1","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"resourceVersion":"1.0","name":"b015c13e-609d-4acb-8f0c-6b2868a52600","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"28f6c546-5603-4ea2-bba7-ed32f8837b03","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"28f6c546-5603-4ea2-bba7-ed32f8837b03","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"LayerId":{"name":"a1273f97-d991-4ab4-b8af-8dd0850a3b80","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_God_Sword_Roll1","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"resourceVersion":"1.0","name":"28f6c546-5603-4ea2-bba7-ed32f8837b03","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"7b095148-ad87-4e9e-9510-ca2f8fd6e77f","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"7b095148-ad87-4e9e-9510-ca2f8fd6e77f","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"LayerId":{"name":"a1273f97-d991-4ab4-b8af-8dd0850a3b80","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_God_Sword_Roll1","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"resourceVersion":"1.0","name":"7b095148-ad87-4e9e-9510-ca2f8fd6e77f","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"d5c10ea6-7d8c-4c98-a72d-b5b5d758a4b7","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"d5c10ea6-7d8c-4c98-a72d-b5b5d758a4b7","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"LayerId":{"name":"a1273f97-d991-4ab4-b8af-8dd0850a3b80","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_God_Sword_Roll1","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"resourceVersion":"1.0","name":"d5c10ea6-7d8c-4c98-a72d-b5b5d758a4b7","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"19f46210-cd09-4591-a488-ce2613d56b64","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"19f46210-cd09-4591-a488-ce2613d56b64","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"LayerId":{"name":"a1273f97-d991-4ab4-b8af-8dd0850a3b80","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_God_Sword_Roll1","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"resourceVersion":"1.0","name":"19f46210-cd09-4591-a488-ce2613d56b64","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"452327a3-4617-4349-9aea-6fa2ff2c3559","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"452327a3-4617-4349-9aea-6fa2ff2c3559","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"LayerId":{"name":"a1273f97-d991-4ab4-b8af-8dd0850a3b80","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_God_Sword_Roll1","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"resourceVersion":"1.0","name":"452327a3-4617-4349-9aea-6fa2ff2c3559","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"b8fd0058-3aec-4818-b2bf-63baa0cb2184","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"b8fd0058-3aec-4818-b2bf-63baa0cb2184","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"LayerId":{"name":"a1273f97-d991-4ab4-b8af-8dd0850a3b80","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_God_Sword_Roll1","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"resourceVersion":"1.0","name":"b8fd0058-3aec-4818-b2bf-63baa0cb2184","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"897ba3de-4278-4319-9a6c-0874b3b01a79","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"897ba3de-4278-4319-9a6c-0874b3b01a79","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"LayerId":{"name":"a1273f97-d991-4ab4-b8af-8dd0850a3b80","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_God_Sword_Roll1","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"resourceVersion":"1.0","name":"897ba3de-4278-4319-9a6c-0874b3b01a79","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"88f92975-ff67-41a4-89b9-dcfc1a8a09ff","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"88f92975-ff67-41a4-89b9-dcfc1a8a09ff","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"LayerId":{"name":"a1273f97-d991-4ab4-b8af-8dd0850a3b80","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_God_Sword_Roll1","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"resourceVersion":"1.0","name":"88f92975-ff67-41a4-89b9-dcfc1a8a09ff","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"a15481c3-af92-4e9d-808e-bf9f4db7fa6b","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"a15481c3-af92-4e9d-808e-bf9f4db7fa6b","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"LayerId":{"name":"a1273f97-d991-4ab4-b8af-8dd0850a3b80","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_God_Sword_Roll1","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"resourceVersion":"1.0","name":"a15481c3-af92-4e9d-808e-bf9f4db7fa6b","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"faec58ec-0510-489a-a594-0b3d41b0bf1b","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"faec58ec-0510-489a-a594-0b3d41b0bf1b","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"LayerId":{"name":"a1273f97-d991-4ab4-b8af-8dd0850a3b80","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_God_Sword_Roll1","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"resourceVersion":"1.0","name":"faec58ec-0510-489a-a594-0b3d41b0bf1b","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"c75b6b1c-ba6c-4f8f-b131-327a68c6e97e","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"c75b6b1c-ba6c-4f8f-b131-327a68c6e97e","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"LayerId":{"name":"a1273f97-d991-4ab4-b8af-8dd0850a3b80","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_God_Sword_Roll1","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"resourceVersion":"1.0","name":"c75b6b1c-ba6c-4f8f-b131-327a68c6e97e","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"6d2e3395-09f4-4405-a26a-00cc9c971350","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"6d2e3395-09f4-4405-a26a-00cc9c971350","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"LayerId":{"name":"a1273f97-d991-4ab4-b8af-8dd0850a3b80","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_God_Sword_Roll1","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"resourceVersion":"1.0","name":"6d2e3395-09f4-4405-a26a-00cc9c971350","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"8272284e-86a2-453f-9a46-9879210121f1","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"8272284e-86a2-453f-9a46-9879210121f1","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"LayerId":{"name":"a1273f97-d991-4ab4-b8af-8dd0850a3b80","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_God_Sword_Roll1","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"resourceVersion":"1.0","name":"8272284e-86a2-453f-9a46-9879210121f1","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"fd262919-b43c-4da1-85c4-a0ad706155f5","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"fd262919-b43c-4da1-85c4-a0ad706155f5","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"LayerId":{"name":"a1273f97-d991-4ab4-b8af-8dd0850a3b80","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_God_Sword_Roll1","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"resourceVersion":"1.0","name":"fd262919-b43c-4da1-85c4-a0ad706155f5","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"0014c4d7-448b-42a3-8a94-fcbfbbf34454","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"0014c4d7-448b-42a3-8a94-fcbfbbf34454","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"LayerId":{"name":"a1273f97-d991-4ab4-b8af-8dd0850a3b80","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_God_Sword_Roll1","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"resourceVersion":"1.0","name":"0014c4d7-448b-42a3-8a94-fcbfbbf34454","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"36ecdd88-50ed-4df5-aef3-0da1f2eebe7d","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"36ecdd88-50ed-4df5-aef3-0da1f2eebe7d","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"LayerId":{"name":"a1273f97-d991-4ab4-b8af-8dd0850a3b80","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_God_Sword_Roll1","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"resourceVersion":"1.0","name":"36ecdd88-50ed-4df5-aef3-0da1f2eebe7d","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"2deafa64-6735-49ce-83b6-c47a8d76b079","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"2deafa64-6735-49ce-83b6-c47a8d76b079","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"LayerId":{"name":"a1273f97-d991-4ab4-b8af-8dd0850a3b80","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_God_Sword_Roll1","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"resourceVersion":"1.0","name":"2deafa64-6735-49ce-83b6-c47a8d76b079","tags":[],"resourceType":"GMSpriteFrame",},
+  ],
+  "sequence": {
+    "spriteId": {"name":"spr_God_Sword_Roll1","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},
+    "timeUnits": 1,
+    "playback": 1,
+    "playbackSpeed": 70.0,
+    "playbackSpeedType": 0,
+    "autoRecord": true,
+    "volume": 1.0,
+    "length": 22.0,
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
+    "tracks": [
+      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"6a4cae80-b9a9-4b7e-a7b5-0524a4277874","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"86a98673-a022-48ed-8a36-b740dd58317d","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"c638cabe-f44b-4d0d-ad6b-d68e0fddb6a1","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4e0b45cc-eadc-4ea1-8b84-e7b63922041a","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"8a41ae3c-b0f4-4ec8-96b7-130e822b02d1","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"31502e04-5a28-4c08-aff4-3a5f69b676a3","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"22e060a0-8d36-480e-a3ad-e040883ec703","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8360256f-fa5c-41a5-a617-afd315f48a70","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"404ede41-28de-41b1-bea7-b6d8c896293a","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b015c13e-609d-4acb-8f0c-6b2868a52600","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"fbc2b837-da8e-432a-a2fe-3cc99b922db6","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"28f6c546-5603-4ea2-bba7-ed32f8837b03","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"15da41ae-c911-49d5-ba22-09494c6adc75","Key":6.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7b095148-ad87-4e9e-9510-ca2f8fd6e77f","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"5c64be7e-aa7a-44ff-8772-4bfe379bbc00","Key":7.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d5c10ea6-7d8c-4c98-a72d-b5b5d758a4b7","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"cbbff8d0-ffe9-4495-a1a9-8503004a6ef6","Key":8.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"19f46210-cd09-4591-a488-ce2613d56b64","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"dcd97827-c540-4b13-85c2-ae6126f23a06","Key":9.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"452327a3-4617-4349-9aea-6fa2ff2c3559","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"fe83849e-59ef-4555-b144-95dfbb3e5ebf","Key":10.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b8fd0058-3aec-4818-b2bf-63baa0cb2184","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"8661a801-da9d-4189-9643-f48fe9c2239a","Key":11.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"897ba3de-4278-4319-9a6c-0874b3b01a79","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"acb3d8f0-559b-4ee6-99a1-95e40b596416","Key":12.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"88f92975-ff67-41a4-89b9-dcfc1a8a09ff","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"9856f1ed-b22e-44ce-8585-318307c3afd1","Key":13.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a15481c3-af92-4e9d-808e-bf9f4db7fa6b","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"dec7f1f7-d983-478a-8cfa-edb9b952869d","Key":14.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"faec58ec-0510-489a-a594-0b3d41b0bf1b","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"e92b71af-0b13-4c3d-8d1e-6612619d3f01","Key":15.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c75b6b1c-ba6c-4f8f-b131-327a68c6e97e","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"7c279e28-c7f7-43fe-a124-631b8ce9e16f","Key":16.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6d2e3395-09f4-4405-a26a-00cc9c971350","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"3bd8b62c-fec3-4c3b-b1b6-dea3d9a5f915","Key":17.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8272284e-86a2-453f-9a46-9879210121f1","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"f2daa960-1089-4371-83be-ea721951d3a5","Key":18.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fd262919-b43c-4da1-85c4-a0ad706155f5","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"2ab3ed78-558c-4434-891f-a77dd8918e82","Key":19.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0014c4d7-448b-42a3-8a94-fcbfbbf34454","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"8d14fae3-63d1-4c5a-af5a-bb41624cadc4","Key":20.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"36ecdd88-50ed-4df5-aef3-0da1f2eebe7d","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"1003612f-fded-4f37-b8e6-5e453fe6a381","Key":21.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2deafa64-6735-49ce-83b6-c47a8d76b079","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+    ],
+    "visibleRange": null,
+    "lockOrigin": false,
+    "showBackdrop": true,
+    "showBackdropImage": false,
+    "backdropImagePath": "",
+    "backdropImageOpacity": 0.5,
+    "backdropWidth": 1366,
+    "backdropHeight": 768,
+    "backdropXOffset": 0.0,
+    "backdropYOffset": 0.0,
+    "xorigin": 52,
+    "yorigin": 53,
+    "eventToFunction": {},
+    "eventStubScript": null,
+    "parent": {"name":"spr_God_Sword_Roll1","path":"sprites/spr_God_Sword_Roll1/spr_God_Sword_Roll1.yy",},
+    "resourceVersion": "1.3",
+    "name": "spr_God_Sword_Roll1",
+    "tags": [],
+    "resourceType": "GMSequence",
+  },
+  "layers": [
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"a1273f97-d991-4ab4-b8af-8dd0850a3b80","tags":[],"resourceType":"GMImageLayer",},
+  ],
+  "nineSlice": null,
+  "parent": {
+    "name": "Particles",
+    "path": "folders/Sprites/Particles.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "spr_God_Sword_Roll1",
+  "tags": [],
+  "resourceType": "GMSprite",
+}

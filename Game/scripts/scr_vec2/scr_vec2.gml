@@ -484,6 +484,18 @@ function vec2(x = 0, y) constructor
 		throw ("Unexpected Argument!");
 	}
 	
+	static DistanceTo=function(input)
+	{
+		gml_pragma("forceinline");
+		
+		if is_struct(input) //is vec2
+		{
+			return ((input).__sub__(self)).Length();
+		}
+	
+		throw ("Unexpected Argument!");
+	}
+	
 	static DistanceSquared=function(input)
 	{
 		gml_pragma("forceinline");
@@ -550,6 +562,41 @@ function vec2(x = 0, y) constructor
 		return self;
 	}
 	
+	/*
+	#macro V_UP    new vec2(0, -1)
+	#macro V_DOWN  new vec2(0,  1)
+	#macro V_LEFT  new vec2(-1, 0)
+	#macro V_RIGHT new vec2( 1, 0)
+	*/
+	
+	static Up = function()
+	{
+		static u = new vec2(0, -1);
+		
+		return u;
+	}
+	
+	static Down = function()
+	{
+		static d = new vec2(0,  1);
+		
+		return d;
+	}
+	
+	static Left = function()
+	{
+		static l = new vec2(-1, 0);
+		
+		return l;
+	}
+	
+	static Right = function()
+	{
+		static r = new vec2( 1, 0);
+		
+		return r;
+	}
+	
 	static ToString = function()
 	{
 		gml_pragma("forceinline");
@@ -561,6 +608,12 @@ function vec2(x = 0, y) constructor
 }
 
 #region Aliases
+
+#macro Pos vec2
+#macro Vec vec2
+
+#macro Vec2 vec2
+#macro Vector2 vec2
 
 #region	Operators/Functions
 
@@ -587,10 +640,15 @@ function vec2(x = 0, y) constructor
 #macro zero new vec2(0, 0)
 #macro one  new vec2(1, 1)
 
-#macro up    new vec2(0, -1)
-#macro down  new vec2(0,  1)
-#macro left  new vec2(-1, 0)
-#macro right new vec2( 1, 0)
+//#macro up    new vec2(0, -1)
+//#macro down  new vec2(0,  1)
+//#macro left  new vec2(-1, 0)
+//#macro right new vec2( 1, 0)
+
+#macro V_UP    new vec2(0, -1)
+#macro V_DOWN  new vec2(0,  1)
+#macro V_LEFT  new vec2(-1, 0)
+#macro V_RIGHT new vec2( 1, 0)
 
 #macro vec2_zero new vec2(0, 0)
 #macro vec2_one  new vec2(1, 1)

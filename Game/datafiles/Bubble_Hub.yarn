@@ -1,0 +1,16 @@
+#__PrivCrochet_version:1
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 56,162
+__PrivCrochet_tags: 
+title: Start
+---
+What is this place?<<jump Node>>
+===
+__PrivCrochet_colorID: 1
+__PrivCrochet_position: 412,222
+__PrivCrochet_tags: 
+title: Node
+---
+...Where am I?
+===
+<<exit>>

@@ -1,19 +1,25 @@
 function EnemyState_Free() {
-	sprite_index = sp_enemy_dummy;//idle
+	sprite_index = ENEMY_IDLE;//idle
 
 		if (keyAttack) state = ENEMYSTATE.ATTACK_SLASH;
+		var inst;
+inst = collision_rectangle(x-10, y-10, x+10, y+10, obj_player, false, true);
+if inst != noone
+   {
+   state=ENEMYSTATE.ATTACK_SLASH;
+   }
 
 
 
 }
 function EnemyState_Dead() {
-	if (sprite_index != sp_enemy_death) //death animation
+	if (sprite_index != ENEMY_IDLE) //death animation
 	{
-		sprite_index = sp_enemy_death;
+		sprite_index = ENEMY_IDLE;
 		image_index = 0;
 	}
 
-	if (animation_end()) instance_change(obj_corpse,true);
+	if (animation_end()) instance_destroy();
 
 
 
@@ -25,7 +31,7 @@ function EnemyState_Hit() {
 	if (hitNow)
 	{
 		
-		sprite_index = sp_enemy_hit;//hit
+		sprite_index = sp_enemy_hitler;//hit
 		image_index = 0;
 			
 		

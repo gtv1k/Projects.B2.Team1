@@ -1,4 +1,16 @@
-weapon=1;
+
+enum Weapon
+{
+	Nothing,
+	Sword,
+	Hammer,
+	Scythe,
+	Gauntlets,
+	MyBeloved
+}
+
+//weapon=1;
+currentWeapon = Weapon.Sword;
 
 targetEnter=0;
 
@@ -18,9 +30,7 @@ myPortraitTalk_x	= 26;
 myPortraitTalk_y	= 44;
 myPortraitIdle		= spr_portrait_examplechar_idle;
 
-
-
-	enum PLAYERSTATE
+enum PLAYERSTATE
 {
 	FREE,
 	WEAPON_1,
@@ -40,8 +50,8 @@ myPortraitIdle		= spr_portrait_examplechar_idle;
 }
 state = PLAYERSTATE.FREE;
 
-hp = 3;
 
+hp=3;
 
 hitNow = false;
 frameCount = 0;
@@ -49,9 +59,25 @@ flash = false;
 
 hsp = 0;
 vsp = 0;
-grv = 0.3;
-walksp = 6;//4;
+grv = 1.2 UNITS;
+walksp = 6.5  UNITS;//4;
 onground=false;
 charge=0;
 
+pos = application_get_position();
+hpWidth = 112;
+hpHeight = 14;
+hpBar_x = pos[0] ;
+hpBar_y = pos[1];
+lastHit = null;
+lastHitFrame = -1;
+lastHitTime  = -1;
+
+isDodging = false;
+dodgeTime = 0;
+dodgeDuration = 0.2;
+dodgeStartPoint = new vec2(0, 0);
+dodgeEndPoint = new vec2(0, 0);
+dashCount = 1;
+position = new vec2(x, y);
 
