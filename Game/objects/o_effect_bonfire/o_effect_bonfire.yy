@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "Sprite118",
-    "path": "sprites/Sprite118/Sprite118.yy",
+    "name": "sBonfire_orb",
+    "path": "sprites/sBonfire_orb/sBonfire_orb.yy",
   },
   "solid": false,
   "visible": true,

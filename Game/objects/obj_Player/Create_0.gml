@@ -58,12 +58,13 @@ flash = false;
 hsp = 0;
 vsp = 0;
 grv = 1.2 UNITS;
-walksp = (6.5  UNITS);//4;
+walksp = 6.5  UNITS;//4;
 onground=false;
 charge=0;
 
-hit = false;
-
-hpWidth = 120;
-hpHeight = 20;
+pos = application_get_position();
+hpWidth = 112;
+hpHeight = 14;
+hpBar_x = pos[0] ;
+hpBar_y = pos[1];
 

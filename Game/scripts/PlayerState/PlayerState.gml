@@ -153,7 +153,7 @@ function PlayerState_Free()
 	//if (place_meeting(x, y + 1, obj_wall)) and key_jump 
 	if place_meeting(x, y + 1, obj_wall) and I_JUMP
 	{
-		vsp = -4 * (walksp  * Time.deltaTime);//-7
+		vsp = -20 * (grv * Time.deltaTime);//-7
 	}
 
 	// Horizontal collision

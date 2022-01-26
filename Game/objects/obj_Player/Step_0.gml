@@ -1,3 +1,5 @@
+
+
 if keyboard_check(vk_home)
 {
     x += I_HOR * ((5 UNITS) * Time.deltaTime);
@@ -111,7 +113,7 @@ if((I_LEFT or I_RIGHT) and I_DASH)
 		colliders();
 	}
 }
-if (hit)
+if (hitNow)
 {
 	if (global.hp > 0)
 	{
@@ -123,5 +125,3 @@ if (hit)
 	}
 }
 
-hpBar_x = x;
-hpBar_y = y - (2 METRES);
