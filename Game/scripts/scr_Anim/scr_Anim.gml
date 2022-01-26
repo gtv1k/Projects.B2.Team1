@@ -1,4 +1,4 @@
-function Anim(_sequence, _position = new vec2(0, 0), _layer = "Attacks", _awaitCompletion = true, _mirror = false, _scale = 1) : Action() constructor
+function Seq(_sequence, _position = new vec2(0, 0), _layer = "Attacks", _awaitCompletion = true, _mirror = false, _scale = 1) : Action() constructor
 {		
 	#region Constructor
 	

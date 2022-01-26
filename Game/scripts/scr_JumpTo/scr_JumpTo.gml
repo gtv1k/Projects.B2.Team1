@@ -58,6 +58,8 @@ function JumpTo(_target) : Action() constructor
 		
 		//Debug.DrawBezier(a, b, c, d);
 		
+		user.sprite_index = sp_golem_idle;
+		
 		if(amount < 1)
 		{
 			var _channel   = animcurve_get_channel(/*curve_struct_or_id */ani_GolemSlamSpeed, /*channel_name_or_index */0);
@@ -68,6 +70,11 @@ function JumpTo(_target) : Action() constructor
 			amount = clamp(amount, 0, 1);
 		
 			var _pos = BlerpUnclamped(a, b, c, d, amount);
+			
+			if(amount >= 1)
+			{
+				screenshake_hard();
+			}
 		
 			//Debug.Log(amount);
 		
