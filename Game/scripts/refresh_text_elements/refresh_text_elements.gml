@@ -1,4 +1,4 @@
-function refresh_text_elements(_x = 450, _y = 600)
+function refresh_text_elements(_x = Dialogue_Trigger_Box.x, _y = Dialogue_Trigger_Box.y)
 {
     
     text_elements = [];
@@ -14,7 +14,7 @@ function refresh_text_elements(_x = 450, _y = 600)
         var _element = scribble(ChatterboxGetContent(chatterbox, _i));
         
         //Wrap our text so that it doesn't exceed the room's width
-        _element.wrap(room_width - 500);
+        _element.wrap(room_width - 800);
         
         //Create a new typist for the text element, and tell it to start typing in
         var _typist = scribble_typist().in(1, 5);
@@ -28,15 +28,15 @@ function refresh_text_elements(_x = 450, _y = 600)
         });
         
         //Move down a bit to make each content string look like a paragraph
-        _y += _element.get_height(_element) + 15;
+        _y += _element.get_height(_element) + 2;
         ++_i;
     }
     
     //Ident our options slightly
-    _x += 30;
+    _x += 8;
     
     //Space out the options from the content a little too
-    _y += 5;
+    _y += 2;
     
     if (ChatterboxIsWaiting(chatterbox))
     {
@@ -86,7 +86,7 @@ function refresh_text_elements(_x = 450, _y = 600)
             });
             
             //Move down a bit to visually separate each option
-            _y += _element.get_height() + 10;
+            _y += _element.get_height() + 2;
             ++_i;
         }
     }

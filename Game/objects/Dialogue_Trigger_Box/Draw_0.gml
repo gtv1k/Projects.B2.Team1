@@ -9,7 +9,7 @@ if(not started)
         if(I_USE and IsInRange)
         {
 			StartDialogue();   
-			Debug.Log("I'mHERE")
+			
         }
     }
     else //us range instead
@@ -33,11 +33,7 @@ if (started)
 }
 
 
-function StartDialogue()
-{
-	started = true;
-    instance_create_layer(position.x, position.y, "Dialogue", dialogue);
-}
+
 
 //if ((boss_instance != noone) and (boss_instance != undefined))
 //	{
