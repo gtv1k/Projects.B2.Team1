@@ -18,7 +18,7 @@ title: Hero_to_NPC2
 ---
 Hey, you okay?
 	->Not really, I don't know who I am. <<jump OPTION A>>
-	->[#b103fc] Yeah I'm in one piece.[/c] <<jump NPC1.2>>
+	->Yeah I'm in one piece. <<jump NPC1.2>>
 ===
 __PrivCrochet_colorID: 0
 __PrivCrochet_position: 705,272
@@ -27,7 +27,7 @@ title: NPC1.2
 ---
 ->Where am I?
     You're on the outskirts of what used to be a nice city, these days however.... not so much.
-->[#b103fc]Who are you exactly?[/c]
+->Who are you exactly?
     No one anymore, I used to fix up water pipes for our village along with my partner, however, I can't find them anywhere.... <<jump NPC1.3>>
 ===
 __PrivCrochet_colorID: 1
@@ -53,7 +53,7 @@ Would you mind looking for them? You don't seem exactly human so you probably wo
         What do you mean by break?
             You need to keep positive, don't let emotions take over otherwise you'll end up like most people out there...
 		
-->[#b103fc]I don't look human?[/c]
+->I don't look human?
     No, I would say you look more like them more than anything, but even then you don't exactly fit the picture... I felt... as if you wouldn't be hostile, that's why I approached in the first place. <<jump help>>
 ===
 __PrivCrochet_colorID: 0

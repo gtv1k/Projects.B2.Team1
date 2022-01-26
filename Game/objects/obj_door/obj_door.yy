@@ -8,7 +8,7 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
-  "physicsObject": false,
+  "physicsObject": true,
   "physicsSensor": false,
   "physicsShape": 1,
   "physicsGroup": 1,
@@ -19,7 +19,12 @@
   "physicsFriction": 0.2,
   "physicsStartAwake": true,
   "physicsKinematic": false,
-  "physicsShapePoints": [],
+  "physicsShapePoints": [
+    {"x":0.0,"y":0.0,},
+    {"x":16.0,"y":0.0,},
+    {"x":16.0,"y":16.0,},
+    {"x":0.0,"y":16.0,},
+  ],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],

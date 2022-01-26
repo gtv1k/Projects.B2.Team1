@@ -1,6 +1,6 @@
 
 
-IsInRange = (self.position.DistanceTo(oPlayer.position) <= range METRES);
+IsInRange = (self.position.DistanceTo(obj_player.position) <= range METRES);
 
 if(not started)
 {
@@ -9,6 +9,7 @@ if(not started)
         if(I_USE and IsInRange)
         {
 			StartDialogue();   
+			
         }
     }
     else //us range instead
@@ -32,11 +33,7 @@ if (started)
 }
 
 
-function StartDialogue()
-{
-	started = true;
-    instance_create_layer(position.x, position.y, "Dialogue", dialogue);
-}
+
 
 //if ((boss_instance != noone) and (boss_instance != undefined))
 //	{
