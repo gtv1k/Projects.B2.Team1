@@ -1,3 +1,23 @@
+if(isDodging)
+{
+    if (dodgeTime < dodgeDuration)
+    {
+        var _t = Tween_CubicIn(dodgeTime / dodgeDuration);
+        dodgeTime += Time.deltaTime;
+        
+        x = lerp(dodgeStartPoint.x, dodgeEndPoint.x, _t);
+        //y = lerp(dodgeStartPoint.y, dodgeEndPoint.y, _t);
+        
+        return;
+    }
+    else
+    {
+        dodgeTime = 0;
+        isDodging = false;
+    }
+}
+
+
 if keyboard_check(vk_home)
 {
     x += I_HOR * ((5 UNITS) * Time.deltaTime);
@@ -6,7 +26,7 @@ if keyboard_check(vk_home)
     return;
 }
 
-vsp=vsp+grv;
+vsp=vsp+(grv * Time.deltaTime);
 // Verticle collision
 if (place_meeting(x, y + vsp, obj_wall)) 
 {
@@ -64,13 +84,13 @@ if (onground)
 {
 	if(state is PLAYERSTATE.CROUCH)
 	{
-		walksp = 1.5;
+		walksp = (3 UNITS) * Time.deltaTime
 		//onground=true;
 	}
 	else
 	{
 		//onground=true;
-		walksp = 2.5
+		walksp =  (6.5 UNITS) * Time.deltaTime;
 		charge = 1;
 	}
 }
@@ -85,7 +105,7 @@ else
 		state=PLAYERSTATE.FALL;
 	}
 	
-	walksp=4;
+	walksp = (6.5  UNITS) * Time.deltaTime;
 	//onground=false;
 }
 
@@ -101,13 +121,62 @@ if(keyboard_check_pressed(ord("V")))
 }
 
 
-
-
-if((I_LEFT or I_RIGHT) and I_DASH) 
+if (hitNow)
 {
-	for (xa=0; xa != 6; xa++)
+	if (global.hp > 0)
 	{
-		x += sign(I_HOR) * 4;
-		colliders();
+		global.hp -= oEnemy.damage;
+	}
+	else
+	{
+		global.is_dead = true;
 	}
 }
+position = new vec2(x, y);
+if((I_LEFT or I_RIGHT) and I_DASH) 
+{
+	if (onground)
+	{
+		dashCount = 1;
+	}
+	else if (dashCount > 0)
+	{
+		dashCount = 0;
+	}
+	else
+	{
+		return;
+	}
+    //var _vector = new vec2(I_HOR * (4 UNITS), 0);
+    var _start = new vec2(x, y);
+    var _dir  = (new vec2(I_HOR, 0)).Normalized();
+    var _dist = (4 UNITS);
+        
+    var _end   = (_start).__add__((_dir).__mul__(_dist));
+    
+    var _ray = new Ray(/*origin */ _start, /*direction */ _dir, /*objects*/obj_wall, /*maxDistance*/ _dist);
+    var _hit = _ray.Cast();
+    
+    if(_hit != null)
+    {
+		
+		if(_hit.point != undefined)
+		{
+			_end = _hit.point;
+			_end.x -= (I_HOR * 0.5 UNIT);
+ 
+			Debug.Log(_hit.point);
+		}
+		
+        Debug.Log("DASH HIT WALL!!!");
+
+    }
+    
+    dodgeStartPoint = _start;
+    dodgeEndPoint   = _end;
+    
+    isDodging = true;
+    dodgeTime = 0;
+}
+
+position = new vec2(x, y);
