@@ -17,6 +17,14 @@
         {"properties":[
             {"propertyId":{"name":"dialogue","path":"objects/Dialogue_Trigger_Box/Dialogue_Trigger_Box.yy",},"objectId":{"name":"Dialogue_Trigger_Box","path":"objects/Dialogue_Trigger_Box/Dialogue_Trigger_Box.yy",},"value":"obj_NPC3_Dial1","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
           ],"isDnd":false,"objectId":{"name":"Dialogue_Trigger_Box","path":"objects/Dialogue_Trigger_Box/Dialogue_Trigger_Box.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2225.0,"y":143.0,"resourceVersion":"1.0","name":"inst_424E3482","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[
+            {"propertyId":{"name":"vari","path":"objects/oPickUp/oPickUp.yy",},"objectId":{"name":"oPickUp","path":"objects/oPickUp/oPickUp.yy",},"value":"8","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+            {"propertyId":{"name":"relic","path":"objects/oPickUp/oPickUp.yy",},"objectId":{"name":"oPickUp","path":"objects/oPickUp/oPickUp.yy",},"value":"minerRelic","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+          ],"isDnd":false,"objectId":{"name":"oPickUp","path":"objects/oPickUp/oPickUp.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1888.0,"y":1152.0,"resourceVersion":"1.0","name":"inst_2D00D0CB","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[
+            {"propertyId":{"name":"vari","path":"objects/oPickUp/oPickUp.yy",},"objectId":{"name":"oPickUp","path":"objects/oPickUp/oPickUp.yy",},"value":"7","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+            {"propertyId":{"name":"relic","path":"objects/oPickUp/oPickUp.yy",},"objectId":{"name":"oPickUp","path":"objects/oPickUp/oPickUp.yy",},"value":"minerRelic","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+          ],"isDnd":false,"objectId":{"name":"oPickUp","path":"objects/oPickUp/oPickUp.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":480.0,"y":928.0,"resourceVersion":"1.0","name":"inst_1DB11BF","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"DIalogue","tags":[],"resourceType":"GMRInstanceLayer",},
     {"assets":[
         {"spriteId":{"name":"NPC3_Rat","path":"sprites/NPC3_Rat/NPC3_Rat.yy",},"headPosition":0.0,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"animationSpeed":1.0,"colour":4294967295,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2154.0,"y":184.0,"resourceVersion":"1.0","name":"graphic_74F1D2C0","tags":[],"resourceType":"GMRSpriteGraphic",},
@@ -432,6 +440,8 @@
     {"name":"inst_D6BBFC0","path":"rooms/r_city_0/r_city_0.yy",},
     {"name":"inst_2BF740F0","path":"rooms/r_city_0/r_city_0.yy",},
     {"name":"inst_424E3482","path":"rooms/r_city_0/r_city_0.yy",},
+    {"name":"inst_2D00D0CB","path":"rooms/r_city_0/r_city_0.yy",},
+    {"name":"inst_1DB11BF","path":"rooms/r_city_0/r_city_0.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

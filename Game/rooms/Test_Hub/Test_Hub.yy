@@ -17,6 +17,10 @@
         {"properties":[
             {"propertyId":{"name":"dialogue","path":"objects/Dialogue_Trigger_Box/Dialogue_Trigger_Box.yy",},"objectId":{"name":"Dialogue_Trigger_Box","path":"objects/Dialogue_Trigger_Box/Dialogue_Trigger_Box.yy",},"value":"obj_hub_Dialogue","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
           ],"isDnd":false,"objectId":{"name":"Dialogue_Trigger_Box","path":"objects/Dialogue_Trigger_Box/Dialogue_Trigger_Box.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":192.0,"y":288.0,"resourceVersion":"1.0","name":"inst_3DF4B574","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[
+            {"propertyId":{"name":"targetRoom","path":"objects/obj_door/obj_door.yy",},"objectId":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},"value":"r_village_0","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+            {"propertyId":{"name":"targetEnter","path":"objects/obj_door/obj_door.yy",},"objectId":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},"value":"room0_enter1","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+          ],"isDnd":false,"objectId":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":288.0,"y":352.0,"resourceVersion":"1.0","name":"inst_358DA47B","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Dialogue","tags":[],"resourceType":"GMRInstanceLayer",},
     {"assets":[
         {"spriteId":{"name":"sGrass","path":"sprites/sGrass/sGrass.yy",},"headPosition":0.0,"rotation":0.0,"scaleX":-1.0,"scaleY":1.0,"animationSpeed":1.0,"colour":4294967295,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":592.0,"y":344.0,"resourceVersion":"1.0","name":"graphic_788708DA","tags":[],"resourceType":"GMRSpriteGraphic",},
@@ -63,6 +67,7 @@
     {"name":"inst_67D8C702","path":"rooms/Test_Hub/Test_Hub.yy",},
     {"name":"inst_7AE49DFE","path":"rooms/Test_Hub/Test_Hub.yy",},
     {"name":"inst_3DF4B574","path":"rooms/Test_Hub/Test_Hub.yy",},
+    {"name":"inst_358DA47B","path":"rooms/Test_Hub/Test_Hub.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
