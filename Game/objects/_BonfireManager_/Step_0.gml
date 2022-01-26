@@ -1,5 +1,4 @@
 
-
 if (bonito)
 {
 	//if(obj_player != null)
@@ -20,8 +19,18 @@ if (bonito)
 
 if (global.is_dead)
 {
+	//timeSpentDead += Time.deltaTime;
+	
+	//if (global.timeOfDeath is null) return;
+	
+	//if (timeSpentDead > (global.timeOfDeath + respawnTime)) return;
+	
+	Debug.Log("RESPAWN RESPAWN RESPAWN RESPAWN RESPAWN RESPAWN RESPAWN RESPAWN RESPAWN");
+	
 	global.hp = 100;
 	global.is_dead = false;
+	//global.timeOfDeath = null;
+	//timeSpentDead = 0;
 	//Debug.Log("current room:", room);
 	
 	if (global.bonfire_room != null)
