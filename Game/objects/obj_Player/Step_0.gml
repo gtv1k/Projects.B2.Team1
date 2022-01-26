@@ -1,3 +1,21 @@
+if(isDodging)
+{
+    if (dodgeTime < dodgeDuration)
+    {
+        var _t = Tween_CubicIn(dodgeTime / dodgeDuration);
+        dodgeTime += Time.deltaTime;
+        
+        x = lerp(dodgeStartPoint.x, dodgeEndPoint.x, _t);
+        //y = lerp(dodgeStartPoint.y, dodgeEndPoint.y, _t);
+        
+        return;
+    }
+    else
+    {
+        dodgeTime = 0;
+        isDodging = false;
+    }
+}
 
 
 if keyboard_check(vk_home)
@@ -107,12 +125,36 @@ if(keyboard_check_pressed(ord("V")))
 
 if((I_LEFT or I_RIGHT) and I_DASH) 
 {
-	for (xa=0; xa != 6; xa++)
-	{
-		x += sign(I_HOR) * 4;
-		colliders();
-	}
+    //var _vector = new vec2(I_HOR * (4 UNITS), 0);
+    var _start = new vec2(x, y);
+    var _dir  = (new vec2(I_HOR, 0)).Normalized();
+    var _dist = (4 UNITS);
+        
+    var _end   = (_start).__add__((_dir).__mul__(_dist));
+    
+    var _ray = new Ray(/*origin */ _start, /*direction */ _dir, /*objects*/obj_wall, /*maxDistance*/ _dist);
+    var _hit = _ray.Cast();
+    
+    if(_hit != null)
+    {
+		
+		if(_hit.point != undefined)
+		{
+			_end = _hit.point;
+			Debug.Log(_hit.point);
+		}
+		
+        Debug.Log("DASH HIT WALL!!!");
+
+    }
+    
+    dodgeStartPoint = _start;
+    dodgeEndPoint   = _end;
+    
+    isDodging = true;
+    dodgeTime = 0;
 }
+
 if (hitNow)
 {
 	if (global.hp > 0)

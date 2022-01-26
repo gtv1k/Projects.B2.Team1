@@ -68,3 +68,10 @@ hpHeight = 14;
 hpBar_x = pos[0] ;
 hpBar_y = pos[1];
 
+isDodging = false;
+dodgeTime = 0;
+dodgeDuration = 0.2;
+dodgeStartPoint = new vec2(0, 0);
+dodgeEndPoint = new vec2(0, 0);
+
+
