@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sp_enemy_wide_boi_idle",
-    "path": "sprites/sp_enemy_wide_boi_idle/sp_enemy_wide_boi_idle.yy",
+    "name": "sp_enemy_walk",
+    "path": "sprites/sp_enemy_walk/sp_enemy_walk.yy",
   },
   "solid": false,
   "visible": true,

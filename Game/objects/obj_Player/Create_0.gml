@@ -50,7 +50,7 @@ enum PLAYERSTATE
 }
 state = PLAYERSTATE.FREE;
 
-hp = 3;
+
 
 
 hitNow = false;
