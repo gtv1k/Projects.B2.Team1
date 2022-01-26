@@ -32,7 +32,7 @@ enum ENEMYSTATE
 	FREE,
 	HIT,
 	DEAD,
-		ATTACK_SLASH,
+	ATTACK_SLASH,
 	ATTACK_COMBO
 }
 image_index = irandom(10);

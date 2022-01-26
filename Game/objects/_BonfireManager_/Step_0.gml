@@ -20,6 +20,7 @@ if (bonito)
 
 if (global.is_dead)
 {
+	global.hp = 100;
 	global.is_dead = false;
 	//Debug.Log("current room:", room);
 	

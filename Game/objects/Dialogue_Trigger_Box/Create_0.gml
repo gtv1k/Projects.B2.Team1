@@ -1,4 +1,4 @@
-self.position = newVec2(x,y);
+self.position = new vec2(x,y);
 started = false; 
 
 
@@ -9,3 +9,9 @@ started = false;
 
 //ChatterboxLoadFromFile(filename);
 //chatterbox = ChatterboxCreate(filename, false);
+function StartDialogue()
+{
+	started = true;
+    instance_create_layer(position.x, position.y, "Dialogue", dialogue);
+	Debug.Log(position.x, position.y);
+}

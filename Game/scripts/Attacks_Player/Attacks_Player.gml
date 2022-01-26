@@ -20,14 +20,14 @@ function PlayerState_Attack_Weapon_1()
 	
 		if (keyAttack) && (image_index >= 6)
 		{	
-			//state = PLAYERSTATE.WEAPON_2;
+			state = PLAYERSTATE.WEAPON_2;
 		}
 
 		if (animation_end())
 		{
-			//sprite_index = sp_player_idle;
-			//state = PLAYERSTATE.FREE;
-			state = PLAYERSTATE.WEAPON_2;
+			sprite_index = sp_player_idle;
+			state = PLAYERSTATE.FREE;
+			//state = PLAYERSTATE.WEAPON_2;
 		}
 	}
 	else if(currentWeapon is Weapon.Hammer)
@@ -56,22 +56,30 @@ function PlayerState_Attack_Weapon_1()
 		
 		ProcessAttack(sp_player_scythe_attack_first, sp_player_scythe_attack_first_HB);
 		
+		if (keyAttack) && (image_index >= 5)
+		{	
+			state = PLAYERSTATE.WEAPON_2;
+		}
 		if (animation_end())
 		{
-			//sprite_index = sp_player_idle;
-			//state = PLAYERSTATE.FREE;
-			state = PLAYERSTATE.WEAPON_2;
+			sprite_index = sp_player_idle;
+			state = PLAYERSTATE.FREE;
+			//state = PLAYERSTATE.WEAPON_2;
 		}
 	}
 	else if(currentWeapon is Weapon.Gauntlets)
 	{
 		ProcessAttack(sp_player_gauntlets_attack_first, sp_player_gauntlets_attack_first_HB);
 		
+					if (keyAttack) && (image_index >= 5)
+		{	
+			state = PLAYERSTATE.WEAPON_2;
+		}
 		if (animation_end())
 		{
-			//sprite_index = sp_player_idle;
-			//state = PLAYERSTATE.FREE;
-				state = PLAYERSTATE.WEAPON_2;
+			sprite_index = sp_player_idle;
+			state = PLAYERSTATE.FREE;
+				//state = PLAYERSTATE.WEAPON_2;
 		}
 	}
 	else if(currentWeapon is Weapon.MyBeloved)
@@ -116,14 +124,14 @@ function PlayerState_Attack_Weapon_2()
 	
 		if (keyAttack) && (image_index >= 3)
 		{	
-			//state = PLAYERSTATE.WEAPON_3;
+			state = PLAYERSTATE.WEAPON_3;
 		}
 
 		if (animation_end())
 		{
-			//sprite_index = sp_player_idle;
-			//state = PLAYERSTATE.FREE;
-			state = PLAYERSTATE.WEAPON_3;	
+			sprite_index = sp_player_idle;
+			state = PLAYERSTATE.FREE;
+			//state = PLAYERSTATE.WEAPON_3;	
 		}
 	}
 	else if(currentWeapon is Weapon.Hammer)
@@ -151,12 +159,16 @@ function PlayerState_Attack_Weapon_2()
 	{
 		
 		ProcessAttack(sp_player_scythe_attack_second, sp_player_scythe_attack_second_HB);
+				if (keyAttack) && (image_index >= 4)
+		{	
+			state = PLAYERSTATE.WEAPON_3;
+		}
 		
 		if (animation_end())
 		{
-			//sprite_index = sp_player_idle;
-			//state = PLAYERSTATE.FREE;
-			state = PLAYERSTATE.WEAPON_3;
+			sprite_index = sp_player_idle;
+			state = PLAYERSTATE.FREE;
+			//state = PLAYERSTATE.WEAPON_3;
 		}
 	}
 	else if(currentWeapon is Weapon.Gauntlets)
@@ -164,13 +176,16 @@ function PlayerState_Attack_Weapon_2()
 		ProcessAttack(sp_player_gauntlets_attack_second, sp_player_gauntlets_attack_second_HB);
 		
 		screenshake_hard();
-		
+					if (keyAttack) && (image_index >= 5)
+		{	
+			state = PLAYERSTATE.WEAPON_3;
+		}
 		
 		if (animation_end())
 		{
-			//sprite_index = sp_player_idle;
-			//state = PLAYERSTATE.FREE;
-			state = PLAYERSTATE.WEAPON_3;
+			sprite_index = sp_player_idle;
+			state = PLAYERSTATE.FREE;
+			//state = PLAYERSTATE.WEAPON_3;
 		}
 	}
 	else if(currentWeapon is Weapon.MyBeloved)

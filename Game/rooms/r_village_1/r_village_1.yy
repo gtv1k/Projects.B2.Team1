@@ -67,6 +67,7 @@
     {"name":"inst_2300F494","path":"rooms/r_village_1/r_village_1.yy",},
     {"name":"inst_5D3ABF15","path":"rooms/r_village_1/r_village_1.yy",},
     {"name":"room1_enter1","path":"rooms/r_village_1/r_village_1.yy",},
+    {"name":"inst_2CE0676D","path":"rooms/r_village_1/r_village_1.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
