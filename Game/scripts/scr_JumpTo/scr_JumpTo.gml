@@ -1,4 +1,4 @@
-function JumpTo(_target, _jumpDuration = 2) : Action() constructor
+function JumpTo(_target) : Action() constructor
 {
 	#region Constructor
 	
@@ -21,8 +21,16 @@ function JumpTo(_target, _jumpDuration = 2) : Action() constructor
 	
 	static Start = function()
 	{
-		self.position_target = new vec2(target.x, target.y);
+		self.position_target = new vec2(target.x, target.y + (0.5 UNITS));
 		self.position_user   = new vec2(user.x, user.y);
+		
+		var _ray = new Ray(position_target, V_DOWN, obj_wall);
+		var _hitInfo = _ray.Cast();
+		if(_hitInfo != null)
+		{
+			position_target = _hitInfo.point;
+		}
+		
 
 		self.a = position_user;
 		self.b = new vec2(a.x, a.y - (5 UNITS));
@@ -50,6 +58,8 @@ function JumpTo(_target, _jumpDuration = 2) : Action() constructor
 		
 		//Debug.DrawBezier(a, b, c, d);
 		
+		user.sprite_index = sp_golem_idle;
+		
 		if(amount < 1)
 		{
 			var _channel   = animcurve_get_channel(/*curve_struct_or_id */ani_GolemSlamSpeed, /*channel_name_or_index */0);
@@ -60,6 +70,11 @@ function JumpTo(_target, _jumpDuration = 2) : Action() constructor
 			amount = clamp(amount, 0, 1);
 		
 			var _pos = BlerpUnclamped(a, b, c, d, amount);
+			
+			if(amount >= 1)
+			{
+				screenshake_hard();
+			}
 		
 			//Debug.Log(amount);
 		

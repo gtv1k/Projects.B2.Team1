@@ -52,7 +52,8 @@
       ],"visible":true,"depth":400,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Player","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[],"visible":true,"depth":500,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Attacks","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
-        {"properties":[],"isDnd":false,"objectId":{"name":"obj_God","path":"objects/obj_God/obj_God.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":704.0,"y":64.0,"resourceVersion":"1.0","name":"inst_414A74C","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"obj_God","path":"objects/obj_God/obj_God.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":609.0,"y":221.0,"resourceVersion":"1.0","name":"inst_414A74C","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"obj_Golem","path":"objects/obj_Golem/obj_Golem.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":386.0,"y":145.0,"resourceVersion":"1.0","name":"inst_1ED0C3CF","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":600,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Enemies","tags":[],"resourceType":"GMRInstanceLayer",},
     {"effectType":"_filter_tintfilter","properties":[
         {"type":1,"name":"g_TintCol","value":"#FF000000",},
@@ -115,6 +116,7 @@
     {"name":"inst_9BC7758","path":"rooms/r_heaven_area/r_heaven_area.yy",},
     {"name":"inst_2A73A8D9","path":"rooms/r_heaven_area/r_heaven_area.yy",},
     {"name":"inst_414A74C","path":"rooms/r_heaven_area/r_heaven_area.yy",},
+    {"name":"inst_1ED0C3CF","path":"rooms/r_heaven_area/r_heaven_area.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

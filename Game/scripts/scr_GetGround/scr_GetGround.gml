@@ -29,8 +29,7 @@ function GetGround(_inPos, _outPos, _maxDistance = infinity) : Action() construc
 	{
 		//if(!hasCheckedGround)
 	
-		var _ray = new Ray(in, down);
-		
+		var _ray = new Ray(in, DOWN);
 		var _hitInfo = _ray.Cast();
 		
 		if(_hitInfo != null)

@@ -69,6 +69,9 @@ hpWidth = 112;
 hpHeight = 14;
 hpBar_x = pos[0] ;
 hpBar_y = pos[1];
+lastHit = null;
+lastHitFrame = -1;
+lastHitTime  = -1;
 
 isDodging = false;
 dodgeTime = 0;
