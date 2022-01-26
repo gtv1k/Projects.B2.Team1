@@ -24,15 +24,21 @@ stateMachine
 			(new Sequence()
 				.Add(new Wait( /*seconds*/ 0.2) )
 				//.Add(new Log("A") )
-				.Add(new Seq(/*sequence*/ seq_God_EnergyCircle, /*position */new vec2(x, y - (1 UNIT)), /*layer*/ "Attacks", /*awaitCompletion*/ false, /*mirror*/ false, /*scale*/0.5) )
+				.Add(new Seq(/*sequence*/ seq_God_EnergyCircle, /*offset */new vec2(0, -(1 UNIT)), /*layer*/ "Attacks", /*awaitCompletion*/ false, new vec2( 0.5, 0.5)) )
 				.Add(new Wait( /*seconds*/ 5.0) )
 			)
 			.Add
 			(new Sequence()
 				.Add(new Wait( /*seconds*/ 0.2) )
 				//.Add(new Log("B") )
-				.Add(new Seq(/*sequence*/ seq_God_EnergyCircle, /*position */new vec2(x, y - (1 UNIT)), /*layer*/ "Attacks", /*awaitCompletion*/ false, /*mirror*/ true, /*scale*/0.5) )
+				.Add(new Seq(/*sequence*/ seq_God_EnergyCircle, /*offset */new vec2(0, -(1 UNIT)), /*layer*/ "Attacks", /*awaitCompletion*/ false, new vec2(-0.5, 0.5)) )
 				.Add(new Wait( /*seconds*/ 6.0) ) //6.0) )
+			)
+			
+			.Add
+			(new Sequence()
+				.Add(new Seq( /*sequence*/ seq_God_SwordRoll, /*offset */new vec2(0, 0), /*layer*/ "Attacks", /*awaitCompletion*/ true, /*scale*/ new vec2( 0.7, 0.7), /*target*/ obj_player) )
+				.Add(new Wait( /*seconds*/ 0.5) )
 			)
 			
 			//Balls
@@ -40,23 +46,23 @@ stateMachine
 			(new Sequence()
 				.Add(new Wait( /*seconds*/ 0.1) )
 				//.Add(new Log("C") )
-				.Add(new Seq( /*sequence*/ seq_God_EnergyBalls, /*position */new vec2(x, y - (1 UNIT)), /*layer*/ "Attacks", /*awaitCompletion*/ false, /*mirror*/ true) )
+				.Add(new Seq( /*sequence*/ seq_God_EnergyBalls, /*offset */new vec2(0, -(1 UNIT)), /*layer*/ "Attacks", /*awaitCompletion*/ false, /*mirror*/ new vec2(-1, 1)) )
 				.Add(new Wait( /*seconds*/ 0.5) ) //0.5) )
-				.Add(new Seq( /*sequence*/ seq_God_EnergyBalls, /*position */new vec2(x, y - (1 UNIT)), /*layer*/ "Attacks", /*awaitCompletion*/ false, /*mirror*/ false) )
+				.Add(new Seq( /*sequence*/ seq_God_EnergyBalls, /*offset */new vec2(0, -(1 UNIT)), /*layer*/ "Attacks", /*awaitCompletion*/ false, /*mirror*/ new vec2( 1, 1)) )
 				.Add(new Wait( /*seconds*/ 0.7) ) //0.5) )
 			)
 			.Add
 			(new Sequence()
 				.Add(new Wait( /*seconds*/ 0.1) )
 				//.Add(new Log("D") )
-				.Add(new Seq( /*sequence*/ seq_God_EnergyBalls, /*position */new vec2(x, y - (1 UNIT)), /*layer*/ "Attacks", /*awaitCompletion*/ false, /*mirror*/ true) )
+				.Add(new Seq( /*sequence*/ seq_God_EnergyBalls, /*offset */new vec2(0, -(1 UNIT)), /*layer*/ "Attacks", /*awaitCompletion*/ false, /*mirror*/ new vec2(-1, 1)) )
 				.Add(new Wait( /*seconds*/ 0.5) )
 			)
 			.Add
 			(new Sequence()
 				.Add(new Wait( /*seconds*/ 0.1) )
 				//.Add(new Log("E") )
-				.Add(new Seq( /*sequence*/ seq_God_EnergyBalls, /*position */new vec2(x, y - (1 UNIT)), /*layer*/ "Attacks", /*awaitCompletion*/ false, /*mirror*/ false) )
+				.Add(new Seq( /*sequence*/ seq_God_EnergyBalls, /*offset */new vec2(0, -(1 UNIT)), /*layer*/ "Attacks", /*awaitCompletion*/ true, /*mirror*/ new vec2( 1, 1)) )
 				.Add(new Wait( /*seconds*/ 0.5) ) //0.5) )
 			)
 			//End balls
@@ -65,16 +71,28 @@ stateMachine
 			(new Sequence()
 				.Add(new Wait( /*seconds*/ 0.1) )
 				//.Add(new Log("F") )
-				.Add(new Seq( /*sequence*/ seq_God_SwordRoll, /*position */new vec2(obj_player.x, obj_player.y), /*layer*/ "Attacks", /*awaitCompletion*/ false, /*mirror*/ false) )
-				.Add(new Wait( /*seconds*/ 0.5) ) //1.5) )
+				.Add(new Seq( /*sequence*/ seq_God_SwordRoll, /*offset */new vec2(0, 0), /*layer*/ "Attacks", /*awaitCompletion*/ true, /*scale*/ new vec2( 0.7, 0.7), /*target*/ obj_player) )
+				.Add(new Wait( /*seconds*/ 0.1) ) //1.5) )
 			)
 			.Add
 			(new Sequence()
 				.Add(new Wait( /*seconds*/ 0.3) )
 				//.Add(new Log("G") )
-				.Add(new Seq( /*sequence*/ seq_God_SwordRoll, /*position */new vec2(obj_player.x, obj_player.y), /*layer*/ "Attacks", /*awaitCompletion*/ false, /*mirror*/ true) )
+				.Add(new Seq( /*sequence*/ seq_God_SwordRoll, /*offset */new vec2(0, 0), /*layer*/ "Attacks", /*awaitCompletion*/ true, /*scale*/ new vec2(-0.7, 0.7), /*target*/ obj_player) )
 				.Add(new Wait( /*seconds*/ 0.2) ) //1.0) )
 			)
+			
+			.Add
+			(new Sequence()
+				.Add(new Seq( /*sequence*/ seq_God_SwordRoll, /*offset */new vec2(0, 0), /*layer*/ "Attacks", /*awaitCompletion*/ true, /*scale*/ new vec2( 0.7, 0.7), /*target*/ obj_player) )
+				.Add(new Wait( /*seconds*/ 0.5) )
+			)
+			.Add
+			(new Sequence()
+				.Add(new Seq( /*sequence*/ seq_God_SwordRoll, /*offset */new vec2(0, 0), /*layer*/ "Attacks", /*awaitCompletion*/ true, /*scale*/ new vec2(-0.7, 0.7), /*target*/ obj_player) )
+				.Add(new Wait( /*seconds*/ 0.7) )
+			)
+			
 			
 			//.Add
 			//(new Sequence()

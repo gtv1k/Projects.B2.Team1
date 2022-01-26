@@ -64,4 +64,8 @@ walksp = 6;//4;
 onground=false;
 charge=0;
 
+lastHit = null;
+lastHitFrame = -1;
+lastHitTime  = -1;
+
 
