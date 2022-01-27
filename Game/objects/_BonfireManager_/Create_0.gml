@@ -7,6 +7,11 @@ global.bonfire_room = null;
 global.bonfire = null;
 
 global.is_dead = false;
+global.timeOfDeath = null;
+
+respawnTime = 1;
+
+timeSpentDead = 0;
 
 bonito = false;
 

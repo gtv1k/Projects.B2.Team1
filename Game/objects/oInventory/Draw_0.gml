@@ -6,7 +6,6 @@ if (keyboard_check_pressed(vk_tab))
 	check_press = !check_press;
 }
 
-
 if (check_press)
 {
 	draw_sprite_stretched

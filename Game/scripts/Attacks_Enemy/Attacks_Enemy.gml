@@ -72,9 +72,8 @@ function ProcessAttackEnemy(argument0, argument1) {
 
 }
 
-function PlayerHit(argument0) {
-	var _damage = argument0;
-
+function PlayerHit(_damage) 
+{
 	hp -= _damage;
 	flash = true;
 	if (hp > 0)
@@ -85,6 +84,10 @@ function PlayerHit(argument0) {
 	else
 	{
 		state = PLAYERSTATE.DEAD;
+		global.is_dead = true;
+		global.timeOfDead = Time.time;
+		
+		//TODO: Add wait
 	}
 
 

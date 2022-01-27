@@ -3,7 +3,7 @@
 
 function Inventory_Search(rootObject, itemType)
 {
-	return 0;	
+	//return 0;	
 	
 	if(rootObject == undefined) return 0;	
 	if(rootObject == null) return 0;	

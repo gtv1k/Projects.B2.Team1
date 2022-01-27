@@ -4,6 +4,11 @@ stateMachine = new StateMachine(/*user*/ id);
 
 //image_speed = 1;
 
+flash = false;
+golemHits = new List();
+
+hp = 6;
+
 stateMachine
 	.Add
 	(new Random()

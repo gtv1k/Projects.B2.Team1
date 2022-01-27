@@ -41,7 +41,6 @@ y += vsp;
 if(instance_exists(obj_textbox)) exit;
 
 
-
 	key_left = keyboard_check(ord("A"));
 	key_right = keyboard_check(ord("D"));
 	key_jump = keyboard_check_pressed(ord("W"));
@@ -50,7 +49,7 @@ if(instance_exists(obj_textbox)) exit;
 	key_Execute = keyboard_check_pressed(ord("F"));
 	keyDash = keyboard_check_pressed(ord("P"));
 	key_interact = keyboard_check_pressed(ord("E"));
-
+	
 switch(state)
 {
 	case PLAYERSTATE.FREE: PlayerState_Free(); break;
